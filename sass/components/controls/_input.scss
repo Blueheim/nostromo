@@ -1,0 +1,45 @@
+.control__input {
+  width: 100%;
+
+  &--1 {
+    display: block;
+    color: color('white');
+    padding: 1rem 1rem 1rem 0rem;
+    // border-radius: 2px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-bottom: 1px solid currentColor;
+
+    &::placeholder {
+      opacity: 0;
+    }
+
+    + .control__helper {
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 1rem 0;
+      color: color('white');
+    }
+
+    &:focus {
+      box-shadow: $shadow-black-small;
+      border-bottom-color: color('primary');
+    }
+
+    &:focus + .control__helper,
+    &:valid + .control__helper {
+      top: -2rem;
+
+      .control__label {
+        font-size: 80%;
+        color: color('primary');
+      }
+
+      .control__label-icon {
+        transform: scale(0);
+      }
+    }
+  }
+}

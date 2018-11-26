@@ -1,0 +1,33 @@
+.gallery {
+  grid-column: 1 / -1;
+  display: grid;
+
+  &--2x2 {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, vw);
+    // grid-gap: size('small');
+    // padding: size('small');
+  }
+
+  &__img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &--2x2 &__figure {
+    &--1 {
+      background-color: green;
+    }
+    &--2 {
+      background-color: red;
+    }
+    &--3 {
+      background-color: yellow;
+    }
+    &--4 {
+      background-color: blue;
+    }
+  }
+}

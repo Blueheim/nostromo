@@ -1,0 +1,38 @@
+/* BUILT IN GRADIENTS */
+
+/* THEME GRADIENTS */
+$transparent-amount: 0.2;
+
+$gd-prim-l: gradient-linear(to left, color(primary), color(primary));
+$gd-prim-trans-l: gradient-linear(
+  to left,
+  transparentize(color(primary), $transparent-amount),
+  transparentize(color(primary), $transparent-amount)
+);
+
+$gd-prim-r: gradient-linear(to right, color(primary), color(primary));
+
+$gd-prim-t: gradient-linear(to top, color(primary), color(primary));
+$gd-prim-b: gradient-linear(to bottom, color(primary), color(primary));
+$gd-prim-lt: gradient-linear(to left top, color(primary), color(primary));
+$gd-prim-lb: gradient-linear(to left bottom, color(primary), color(primary));
+$gd-prim-rt: gradient-linear(to right top, color(primary), color(primary));
+$gd-prim-rb: gradient-linear(to right bottom, color(primary), complementary-color(color(primary)));
+
+$gd-sec-l: gradient-linear(to left, color(secondary), color(secondary));
+$gd-sec-r: gradient-linear(to right, color(secondary), color(secondary));
+$gd-sec-t: gradient-linear(to top, color(secondary), color(secondary));
+$gd-sec-b: gradient-linear(to bottom, color(secondary), color(secondary));
+$gd-sec-lt: gradient-linear(to left top, color(secondary), color(secondary));
+$gd-sec-lb: gradient-linear(to left bottom, color(secondary), color(secondary));
+$gd-sec-rt: gradient-linear(to right top, color(secondary), color(secondary));
+$gd-sec-rb: gradient-linear(to right bottom, color(secondary), complementary-color(color(secondary)));
+
+$gd-tert-l: gradient-linear(to left, color(tertiary), color(tertiary));
+$gd-tert-r: gradient-linear(to right, color(tertiary), color(tertiary));
+$gd-tert-t: gradient-linear(to top, color(tertiary), color(tertiary));
+$gd-tert-b: gradient-linear(to bottom, color(tertiary), color(tertiary));
+$gd-tert-lt: gradient-linear(to left top, color(tertiary), color(tertiary));
+$gd-tert-lb: gradient-linear(to left bottom, color(tertiary), color(tertiary));
+$gd-tert-rt: gradient-linear(to right top, color(tertiary), color(tertiary));
+$gd-tert-rb: gradient-linear(to right bottom, color(tertiary), color(tertiary));

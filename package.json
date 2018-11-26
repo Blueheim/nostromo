@@ -1,0 +1,51 @@
+{
+  "name": "nostromo",
+  "version": "0.1.0",
+  "description": "My modern CSS Toolkit. Based on Flexbox and grids.",
+  "main": "main.scss",
+  "scripts": {
+    "start": "npm-run-all --parallel watch:sass",
+    "clean:css": "rimraf css",
+    "watch:sass": "node-sass --output-style expanded --source-map true sass/main.scss css/style.css -w",
+    "compile:sass": "node-sass sass/main.scss css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer --map false -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
+    "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
+    "build:css": "npm-run-all clean:css compile:sass prefix:css compress:css",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
+  },
+  "keywords": [
+    "framework",
+    "sass",
+    "css",
+    "grid",
+    "responsive"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Blueheim/nostromo.git"
+  },
+  "author": {
+    "name": "Xavier Deroeux",
+    "email": "",
+    "url": ""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^9.3.1",
+    "clean-css-cli": "^4.2.1",
+    "concat": "^1.0.3",
+    "docz": "^0.12.13",
+    "docz-plugin-css": "^0.11.0",
+    "node-sass": "^4.10.0",
+    "npm-run-all": "^4.1.3",
+    "postcss-cli": "^6.0.1",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "rimraf": "^2.6.2"
+  },
+  "bugs": {
+    "url": "https://github.com/Blueheim/nostromo/issues"
+  },
+  "homepage": "https://github.com/Blueheim/nostromo#readme"
+}

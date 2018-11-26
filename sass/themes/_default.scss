@@ -1,0 +1,42 @@
+/*
+By Xavier 'Blueheim' Deroeux
+*/
+
+// DEFAULT THEME
+
+// COLORS
+
+// Best practices:
+// Prefer HSL definition then RGB
+// Use mix instead of darken and lighten
+
+/* Theme Color Scheme */
+$white-color: hsl(0, 0%, 100%) !default;
+$black-color: hsl(0, 0%, 0%) !default;
+$color-weight: 20% !default;
+
+$color-primary: hsl(195, 100%, 50%) !default;
+$color-primary-light: tint($color-primary, $color-weight) !default;
+$color-primary-dark: shade($color-primary, $color-weight) !default;
+
+$color-secondary: #ff7730 !default;
+$color-secondary-light: tint($color-secondary, $color-weight) !default;
+$color-secondary-dark: shade($color-secondary, $color-weight) !default;
+
+$color-tertiary: #2998ff !default;
+$color-tertiary-light: tint($color-tertiary, $color-weight) !default;
+$color-tertiary-dark: shade($color-tertiary, $color-weight) !default;
+
+/* Grey Color Scheme */
+$color-grey: #f7f7f7 !default;
+
+$color-grey-light-1: tint($color-grey, 10%) !default;
+$color-grey-light-2: tint($color-grey, 20%) !default;
+$color-grey-light-3: tint($color-grey, 30%) !default;
+
+$color-grey-dark-1: shade($color-grey, 10%) !default;
+$color-grey-dark-2: shade($color-grey, 20%) !default;
+$color-grey-dark-3: shade($color-grey, 30%) !default;
+
+/* FONTS */
+$font-primary: 'Nunito', sans-serif !default;

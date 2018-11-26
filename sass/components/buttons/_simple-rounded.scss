@@ -1,0 +1,52 @@
+.btn--r1 {
+  border-radius: size('very-tiny');
+
+  &.btn--e1 {
+    &::after {
+      border-radius: size('very-tiny');
+    }
+  }
+}
+
+.btn--r2 {
+  border-radius: size('tiny');
+}
+
+.btn--r3 {
+  border-radius: size('very-small');
+}
+
+.btn--r4 {
+  border-radius: size('small');
+}
+
+.btn--r5 {
+  border-radius: size('medium');
+}
+
+.btn--r6 {
+  border-radius: size('big');
+}
+
+.btn--r7 {
+  border-radius: size('very-big');
+}
+
+.btn--r8 {
+  border-radius: size('huge');
+}
+
+.btn--r9 {
+  border-radius: size('very-huge');
+}
+
+.btn--r10 {
+  border-radius: 180286px;
+}
+
+.btn--r-1 {
+}
+
+.btn--r2 {
+  background-size: 400%;
+}

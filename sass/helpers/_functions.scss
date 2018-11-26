@@ -1,0 +1,77 @@
+// @function color($color-name) {
+//   @return var(--color-#{$color-name});
+// }
+@function gradient-linear($direction, $steps...) {
+  @return linear-gradient($direction, $steps);
+}
+
+@function color($key) {
+  @if not map-has-key($colors, $key) {
+    @warn "Colors: Key `#{$key}` not found.";
+  }
+  @return map-get($colors, $key);
+}
+
+@function font($key) {
+  @if not map-has-key($fonts, $key) {
+    @warn "Fonts: Key `#{$key}` not found.";
+  }
+  @return map-get($fonts, $key);
+}
+
+@function size($key) {
+  @if not map-has-key($sizes, $key) {
+    @warn "Fonts: Key `#{$key}` not found.";
+  }
+  @return map-get($sizes, $key);
+}
+
+@function tint($color, $percentage) {
+  @return mix(hsl(0, 0%, 100%), $color, $percentage);
+}
+
+@function shade($color, $percentage) {
+  @return mix(hsl(0, 0%, 0%), $color, $percentage);
+}
+
+@function complementary-color($color) {
+  @return adjust-hue($color, 180deg);
+}
+
+@function complementary-adj-color($color) {
+  @return adjust-hue(adjust-hue($color, 120deg), 240deg);
+}
+
+@function analog-color($color, $depth: 1) {
+  $degrees: $depth * 30deg;
+  @return adjust-hue($color, $degrees);
+}
+
+@function parseInt($str, $radix: 10) {
+  $chars: charsFromBase($radix);
+  $result: 0;
+
+  $is-negative: str-index($str, '-') == 1;
+
+  @if $is-negative {
+    $str: str-slice($str, 2);
+  }
+
+  @for $i from 1 through str-length($str) {
+    $char: str-slice($str, -$i, -$i);
+    $value: str-index($chars, $char) - 1;
+    $result: $result + ($value * pow($radix, ($i - 1)));
+  }
+
+  @return if($is-negative, -$result, $result);
+}
+
+@function rem($pixelSize) {
+  $remSize: $pixelSize / $rootSize;
+  @return #{$remSize}rem;
+}
+
+@function px($remSize) {
+  $pixelSize: parseInt($remSize) * $rootSize;
+  @return #{$value}px;
+}

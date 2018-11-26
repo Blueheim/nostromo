@@ -1,0 +1,81 @@
+/*
+By Xavier 'Blueheim' Deroeux
+*/
+
+// DEFAULT THEME
+
+// COLORS
+
+// Best practices:
+// Prefer HSL definition then RGB
+// Use mix instead of darken and lighten
+
+/* Theme Color Scheme */
+$weight-1: 10% !default;
+$weight-2: 20% !default;
+$weight-3: 30% !default;
+
+$white: #fffff8; // hsl(0, 0%, 100%);
+$black: hsl(0, 0%, 0%);
+
+$blue: hsl(279, 88, 68) !default;
+$blue-light: tint($blue, $weight-2) !default;
+$blue-dark: shade($blue, $weight-2) !default;
+
+$orange: hsl(248, 69, 69) !default;
+$orange-light: tint($orange, $weight-2) !default;
+$orange-dark: shade($orange, $weight-2) !default;
+
+$purple: #f66456 !default;
+$purple-light: tint($purple, $weight-2) !default;
+$purple-dark: shade($purple, $weight-2) !default;
+
+//#B82B28
+
+//D2DDE3
+
+/* Grey Color Scheme */
+$grey: #494454 !default;
+$grey-light-1: tint($grey, $weight-1) !default;
+$grey-light-2: tint($grey, $weight-2) !default;
+$grey-light-3: tint($grey, $weight-3) !default;
+
+$grey-dark-1: shade($grey, $weight-1) !default;
+$grey-dark-2: shade($grey, $weight-2) !default;
+$grey-dark-3: shade($grey, $weight-3) !default;
+
+/* FONTS */
+$lato: 'Lato', sans-serif;
+
+$colors: (
+  'white': $white,
+  'black': $black,
+  'primary': $blue,
+  'primary-light': $blue-light,
+  'primary-dark': $blue-dark,
+  'secondary': $orange,
+  'secondary-light': $orange-light,
+  'secondary-dark': $orange-dark,
+  'tertiary': $purple,
+  'tertiary-light': $purple-light,
+  'tertiary-dark': $purple-dark,
+  'grey': $grey,
+  'grey-light-1': $grey-light-1,
+  'grey-light-2': $grey-light-2,
+  'grey-light-3': $grey-light-3,
+  'grey-dark-1': $grey-dark-1,
+  'grey-dark-2': $grey-dark-2,
+  'grey-dark-3': $grey-dark-3,
+  'font-primary': $grey-dark-3,
+  'font-title-header': $white,
+  'font-subtitle-header': $white,
+  'font-nav': $white,
+  'font-title-primary': $grey-dark-3,
+  'font-title-secondary': $grey-dark-3,
+  'font-title-tertiary': $grey-dark-3,
+) !default;
+
+$fonts: (
+  'primary': $lato,
+  'secondary': $lato,
+) !default;

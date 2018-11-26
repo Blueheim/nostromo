@@ -1,0 +1,63 @@
+/*
+By Xavier 'Blueheim' Deroeux
+*/
+
+// 1rem settings
+
+//1rem = 8px, 8/16 = 50%
+$size-percent-small: 50%;
+
+// 1rem = 10px; 10px/16px = 62.5%
+$size-percent-default: 62.5%;
+
+//1rem = 12px, 12/16 = 75%
+$size-percent-big: 75%;
+
+/* SIZES */
+$sizes: (
+  'very-tiny': 0.8rem,
+  'tiny': 1rem,
+  'very-small': 1.2rem,
+  'small': 1.4rem,
+  'medium': 1.6rem,
+  'big': 2.2rem,
+  'very-big': 3.5rem,
+  'huge': 5rem,
+  'very-huge': 8rem,
+);
+
+/* GRID */
+
+$globalbar-height: 6rem;
+$globalbar-width: 25vh;
+$content-margin: 2.5rem;
+
+/* BREAKPOINTS */
+$breakpoints: (
+  //600px
+    'tiny': 37.5em,
+  //800px
+    'small': 50em,
+  //1000px
+    'medium': 62.5em,
+  //1200px
+    'large': 75em,
+  //1800px,
+    'huge': 112.5em
+);
+
+/* Effects */
+$transition-duration: 0.2s;
+$translate-y-1: -10%;
+$translate-y-2: -20%;
+
+$scale-x-1: 110%;
+$scale-x-2: 120%;
+$scale-x-3: 130%;
+$scale-x-4: 140%;
+$scale-x-5: 150%;
+$scale-x-6: 160%;
+$scale-x-7: 170%;
+$scale-x-8: 180%;
+$scale-x-9: 190%;
+$scale-x-10: 200%;

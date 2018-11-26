@@ -1,0 +1,27 @@
+.control {
+  position: relative;
+  transition: all 0.3s;
+  width: 100%;
+
+  &__helper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    pointer-events: none;
+    transition: 0.5s;
+  }
+
+  &__label {
+    transition: 0.5s;
+  }
+
+  &__label-icon {
+    @include size(1.5rem);
+    fill: currentColor;
+    transition: transform 0.5s;
+
+    &--right {
+      margin-left: 1rem;
+    }
+  }
+}

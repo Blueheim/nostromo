@@ -1,0 +1,101 @@
+.u-bg-transparent {
+  background-color: transparent !important;
+}
+
+/* TEXT  */
+
+.u-tc {
+  text-align: center !important;
+}
+/* MARGIN RIGHT */
+.u-mr-xs {
+  margin-right: size('very-small') !important;
+}
+
+.u-mr-sm {
+  margin-right: size('small') !important;
+}
+
+.u-mr-md {
+  margin-right: size('medium') !important;
+}
+
+/* MARGIN BOTTOM */
+
+.u-mb-xs {
+  margin-bottom: size('very-small') !important;
+}
+
+.u-mb-sm {
+  margin-bottom: size('small') !important;
+}
+
+.u-mb-md {
+  margin-bottom: size('medium') !important;
+}
+
+.u-mb-b {
+  margin-bottom: size('big') !important;
+}
+
+.u-mb-vb {
+  margin-bottom: size('very-big') !important;
+}
+
+.u-mb-hg {
+  margin-bottom: size('huge') !important;
+}
+
+.u-mb-vh {
+  margin-bottom: size('very-huge') !important;
+}
+
+/* CLIPPING */
+
+// Rectangle
+
+.u-clip-rec-1 {
+  @extend %clip-1;
+
+  &-inverted {
+    @extend %clip-1-inverted;
+  }
+}
+
+.u-clip-rec-2 {
+  @extend %clip-2;
+
+  &-inverted {
+    @extend %clip-2-inverted;
+  }
+}
+
+.u-clip-rec-3 {
+  @extend %clip-3;
+}
+
+.u-clip-ellipse-1 {
+  @extend %clip-ellipse-1;
+}
+
+.u-clip-ellipse-2 {
+  @extend %clip-ellipse-2;
+}
+
+//Ellipse
+
+/* ANIMATIONS */
+.u-anim-mil {
+  animation: moveInLeft 2s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.u-anim-mir {
+  animation: moveInRight 2s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}
+
+.u-anim-mib {
+  animation: moveInBottom 1.5s ease-out 0.75s;
+  animation-fill-mode: backwards;
+}

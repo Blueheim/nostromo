@@ -1,0 +1,15 @@
+.l-globalbar {
+  &--fixed {
+    &-top {
+      position: fixed;
+      // display: flex;
+      // opacity: 0.8;
+      z-index: 10;
+      width: 100%;
+    }
+  }
+
+  @include respond-to('large') {
+    //flex-direction: column;
+  }
+}

@@ -1,0 +1,48 @@
+%clip-1 {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%);
+  }
+
+  &-inverted {
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%);
+    }
+  }
+}
+
+%clip-2 {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: polygon(100% 0%, 100% 50%, 100% 85%, 50% 100%, 0 85%, 0 0);
+    clip-path: polygon(100% 0%, 100% 50%, 100% 85%, 50% 100%, 0 85%, 0 0);
+  }
+
+  &-inverted {
+    @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+      -webkit-clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 0);
+      clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 0);
+    }
+  }
+}
+
+%clip-3 {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: circle(71.9% at 51% 27%);
+    clip-path: circle(71.9% at 51% 27%);
+  }
+}
+
+%clip-ellipse-1 {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: ellipse(100% 99% at 50% 100%);
+    clip-path: ellipse(100% 99% at 50% 100%);
+  }
+}
+
+%clip-ellipse-2 {
+  @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+    -webkit-clip-path: ellipse(100% 99% at 50% 0%);
+    clip-path: ellipse(100% 99% at 50% 0%);
+  }
+}

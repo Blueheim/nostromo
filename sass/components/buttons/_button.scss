@@ -1,0 +1,130 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    position: relative;
+    text-transform: uppercase;
+    padding: 1.5rem 4rem;
+    display: inline-block;
+    transition: all $transition-duration;
+  }
+
+  &--e1 {
+    &:hover {
+      transform: translateY($translate-y-1);
+      box-shadow: $shadow-black-small;
+    }
+
+    &:active,
+    &focus {
+      transform: translateY($translate-y-1 / 2);
+      box-shadow: $shadow-black-tiny;
+    }
+  }
+
+  &--e2 {
+    &::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: inline-block;
+      height: 100%;
+      width: 100%;
+      transition: all $transition-duration;
+      z-index: -1;
+    }
+
+    &:hover {
+      transform: translateY($translate-y-1);
+      box-shadow: $shadow-black-small;
+
+      &::after {
+        transform: scaleX(1.4) scaleY(1.6);
+        opacity: 0;
+      }
+    }
+
+    &:active,
+    &focus {
+      /* Click state */
+      outline: none;
+      transform: translateY(-0.1rem);
+      box-shadow: $shadow-black-tiny;
+    }
+  }
+
+  &--effect-2 {
+    &:before {
+      content: '';
+      position: absolute;
+      top: -5px;
+      left: -5px;
+      right: -5px;
+      bottom: -5px;
+      z-index: -1;
+      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+      background-size: 400%;
+      border-radius: 40px;
+      opacity: 0;
+      transition: 0.5s;
+    }
+
+    &:hover {
+      animation: bg-position 6s linear infinite;
+
+      &::before {
+        filter: blur(20px);
+        opacity: 1;
+        animation: bg-position 6s linear infinite;
+      }
+    }
+  }
+
+  &--primary {
+    background-color: color('primary');
+    color: color('white');
+
+    &:hover {
+      background-color: color('primary-dark');
+    }
+
+    &::after {
+      background-color: color('primary');
+    }
+
+    &-gradient-light {
+      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+
+      &::after {
+        background-color: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+      }
+    }
+  }
+
+  &--secondary {
+    background-color: color('secondary');
+    color: color('white');
+
+    &:hover {
+      background-color: color('secondary-dark');
+    }
+
+    &::after {
+      background-color: color('secondary');
+    }
+  }
+
+  &--tertiary {
+    background-color: color('tertiary');
+    color: color('white');
+
+    &:hover {
+      background-color: color('tertiary-dark');
+    }
+
+    &::after {
+      background-color: color('tertiary');
+    }
+  }
+}

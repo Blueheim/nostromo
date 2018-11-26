@@ -1,0 +1,38 @@
+.scroll-indicator {
+  position: fixed;
+  left: 50%;
+  bottom: 2rem;
+  @include size(5rem);
+  background: none;
+  transform: translate(-50%, -50%) rotate(45deg);
+
+  .arrow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include size(80%);
+    display: block;
+    border: none;
+    border-right: 3px solid color('white');
+    border-bottom: 3px solid color('white');
+    animation: scroll-animation 1s linear infinite;
+
+    &:nth-child(1) {
+      top: -3rem;
+      left: -3rem;
+      animation-delay: 0s;
+    }
+
+    &:nth-child(2) {
+      top: -1.5rem;
+      left: -1.5rem;
+      animation-delay: 0.2s;
+    }
+
+    &:nth-child(3) {
+      top: 0;
+      left: 0;
+      animation-delay: 0.4s;
+    }
+  }
+}

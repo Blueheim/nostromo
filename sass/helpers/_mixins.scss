@@ -1,0 +1,121 @@
+@mixin overlay-skewed($percent-height: 40%) {
+  &:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: $percent-height;
+    background: transparentize(color('white'), 0.9);
+    //z-index: 1;
+    transform: skewY(-5deg) scale(1.5);
+  }
+}
+
+@mixin size($width, $height: $width) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex-center() {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@mixin flex($justify: stretch, $align: stretch, $direction: row) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin inline-flex($justify: stretch, $align: stretch, $direction: row) {
+  display: inline-flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin flex_none($justify: stretch, $align: stretch, $direction: row) {
+  display: none;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin background(
+  $image: (
+    $url: null,
+    $position: null,
+    $size: null,
+    $attachment: null,
+    $clip: null,
+    $repeat: no-repeat,
+    $origin: border-box,
+  ),
+  $fallback: null,
+  $overlay: null
+) {
+  background: $overlay,
+    map-get($image, url) map-get($image, position) / map-get($image, size) map-get($image, repeat)
+      map-get($image, origin) map-get($image, clip) map-get($image, attachment),
+    $fallback;
+}
+
+@mixin fontSize($pixel-size) {
+  //font-size: $size; //Fallback in px;
+  font-size: rem($pixel-size);
+}
+
+@mixin margin($pixel-size) {
+  //margin: $size; //Fallback in px;
+  margin: rem($pixel-size);
+}
+
+@mixin etchedText() {
+  text-shadow: 0 1px white;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #b8bec5;
+}
+
+@mixin gradientText() {
+  background: -webkit-linear-gradient(pink, red);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+@mixin grid() {
+  display: grid;
+}
+
+// MEDIA QUERY MANAGER
+
+@mixin respond-to($min: null, $max: null) {
+  $statement: 'only screen and ';
+  $min-width: map-get($breakpoints, $min);
+  $max-width: map-get($breakpoints, $max);
+
+  @if not $min-width and not $max-width {
+    @error 'Valeurs de breakpoint `{$min}` et/ou `{$max}` sans correspondance.';
+  } @else {
+    @if $min-width {
+      @if (type-of($min-width) == 'number') {
+        $statement: $statement + '(min-width:' + $min-width + ')';
+      }
+    }
+
+    @if $max-width {
+      @if (type-of($max-width) == 'number') {
+        $statement: $statement + ' and (max-width:' + $max-width + ')';
+      }
+    }
+
+    $statement: inspect(unquote($statement));
+
+    @media #{$statement} {
+      @content;
+    }
+  }
+}

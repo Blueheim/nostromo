@@ -1,0 +1,28 @@
+.l-section {
+  grid-column: main-start / main-end;
+  display: grid;
+  width: 100%;
+
+  &--simple {
+    grid-template-columns: [section-start] 1fr [section-end];
+  }
+
+  &--auto {
+    grid-template-columns: [section-start] repeat(auto-fit, minmax(0, 1fr)) [section-end];
+  }
+
+  > .l-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-gap: 2rem;
+    align-items: start;
+    margin: auto;
+
+    @include respond-to('large') {
+      width: 80%;
+    }
+  }
+}
+
+.section-title {
+}
