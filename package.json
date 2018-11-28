@@ -2,7 +2,7 @@
   "name": "nostromo-css",
   "version": "0.0.1",
   "description": "My modern CSS Toolkit. Based on Flexbox and grids.",
-  "main": "main.scss",
+  "main": "default.scss",
   "scripts": {
     "start": "npm-run-all --parallel watch:sass",
     "clean:css": "rimraf css",
