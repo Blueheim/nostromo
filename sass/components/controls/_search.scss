@@ -1,0 +1,14 @@
+.control__search {
+  &__input {
+  }
+
+  &__button {
+  }
+
+  &__icon {
+    @include size('small');
+
+    @include respond-to('large') {
+    }
+  }
+}

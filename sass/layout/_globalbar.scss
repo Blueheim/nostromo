@@ -1,12 +1,16 @@
 .l-globalbar {
   &--fixed {
+    position: fixed;
+    // display: flex;
+    // opacity: 0.8;
+    z-index: 10;
+    width: 100%;
     &-top {
-      position: fixed;
-      // display: flex;
-      // opacity: 0.8;
-      z-index: 10;
-      width: 100%;
     }
+  }
+
+  &--secondary {
+    background-color: color('secondary');
   }
 
   @include respond-to('large') {

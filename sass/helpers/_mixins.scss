@@ -12,6 +12,26 @@
   }
 }
 
+@mixin primary() {
+  background-color: color('primary');
+  color: color('font-primary');
+}
+
+@mixin secondary() {
+  background-color: color('secondary');
+  color: color('font-secondary');
+}
+
+@mixin tertiary() {
+  background-color: color('tertiary');
+  color: color('font-tertiary');
+}
+
+@mixin transparent() {
+  background-color: transparent;
+  //color: color('font-tertiary');
+}
+
 @mixin size($width, $height: $width) {
   width: $width;
   height: $height;

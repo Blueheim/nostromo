@@ -1,0 +1,35 @@
+.l-hero {
+  height: 100vh;
+  //background-color: #494454;
+  background-size: cover;
+  width: 100%;
+
+  &--primary {
+    background-color: color('primary');
+  }
+
+  &--secondary {
+    background-color: color('secondary');
+  }
+
+  &--tertiary {
+    background-color: color('tertiary');
+  }
+
+  background-blend-mode: multiply;
+  // background-image: gradient-linear(to right, transparentize(#494454, 0.2), #494454),
+  //   url(../../img/rafael-de-nadai-588387-unsplash.jpg);
+  // background-image: gradient-linear(
+  //   to right bottom,
+  //   transparentize(color('primary'), 0.7),
+  //   transparentize(color('secondary'), 0.7)
+  // );
+
+  // background-image: gradient-linear(
+  //   to right bottom,
+  //   transparentize(color('primary'), 0.7),
+  //   transparentize(color('secondary'), 0.7)
+  // );
+
+  // @include background($background-image, $fallback);
+}

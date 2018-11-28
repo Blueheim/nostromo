@@ -9,6 +9,8 @@ Contains all the imports
 */
 @charset 'utf-8';
 
+@import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+
 /* HELPERS */
 @import 'helpers/variables';
 @import 'helpers/functions';
@@ -39,7 +41,8 @@ Contains all the imports
 @import 'layout/forms';
 
 /* COMPONENTS */
-@import 'components/burger';
+@import 'components/navigation/burger';
+@import 'components/navigation/nav';
 @import 'components/buttons/button';
 @import 'components/buttons/simple-rounded';
 @import 'components/cards/card';
@@ -48,6 +51,7 @@ Contains all the imports
 @import 'components/controls/control';
 @import 'components/controls/input';
 @import 'components/scroll-indicator';
+@import 'components/icon';
 //@import 'components/gallery';
 
 /* PAGES */

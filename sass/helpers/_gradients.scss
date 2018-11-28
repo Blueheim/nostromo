@@ -10,6 +10,36 @@ $gd-prim-trans-l: gradient-linear(
   transparentize(color(primary), $transparent-amount)
 );
 
+$gd-prim-multi-r: gradient-linear(
+  to right,
+  color(primary),
+  tint(color(primary), 10%),
+  tint(color(primary), 20%),
+  tint(color(primary), 30%),
+  tint(color(primary), 40%),
+  color(primary)
+);
+
+$gd-sec-multi-r: gradient-linear(
+  to right,
+  color(secondary),
+  tint(color(secondary), 10%),
+  tint(color(secondary), 20%),
+  tint(color(secondary), 30%),
+  tint(color(secondary), 40%),
+  color(secondary)
+);
+
+$gd-tert-multi-r: gradient-linear(
+  to right,
+  color(tertiary),
+  tint(color(tertiary), 10%),
+  tint(color(tertiary), 20%),
+  tint(color(tertiary), 30%),
+  tint(color(tertiary), 40%),
+  color(tertiary)
+);
+
 $gd-prim-r: gradient-linear(to right, color(primary), color(primary));
 
 $gd-prim-t: gradient-linear(to top, color(primary), color(primary));

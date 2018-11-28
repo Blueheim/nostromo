@@ -7,6 +7,7 @@
     padding: 1.5rem 4rem;
     display: inline-block;
     transition: all $transition-duration;
+    z-index: 1;
   }
 
   &--e1 {
@@ -40,7 +41,7 @@
       box-shadow: $shadow-black-small;
 
       &::after {
-        transform: scaleX(1.4) scaleY(1.6);
+        transform: scaleX($scale-4) scaleY($scale-6);
         opacity: 0;
       }
     }
@@ -54,20 +55,19 @@
     }
   }
 
-  &--effect-2 {
-    &:before {
+  &--e3 {
+    &::before {
       content: '';
       position: absolute;
-      top: -5px;
-      left: -5px;
-      right: -5px;
-      bottom: -5px;
-      z-index: -1;
-      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
       background-size: 400%;
-      border-radius: 40px;
+      transform: scale($scale-1);
       opacity: 0;
-      transition: 0.5s;
+      transition: all $transition-duration;
+      z-index: -1;
     }
 
     &:hover {
@@ -85,6 +85,14 @@
     background-color: color('primary');
     color: color('white');
 
+    &.btn--e3 {
+      background: $gd-prim-multi-r;
+
+      &::before {
+        background: $gd-prim-multi-r;
+      }
+    }
+
     &:hover {
       background-color: color('primary-dark');
     }
@@ -92,19 +100,19 @@
     &::after {
       background-color: color('primary');
     }
-
-    &-gradient-light {
-      background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-
-      &::after {
-        background-color: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
-      }
-    }
   }
 
   &--secondary {
     background-color: color('secondary');
     color: color('white');
+
+    &.btn--e3 {
+      background: $gd-sec-multi-r;
+
+      &::before {
+        background: $gd-sec-multi-r;
+      }
+    }
 
     &:hover {
       background-color: color('secondary-dark');
@@ -118,6 +126,14 @@
   &--tertiary {
     background-color: color('tertiary');
     color: color('white');
+
+    &.btn--e3 {
+      background: $gd-tert-multi-r;
+
+      &::before {
+        background: $gd-tert-multi-r;
+      }
+    }
 
     &:hover {
       background-color: color('tertiary-dark');

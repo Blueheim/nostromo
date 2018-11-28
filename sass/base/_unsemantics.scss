@@ -2,11 +2,50 @@
   background-color: transparent !important;
 }
 
+/* Width */
+
+.u-w-100 {
+  width: 100%;
+}
+
+/* Height */
+
+.u-h-md {
+  height: 8rem !important;
+}
+
+.u-h-50 {
+  height: 50%;
+}
+
+/* Grid */
+.u-row-span-2 {
+  grid-row: span 2;
+}
+
+.u-row-span-3 {
+  grid-row: span 3;
+}
+
 /* TEXT  */
 
 .u-tc {
   text-align: center !important;
 }
+
+.u-tl {
+  text-align: left !important;
+}
+
+.u-tr {
+  text-align: right !important;
+}
+
+/* PADDING */
+.u-ph-md {
+  padding: 0 size('medium') !important;
+}
+
 /* MARGIN RIGHT */
 .u-mr-xs {
   margin-right: size('very-small') !important;

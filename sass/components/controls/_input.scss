@@ -42,4 +42,15 @@
       }
     }
   }
+
+  &--2 {
+    background-color: color('grey');
+    padding: 0.7rem 2rem;
+    border-radius: 100px;
+    margin-right: -3.25rem;
+  }
+}
+
+.control__action {
+  @include flex-center;
 }

@@ -1,6 +1,6 @@
 {
-  "name": "nostromo",
-  "version": "0.1.0",
+  "name": "nostromo-css",
+  "version": "0.0.1",
   "description": "My modern CSS Toolkit. Based on Flexbox and grids.",
   "main": "main.scss",
   "scripts": {
@@ -14,8 +14,15 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build"
   },
+  "files": [
+    "css",
+    "sass",
+    "main.scss",
+    "LICENSE",
+    "README.md"
+  ],
   "keywords": [
-    "framework",
+    "toolkit",
     "sass",
     "css",
     "grid",
@@ -26,9 +33,7 @@
     "url": "git+https://github.com/Blueheim/nostromo.git"
   },
   "author": {
-    "name": "Xavier Deroeux",
-    "email": "",
-    "url": ""
+    "name": "Xavier Deroeux"
   },
   "license": "MIT",
   "devDependencies": {

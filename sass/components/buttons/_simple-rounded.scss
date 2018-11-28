@@ -1,8 +1,16 @@
 .btn--r1 {
   border-radius: size('very-tiny');
 
-  &.btn--e1 {
+  &.btn--e2 {
     &::after {
+      border-radius: size('very-tiny');
+    }
+  }
+
+  &.btn--e3 {
+    background-size: 400%;
+
+    &::before {
       border-radius: size('very-tiny');
     }
   }
@@ -10,22 +18,92 @@
 
 .btn--r2 {
   border-radius: size('tiny');
+
+  &.btn--e2 {
+    &::after {
+      border-radius: size('tiny');
+    }
+  }
+
+  &.btn--e3 {
+    background-size: 400%;
+
+    &::before {
+      border-radius: size('tiny');
+    }
+  }
 }
 
 .btn--r3 {
   border-radius: size('very-small');
+
+  &.btn--e2 {
+    &::after {
+      border-radius: size('very-small');
+    }
+  }
+
+  &.btn--e3 {
+    background-size: 400%;
+
+    &::before {
+      border-radius: size('very-small');
+    }
+  }
 }
 
 .btn--r4 {
   border-radius: size('small');
+
+  &.btn--e2 {
+    &::after {
+      border-radius: size('small');
+    }
+  }
+
+  &.btn--e3 {
+    background-size: 400%;
+
+    &::before {
+      border-radius: size('small');
+    }
+  }
 }
 
 .btn--r5 {
   border-radius: size('medium');
+
+  &.btn--e2 {
+    &::after {
+      border-radius: size('medium');
+    }
+  }
+
+  &.btn--e3 {
+    background-size: 400%;
+
+    &::before {
+      border-radius: size('medium');
+    }
+  }
 }
 
 .btn--r6 {
   border-radius: size('big');
+
+  &.btn--e2 {
+    &::after {
+      border-radius: size('big');
+    }
+  }
+
+  &.btn--e3 {
+    background-size: 400%;
+
+    &::before {
+      border-radius: size('big');
+    }
+  }
 }
 
 .btn--r7 {
@@ -42,11 +120,18 @@
 
 .btn--r10 {
   border-radius: 180286px;
-}
 
-.btn--r-1 {
-}
+  &.btn--e2 {
+    &::after {
+      border-radius: 180286px;
+    }
+  }
 
-.btn--r2 {
-  background-size: 400%;
+  &.btn--e3 {
+    background-size: 400%;
+
+    &::before {
+      border-radius: 180286px;
+    }
+  }
 }

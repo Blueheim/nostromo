@@ -1,6 +1,7 @@
 .control {
   position: relative;
   transition: all 0.3s;
+  display: flex;
   width: 100%;
 
   &__helper {

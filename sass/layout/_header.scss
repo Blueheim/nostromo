@@ -8,9 +8,10 @@
 
 .l-header {
   position: relative;
-  display: flex;
-  // @include flex-center;
-  // background-color: color('secondary');
+
+  &--primary {
+    @include primary;
+  }
 
   @include respond-to('large') {
   }
@@ -21,7 +22,6 @@
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     color: color('white');
     @include size(100%);
-    padding-top: 8rem;
 
     @include respond-to('large') {
       .content {
@@ -40,29 +40,6 @@
       text-align: center;
     }
   }
-}
-
-.hero {
-  height: 100vh;
-  //background-color: #494454;
-  background-size: cover;
-  width: 100%;
-  background-blend-mode: multiply;
-  // background-image: gradient-linear(to right, transparentize(#494454, 0.2), #494454),
-  //   url(../../img/rafael-de-nadai-588387-unsplash.jpg);
-  // background-image: gradient-linear(
-  //   to right bottom,
-  //   transparentize(color('primary'), 0.7),
-  //   transparentize(color('secondary'), 0.7)
-  // );
-
-  // background-image: gradient-linear(
-  //   to right bottom,
-  //   transparentize(color('primary'), 0.7),
-  //   transparentize(color('secondary'), 0.7)
-  // );
-
-  // @include background($background-image, $fallback);
 }
 
 .animation-box {

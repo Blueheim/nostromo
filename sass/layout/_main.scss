@@ -1,2 +1,16 @@
 .l-main {
+  &--primary {
+    background-color: color('primary');
+    color: color('font-primary');
+  }
+
+  &--secondary {
+    background-color: color('secondary');
+    color: color('font-secondary');
+  }
+
+  &--tertiary {
+    background-color: color('tertiary');
+    color: color('font-tertiary');
+  }
 }

@@ -333,6 +333,9 @@ ASALocalRun/
 build/
 dist/
 
+#Assets
+img/
+
 #Docz
 .docz
 
