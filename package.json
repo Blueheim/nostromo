@@ -17,7 +17,7 @@
   "files": [
     "css",
     "sass",
-    "main.scss",
+    "default.scss",
     "LICENSE",
     "README.md"
   ],
