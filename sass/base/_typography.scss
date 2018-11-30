@@ -9,14 +9,14 @@ body {
 .l-header {
   &__title {
     display: block;
-    color: color('font-title-header');
+    // color: color('font-title-header');
 
     text-transform: uppercase;
 
-    background-image: linear-gradient(to right, color('primary-light'), color('secondary'));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+    // background-image: linear-gradient(to right, color('primary-light'), color('secondary'));
+    // -webkit-background-clip: text;
+    // background-clip: text;
+    //color: transparent;
 
     @include respond-to('large') {
       font-size: size('huge');
@@ -27,12 +27,12 @@ body {
   &__subtitle {
     display: block;
     font-weight: 700;
-    color: color('font-subtitle-header');
+    // color: color('font-subtitle-header');
     text-transform: uppercase;
 
     @include respond-to('large') {
-      font-size: size('big');
-      letter-spacing: size('big') / 2;
+      font-size: size('medium');
+      letter-spacing: size('medium') / 2;
     }
   }
 
@@ -41,6 +41,15 @@ body {
     @include respond-to('large') {
       font-size: size('medium');
     }
+  }
+}
+
+.l-section__title {
+  text-transform: uppercase;
+
+  @include respond-to('large') {
+    font-size: size('medium');
+    letter-spacing: size('medium') / 2;
   }
 }
 

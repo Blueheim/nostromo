@@ -9,10 +9,6 @@
 .l-header {
   position: relative;
 
-  &--primary {
-    @include primary;
-  }
-
   @include respond-to('large') {
   }
 

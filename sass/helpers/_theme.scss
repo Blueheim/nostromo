@@ -35,14 +35,15 @@ $purple-dark: shade($purple, $weight-2) !default;
 //D2DDE3
 
 /* Grey Color Scheme */
-$grey: #494454 !default;
-$grey-light-1: tint($grey, $weight-1) !default;
-$grey-light-2: tint($grey, $weight-2) !default;
-$grey-light-3: tint($grey, $weight-3) !default;
+//$grey: #777 !default;
 
-$grey-dark-1: shade($grey, $weight-1) !default;
-$grey-dark-2: shade($grey, $weight-2) !default;
-$grey-dark-3: shade($grey, $weight-3) !default;
+$grey-light-1: #faf9f9;
+$grey-light-2: #f4f2f2;
+$grey-light-3: #f0eeee;
+
+$grey-dark-1: #333 !default;
+$grey-dark-2: #777 !default;
+$grey-dark-3: #999 !default;
 
 /* FONTS */
 $lato: 'Lato', sans-serif;
@@ -53,22 +54,27 @@ $colors: (
   'primary': $blue,
   'primary-light': $blue-light,
   'primary-dark': $blue-dark,
+  'font-primary': $grey-dark-3,
+  'font-primary-light': $grey-dark-3,
+  'font-primary-dark': $grey-dark-3,
   'secondary': $orange,
   'secondary-light': $orange-light,
   'secondary-dark': $orange-dark,
+  'font-secondary': $grey-dark-3,
+  'font-secondary-light': $grey-dark-3,
+  'font-secondary-dark': $grey-dark-3,
   'tertiary': $purple,
   'tertiary-light': $purple-light,
   'tertiary-dark': $purple-dark,
-  'grey': $grey,
+  'font-tertiary': $grey-dark-3,
+  'font-tertiary-light': $grey-dark-3,
+  'font-tertiary-dark': $grey-dark-3,
   'grey-light-1': $grey-light-1,
   'grey-light-2': $grey-light-2,
   'grey-light-3': $grey-light-3,
   'grey-dark-1': $grey-dark-1,
   'grey-dark-2': $grey-dark-2,
   'grey-dark-3': $grey-dark-3,
-  'font-primary': $grey-dark-3,
-  'font-secondary': $grey-dark-3,
-  'font-tertiary': $grey-dark-3,
   'font-title-header': $white,
   'font-subtitle-header': $white,
   'font-nav': $white,

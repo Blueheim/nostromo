@@ -15,16 +15,16 @@ $size-percent-big: 75%;
 
 /* SIZES */
 $sizes: (
-  'very-tiny': 0.8rem,
-  'tiny': 1rem,
-  'very-small': 1.2rem,
-  'small': 1.4rem,
-  'medium': 1.6rem,
-  'big': 2.2rem,
-  'very-big': 3.5rem,
+  'very-tiny': 1rem,
+  'tiny': 1.5rem,
+  'very-small': 2rem,
+  'small': 2.5rem,
+  'medium': 3rem,
+  'big': 3.5rem,
+  'very-big': 4rem,
   'huge': 5rem,
-  'very-huge': 8rem,
-);
+  'very-huge': 6rem,
+) !default;
 
 /* GRID */
 

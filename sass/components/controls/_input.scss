@@ -1,5 +1,8 @@
 .control__input {
-  width: 100%;
+  flex-grow: 1;
+  order: 0;
+  padding: 0.7rem 2rem;
+  // width: 100%;
 
   &--1 {
     display: block;
@@ -42,15 +45,10 @@
       }
     }
   }
-
-  &--2 {
-    background-color: color('grey');
-    padding: 0.7rem 2rem;
-    border-radius: 100px;
-    margin-right: -3.25rem;
-  }
 }
 
-.control__action {
-  @include flex-center;
-}
+// .control__action {
+//   @include flex-center;
+//   // flex: 0 0 10%;
+//   padding: 0.7rem 2rem;
+// }

@@ -1,0 +1,215 @@
+.m {
+  // PRIMARY
+  &-text-primary {
+    color: color('primary');
+  }
+
+  &-text-primary-light {
+    color: color('primary-light');
+  }
+
+  &-text-primary-dark {
+    color: color('primary-dark');
+  }
+
+  &-primary {
+    background-color: color('primary');
+    color: color('font-primary');
+
+    &--invert {
+      background-color: invert(color('primary'));
+      color: invert(color('font-primary'));
+    }
+
+    &--comp {
+      background-color: complement(color('primary'));
+      color: complement(color('font-primary'));
+    }
+
+    &-light {
+      background-color: color('primary-light');
+      color: color('font-primary-light');
+
+      &--invert {
+        background-color: invert(color('primary-light'));
+        color: invert(color('font-primary-light'));
+      }
+
+      &--comp {
+        background-color: complement(color('primary-light'));
+        color: complement(color('font-primary-light'));
+      }
+    }
+
+    &-dark {
+      background-color: color('primary-dark');
+      color: color('font-primary-dark');
+
+      &--invert {
+        background-color: invert(color('primary-dark'));
+        color: invert(color('font-primary-dark'));
+      }
+
+      &--comp {
+        background-color: complement(color('primary-dark'));
+        color: complement(color('font-primary-dark'));
+      }
+    }
+  }
+
+  // SECONDARY
+  &-text-secondary {
+    color: color('secondary');
+  }
+
+  &-text-secondary-light {
+    color: color('secondary-light');
+  }
+
+  &-text-secondary-dark {
+    color: color('secondary-dark');
+  }
+
+  &-secondary {
+    background-color: color('secondary');
+    color: color('font-secondary');
+
+    &--invert {
+      background-color: invert(color('secondary'));
+      color: invert(color('font-secondary'));
+    }
+
+    &--comp {
+      background-color: complement(color('secondary'));
+      color: complement(color('font-secondary'));
+    }
+
+    &-light {
+      background-color: color('secondary-light');
+      color: color('font-secondary-light');
+
+      &--invert {
+        background-color: invert(color('secondary-light'));
+        color: invert(color('font-secondary-light'));
+      }
+
+      &--comp {
+        background-color: complement(color('secondary-light'));
+        color: complement(color('font-secondary-light'));
+      }
+    }
+
+    &-dark {
+      background-color: color('secondary-dark');
+      color: color('font-secondary-dark');
+
+      &--invert {
+        background-color: invert(color('secondary-dark'));
+        color: invert(color('font-secondary-dark'));
+      }
+
+      &--comp {
+        background-color: complement(color('secondary-dark'));
+        color: complement(color('font-secondary-dark'));
+      }
+    }
+  }
+
+  // TERTIARY
+  &-text-tertiary {
+    color: color('tertiary');
+  }
+
+  &-text-tertiary-light {
+    color: color('tertiary-light');
+  }
+
+  &-text-tertiary-dark {
+    color: color('tertiary-dark');
+  }
+
+  &-tertiary {
+    background-color: color('tertiary');
+    color: color('font-tertiary');
+
+    &--invert {
+      background-color: invert(color('tertiary'));
+      color: invert(color('font-tertiary'));
+    }
+
+    &--comp {
+      background-color: complement(color('tertiary'));
+      color: complement(color('font-tertiary'));
+    }
+
+    &-light {
+      background-color: color('tertiary-light');
+      color: color('font-tertiary-light');
+
+      &--invert {
+        background-color: invert(color('tertiary-light'));
+        color: invert(color('font-tertiary-light'));
+      }
+
+      &--comp {
+        background-color: complement(color('tertiary-light'));
+        color: complement(color('font-tertiary-light'));
+      }
+    }
+
+    &-dark {
+      background-color: color('tertiary-dark');
+      color: color('font-tertiary-dark');
+
+      &--invert {
+        background-color: invert(color('tertiary-dark'));
+        color: invert(color('font-tertiary-dark'));
+      }
+
+      &--comp {
+        background-color: complement(color('tertiary-dark'));
+        color: complement(color('font-tertiary-dark'));
+      }
+    }
+  }
+
+  // GREY
+  &-text-grey-light-1 {
+    color: color('grey-light-1');
+  }
+
+  &-text-grey-light-2 {
+    color: color('grey-light-2');
+  }
+
+  &-text-grey-light-3 {
+    color: color('grey-light-3');
+  }
+
+  &-text-grey-dark-1 {
+    color: color('grey-dark-1');
+  }
+
+  &-text-grey-dark-2 {
+    color: color('grey-dark-2');
+  }
+
+  &-text-grey-dark-3 {
+    color: color('grey-dark-3');
+  }
+
+  &-grey-1 {
+    background-color: color('grey-dark-1');
+    color: color('grey-light-1');
+  }
+
+  &-grey-2 {
+    background-color: color('grey-dark-2');
+    color: color('grey-light-2');
+  }
+
+  &-grey-3 {
+    background-color: color('grey-dark-3');
+    color: color('grey-light-3');
+  }
+}

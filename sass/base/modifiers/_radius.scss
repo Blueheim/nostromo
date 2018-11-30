@@ -1,0 +1,281 @@
+.m {
+  &-r1 {
+    border-radius: size('very-tiny');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('very-tiny');
+      border-bottom-left-radius: size('very-tiny');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('very-tiny');
+      border-bottom-right-radius: size('very-tiny');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('very-tiny');
+      border-bottom-right-radius: size('very-tiny');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('very-tiny');
+      border-top-right-radius: size('very-tiny');
+    }
+  }
+
+  &-r2 {
+    border-radius: size('tiny');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('tiny');
+      border-bottom-left-radius: size('tiny');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('tiny');
+      border-bottom-right-radius: size('tiny');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('tiny');
+      border-bottom-right-radius: size('tiny');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('tiny');
+      border-top-right-radius: size('tiny');
+    }
+  }
+
+  &-r3 {
+    border-radius: size('very-small');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('very-small');
+      border-bottom-left-radius: size('very-small');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('very-small');
+      border-bottom-right-radius: size('very-small');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('very-small');
+      border-bottom-right-radius: size('very-small');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('very-small');
+      border-top-right-radius: size('very-small');
+    }
+  }
+
+  &-r4 {
+    border-radius: size('small');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('small');
+      border-bottom-left-radius: size('small');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('small');
+      border-bottom-right-radius: size('small');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('small');
+      border-bottom-right-radius: size('small');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('small');
+      border-top-right-radius: size('small');
+    }
+  }
+
+  &-r5 {
+    border-radius: size('medium');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('medium');
+      border-bottom-left-radius: size('medium');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('medium');
+      border-bottom-right-radius: size('medium');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('medium');
+      border-bottom-right-radius: size('medium');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('medium');
+      border-top-right-radius: size('medium');
+    }
+  }
+
+  &-r6 {
+    border-radius: size('big');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('big');
+      border-bottom-left-radius: size('big');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('big');
+      border-bottom-right-radius: size('big');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('big');
+      border-bottom-right-radius: size('big');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('big');
+      border-top-right-radius: size('big');
+    }
+  }
+
+  &-r7 {
+    border-radius: size('very-big');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('very-big');
+      border-bottom-left-radius: size('very-big');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('very-big');
+      border-bottom-right-radius: size('very-big');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('very-big');
+      border-bottom-right-radius: size('very-big');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('very-big');
+      border-top-right-radius: size('very-big');
+    }
+  }
+
+  &-r8 {
+    border-radius: size('huge');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('huge');
+      border-bottom-left-radius: size('huge');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('huge');
+      border-bottom-right-radius: size('huge');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('huge');
+      border-bottom-right-radius: size('huge');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('huge');
+      border-top-right-radius: size('huge');
+    }
+  }
+
+  &-r9 {
+    border-radius: size('very-huge');
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: size('very-huge');
+      border-bottom-left-radius: size('very-huge');
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: size('very-huge');
+      border-bottom-right-radius: size('very-huge');
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: size('very-huge');
+      border-bottom-right-radius: size('very-huge');
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: size('very-huge');
+      border-top-right-radius: size('very-huge');
+    }
+  }
+
+  &-r10 {
+    border-radius: 180286px;
+
+    &-left {
+      border-radius: none;
+      border-top-left-radius: 180286px;
+      border-bottom-left-radius: 180286px;
+    }
+
+    &-right {
+      border-radius: none;
+      border-top-right-radius: 180286px;
+      border-bottom-right-radius: 180286px;
+    }
+
+    &-bottom {
+      border-radius: none;
+      border-bottom-left-radius: 180286px;
+      border-bottom-right-radius: 180286px;
+    }
+
+    &-top {
+      border-radius: none;
+      border-top-left-radius: 180286px;
+      border-top-right-radius: 180286px;
+    }
+  }
+}

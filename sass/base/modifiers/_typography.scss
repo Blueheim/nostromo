@@ -1,0 +1,29 @@
+.m {
+  &-text-vt {
+    font-size: size('very-tiny');
+  }
+  &-text-t {
+    font-size: size('tiny');
+  }
+  &-text-xs {
+    font-size: size('very-small');
+  }
+  &-text-sm {
+    font-size: size('small');
+  }
+  &-text-md {
+    font-size: size('medium');
+  }
+  &-text-b {
+    font-size: size('big');
+  }
+  &-text-vb {
+    font-size: size('very-big');
+  }
+  &-text-hg {
+    font-size: size('huge');
+  }
+  &-text-vh {
+    font-size: size('very-huge');
+  }
+}

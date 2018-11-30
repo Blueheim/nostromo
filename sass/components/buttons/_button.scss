@@ -3,7 +3,7 @@
   &:link,
   &:visited {
     position: relative;
-    text-transform: uppercase;
+    //text-transform: uppercase;
     padding: 1.5rem 4rem;
     display: inline-block;
     transition: all $transition-duration;
@@ -81,10 +81,7 @@
     }
   }
 
-  &--primary {
-    background-color: color('primary');
-    color: color('white');
-
+  &.m-primary {
     &.btn--e3 {
       background: $gd-prim-multi-r;
 
@@ -102,10 +99,7 @@
     }
   }
 
-  &--secondary {
-    background-color: color('secondary');
-    color: color('white');
-
+  &.m-secondary {
     &.btn--e3 {
       background: $gd-sec-multi-r;
 
@@ -123,10 +117,7 @@
     }
   }
 
-  &--tertiary {
-    background-color: color('tertiary');
-    color: color('white');
-
+  &.m-tertiary {
     &.btn--e3 {
       background: $gd-tert-multi-r;
 

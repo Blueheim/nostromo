@@ -5,18 +5,6 @@
 }
 
 .l-nav {
-  &--primary {
-    @include primary;
-  }
-
-  &--secondary {
-    @include secondary;
-  }
-
-  &--tertiary {
-    @include tertiary;
-  }
-
   &--transparent {
     @include transparent;
   }
