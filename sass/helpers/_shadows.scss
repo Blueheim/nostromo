@@ -1,5 +1,13 @@
 /* Shadows */
 
-$shadow-black-tiny: 0 0.5rem 1rem transparentize(color('black'), 0.8);
-$shadow-black-small: 0 1rem 2rem transparentize(color('black'), 0.8);
-$shadow-black-medium: 0 2rem 4rem transparentize(color('black'), 0.8);
+$shadow-light-tiny: 0 0.5rem 1rem transparentize(color('black'), 0.95);
+$shadow-light-small: 0 1rem 2rem transparentize(color('black'), 0.95);
+$shadow-light-medium: 0 2rem 4rem transparentize(color('black'), 0.95);
+$shadow-light-big: 0 2rem 5rem rgba(0, 0, 0, 0.95);
+$shadow-light-huge: 0 2rem 6rem rgba(0, 0, 0, 0.95);
+
+$shadow-dark-tiny: 0 0.5rem 1rem transparentize(color('black'), 0.7);
+$shadow-dark-small: 0 1rem 2rem transparentize(color('black'), 0.7);
+$shadow-dark-medium: 0 2rem 4rem transparentize(color('black'), 0.7);
+$shadow-dark-big: 0 2rem 5rem rgba(color('black'), 0.7);
+$shadow-dark-huge: 0 2rem 6rem rgba(color('black'), 0.7);

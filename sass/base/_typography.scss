@@ -81,27 +81,3 @@ body {
 .title-tertiary {
   color: color('font-title-tertiary');
 }
-
-.text {
-  font-size: size('small');
-
-  &:not(:last-child) {
-    margin-bottom: 3rem;
-  }
-}
-
-.text--primary {
-  color: color('font-primary');
-}
-
-.text--secondary {
-  color: color('font-secondary');
-}
-
-.text--tertiary {
-  color: color('font-tertiary');
-}
-
-.text--white {
-  color: color('white');
-}

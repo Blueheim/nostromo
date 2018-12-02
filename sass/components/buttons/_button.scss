@@ -4,7 +4,7 @@
   &:visited {
     position: relative;
     //text-transform: uppercase;
-    padding: 1.5rem 4rem;
+    // padding: 1.5rem 4rem;
     display: inline-block;
     transition: all $transition-duration;
     z-index: 1;
@@ -13,13 +13,13 @@
   &--e1 {
     &:hover {
       transform: translateY($translate-y-1);
-      box-shadow: $shadow-black-small;
+      box-shadow: $shadow-dark-small;
     }
 
     &:active,
     &focus {
       transform: translateY($translate-y-1 / 2);
-      box-shadow: $shadow-black-tiny;
+      box-shadow: $shadow-dark-tiny;
     }
   }
 
@@ -38,7 +38,7 @@
 
     &:hover {
       transform: translateY($translate-y-1);
-      box-shadow: $shadow-black-small;
+      box-shadow: $shadow-dark-small;
 
       &::after {
         transform: scaleX($scale-4) scaleY($scale-6);
@@ -51,7 +51,7 @@
       /* Click state */
       outline: none;
       transform: translateY(-0.1rem);
-      box-shadow: $shadow-black-tiny;
+      box-shadow: $shadow-dark-tiny;
     }
   }
 

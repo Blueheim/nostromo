@@ -4,6 +4,7 @@ name: Card
 
 import '../../docs.scss'
 import DocumentationWrapper from '../DocumentationWrapper.js'
+import image from '../../img/image.jpg'
 
 # Cards
 
@@ -14,6 +15,36 @@ Tertiary class: `card--tertiary`
 
 ## Basic
 
+### Vertical
+
 <DocumentationWrapper>
-  <div class="card"></div>
+  <div style={{height: 40 + 'rem', width: 18 + 'rem' }} class="card card--vertical m-r1 m-sw-sm--dark">
+    <div class="card__side card__side--front">
+      <div class="card__title card__title--fixed m-primary u-tc">SIDE FRONT</div>
+      <div class="card__picture">
+        <img src={image} alt="image" />
+      </div>
+      <div class="card__actions">
+        <button class="btn u-pv-md m-primary">Action 1</button>
+        <button class="btn u-pv-md m-secondary">Action 2</button>
+        <button class="btn u-pv-md m-tertiary">Action 3</button>
+      </div>
+    </div>
+  </div>
+</DocumentationWrapper>
+
+### Horizontal
+
+<DocumentationWrapper>
+  <div style={{height: 20 + 'rem' }} class="card card--horizontal m-r1 m-sw-sm--dark">
+    <div class="card__side card__side--front">
+      <p>SIDE FRONT</p>
+      <p>IMAGE</p>
+      <div class="card__actions">
+         <button class="btn m-primary">Action 1</button>
+        <button class="btn m-secondary">Action 2</button>
+        <button class="btn m-tertiary">Action 3</button>
+      </div>
+    </div>
+  </div>
 </DocumentationWrapper>

@@ -1,8 +1,4 @@
 .card-product-1 {
-  color: color('white');
-  box-shadow: $shadow-black-small;
-  border-radius: 15px;
-
   .card__side {
     &--front {
       &:nth-of-type(1) {
@@ -48,7 +44,7 @@
     color: currentColor;
     @include size(8rem);
     border-radius: 50%;
-    box-shadow: $shadow-black-small;
+    box-shadow: $shadow-dark-small;
 
     .icon {
       fill: currentColor;

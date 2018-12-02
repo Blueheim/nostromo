@@ -1,0 +1,51 @@
+.m {
+  &-sw-ty {
+    &--dark {
+      box-shadow: $shadow-dark-tiny;
+    }
+
+    &--light {
+      box-shadow: $shadow-light-tiny;
+    }
+  }
+
+  &-sw-sm {
+    &--dark {
+      box-shadow: $shadow-dark-small;
+    }
+
+    &--light {
+      box-shadow: $shadow-light-small;
+    }
+  }
+
+  &-sw-md {
+    &--dark {
+      box-shadow: $shadow-dark-medium;
+    }
+
+    &--light {
+      box-shadow: $shadow-light-medium;
+    }
+  }
+
+  &-sw-bg {
+    &--dark {
+      box-shadow: $shadow-dark-big;
+    }
+
+    &--light {
+      box-shadow: $shadow-light-big;
+    }
+  }
+
+  &-sw-hg {
+    &--dark {
+      box-shadow: $shadow-dark-huge;
+    }
+
+    &--light {
+      box-shadow: $shadow-light-huge;
+    }
+  }
+}

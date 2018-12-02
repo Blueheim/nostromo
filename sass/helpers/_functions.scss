@@ -1,3 +1,9 @@
+@function index-to-key($list, $index) {
+  $keys: map-keys($list);
+
+  @return nth($keys, $index);
+}
+
 // @function color($color-name) {
 //   @return var(--color-#{$color-name});
 // }

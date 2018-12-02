@@ -1,0 +1,81 @@
+@for $i from 1 through 10 {
+  .m-b#{$i} {
+    border: #{$i}px solid currentColor;
+
+    &--left {
+      border-left: #{$i}px solid currentColor;
+    }
+
+    &--right {
+      border-right: #{$i}px solid currentColor;
+    }
+
+    &--top {
+      border-top: #{$i}px solid currentColor;
+    }
+
+    &--bottom {
+      border-bottom: #{$i}px solid currentColor;
+    }
+
+    &-primary {
+      border: #{$i}px solid color('primary');
+
+      &--left {
+        border-left: #{$i}px solid color('primary');
+      }
+
+      &--right {
+        border-right: #{$i}px solid color('primary');
+      }
+
+      &--top {
+        border-top: #{$i}px solid color('primary');
+      }
+
+      &--bottom {
+        border-bottom: #{$i}px solid color('primary');
+      }
+    }
+
+    &-secondary {
+      border: #{$i}px solid color('secondary');
+
+      &--left {
+        border-left: #{$i}px solid color('secondary');
+      }
+
+      &--right {
+        border-right: #{$i}px solid color('secondary');
+      }
+
+      &--top {
+        border-top: #{$i}px solid color('secondary');
+      }
+
+      &--bottom {
+        border-bottom: #{$i}px solid color('secondary');
+      }
+    }
+
+    &-tertiary {
+      border: #{$i}px solid color('tertiary');
+
+      &--left {
+        border-left: #{$i}px solid color('tertiary');
+      }
+
+      &--right {
+        border-right: #{$i}px solid color('tertiary');
+      }
+
+      &--top {
+        border-top: #{$i}px solid color('tertiary');
+      }
+
+      &--bottom {
+        border-bottom: #{$i}px solid color('tertiary');
+      }
+    }
+  }
+}
