@@ -14,7 +14,7 @@
     "docz:dev": "docz dev",
     "docz:build": "docz build",
     "publish:patch": "npm version patch && npm publish",
-    "publish": "publish:patch"
+    "publish": "npm-run-all publish:patch"
   },
   "files": [
     "css",
