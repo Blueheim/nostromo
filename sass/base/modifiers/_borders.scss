@@ -1,5 +1,7 @@
-@for $i from 1 through 10 {
-  .m-b#{$i} {
+@each $suffix, $size in $sizes {
+  $i: index(($sizes), ($suffix $size));
+
+  .m-border-#{$suffix} {
     border: #{$i}px solid currentColor;
 
     &--left {

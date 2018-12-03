@@ -1,31 +1,31 @@
 $div-value: 2;
 
-@for $i from 1 through length($sizes) {
-  $key: index-to-key($sizes, $i);
-  $size: size($key) / $div-value;
-  .m-r#{$i} {
+// @for $i from 1 through length($sizes) {
+//   $key: index-to-key($sizes, $i);
+//   $size: size($key) / $div-value;
+
+@each $suffix, $size in $sizes {
+  $size: $size / $div-value;
+
+  .m-radius-#{$suffix} {
     border-radius: $size;
 
-    &-left {
-      border-radius: none;
+    &--left {
       border-top-left-radius: $size;
       border-bottom-left-radius: $size;
     }
 
-    &-right {
-      border-radius: none;
+    &--right {
       border-top-right-radius: $size;
       border-bottom-right-radius: $size;
     }
 
-    &-bottom {
-      border-radius: none;
+    &--bottom {
       border-bottom-left-radius: $size;
       border-bottom-right-radius: $size;
     }
 
-    &-top {
-      border-radius: none;
+    &--top {
       border-top-left-radius: $size;
       border-top-right-radius: $size;
     }
@@ -35,26 +35,22 @@ $div-value: 2;
 .m-r10 {
   border-radius: 180286px;
 
-  &-left {
-    border-radius: none;
+  &--left {
     border-top-left-radius: 180286px;
     border-bottom-left-radius: 180286px;
   }
 
-  &-right {
-    border-radius: none;
+  &--right {
     border-top-right-radius: 180286px;
     border-bottom-right-radius: 180286px;
   }
 
-  &-bottom {
-    border-radius: none;
+  &--bottom {
     border-bottom-left-radius: 180286px;
     border-bottom-right-radius: 180286px;
   }
 
-  &-top {
-    border-radius: none;
+  &--top {
     border-top-left-radius: 180286px;
     border-top-right-radius: 180286px;
   }

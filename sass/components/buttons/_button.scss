@@ -4,7 +4,7 @@
   &:visited {
     position: relative;
     //text-transform: uppercase;
-    // padding: 1.5rem 4rem;
+    padding: size('ty') size('sm');
     display: inline-block;
     transition: all $transition-duration;
     z-index: 1;

@@ -1,9 +1,9 @@
 .btn--r1 {
-  border-radius: size('very-tiny');
+  border-radius: size('xt');
 
   &.btn--e2 {
     &::after {
-      border-radius: size('very-tiny');
+      border-radius: size('xt');
     }
   }
 
@@ -11,17 +11,17 @@
     background-size: 400%;
 
     &::before {
-      border-radius: size('very-tiny');
+      border-radius: size('xt');
     }
   }
 }
 
 .btn--r2 {
-  border-radius: size('tiny');
+  border-radius: size('ty');
 
   &.btn--e2 {
     &::after {
-      border-radius: size('tiny');
+      border-radius: size('ty');
     }
   }
 
@@ -29,17 +29,17 @@
     background-size: 400%;
 
     &::before {
-      border-radius: size('tiny');
+      border-radius: size('ty');
     }
   }
 }
 
 .btn--r3 {
-  border-radius: size('very-small');
+  border-radius: size('xs');
 
   &.btn--e2 {
     &::after {
-      border-radius: size('very-small');
+      border-radius: size('xs');
     }
   }
 
@@ -47,17 +47,17 @@
     background-size: 400%;
 
     &::before {
-      border-radius: size('very-small');
+      border-radius: size('xs');
     }
   }
 }
 
 .btn--r4 {
-  border-radius: size('small');
+  border-radius: size('sm');
 
   &.btn--e2 {
     &::after {
-      border-radius: size('small');
+      border-radius: size('sm');
     }
   }
 
@@ -65,17 +65,17 @@
     background-size: 400%;
 
     &::before {
-      border-radius: size('small');
+      border-radius: size('sm');
     }
   }
 }
 
 .btn--r5 {
-  border-radius: size('medium');
+  border-radius: size('md');
 
   &.btn--e2 {
     &::after {
-      border-radius: size('medium');
+      border-radius: size('md');
     }
   }
 
@@ -83,17 +83,17 @@
     background-size: 400%;
 
     &::before {
-      border-radius: size('medium');
+      border-radius: size('md');
     }
   }
 }
 
 .btn--r6 {
-  border-radius: size('big');
+  border-radius: size('lg');
 
   &.btn--e2 {
     &::after {
-      border-radius: size('big');
+      border-radius: size('lg');
     }
   }
 
@@ -101,21 +101,21 @@
     background-size: 400%;
 
     &::before {
-      border-radius: size('big');
+      border-radius: size('lg');
     }
   }
 }
 
 .btn--r7 {
-  border-radius: size('very-big');
+  border-radius: size('xl');
 }
 
 .btn--r8 {
-  border-radius: size('huge');
+  border-radius: size('hg');
 }
 
 .btn--r9 {
-  border-radius: size('very-huge');
+  border-radius: size('xh');
 }
 
 .btn--r10 {

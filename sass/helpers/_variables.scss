@@ -15,15 +15,24 @@ $size-percent-big: 75%;
 
 /* SIZES */
 $sizes: (
-  'very-tiny': 1rem,
-  'tiny': 1.5rem,
-  'very-small': 2rem,
-  'small': 2.5rem,
-  'medium': 3rem,
-  'big': 3.5rem,
-  'very-big': 4rem,
-  'huge': 5rem,
-  'very-huge': 6rem,
+  'xt': 1rem,
+  // Very tiny
+    'ty': 1.6rem,
+  // Tiny
+    'xs': 2rem,
+  // Very small
+    'sm': 2.5rem,
+  // Small
+    'md': 3rem,
+  // Medium
+    'lg': 3.5rem,
+  // Large
+    'xl': 4rem,
+  // Very big
+    'hg': 5rem,
+  // Huge
+    'xh': 6rem,
+  // Very huge,,
 ) !default;
 
 /* GRID */

@@ -6,15 +6,13 @@
   "scripts": {
     "start": "npm-run-all --parallel watch:sass",
     "clean:css": "rimraf css",
-    "watch:sass": "node-sass --output-style expanded --source-map true sass/main.scss css/style.css -w",
+    "watch:sass": "node-sass --output-style expanded --source-map true default.scss css/style.css -w",
     "compile:sass": "node-sass default.scss css/style.comp.css",
     "prefix:css": "postcss --use autoprefixer --map false -b 'last 10 versions' css/style.comp.css -o css/style.prefix.css",
     "compress:css": "node-sass css/style.prefix.css css/style.css --output-style compressed",
     "build:css": "npm-run-all compile:sass prefix:css compress:css",
     "docz:dev": "docz dev",
-    "docz:build": "docz build",
-    "publish:patch": "npm version patch && npm publish",
-    "publish": "npm-run-all publish:patch"
+    "docz:build": "docz build"
   },
   "files": [
     "css",
