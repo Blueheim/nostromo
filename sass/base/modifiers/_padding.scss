@@ -1,0 +1,21 @@
+@each $suffix, $size in $sizes {
+  .m-padding-#{$suffix} {
+    padding: $size;
+
+    &--left {
+      padding-left: $size;
+    }
+
+    &--right {
+      padding-right: $size;
+    }
+
+    &--top {
+      padding-top: $size;
+    }
+
+    &--bottom {
+      padding-bottom: $size;
+    }
+  }
+}

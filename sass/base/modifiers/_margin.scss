@@ -1,0 +1,21 @@
+@each $suffix, $size in $sizes {
+  .m-margin-#{$suffix} {
+    margin: $size;
+
+    &--left {
+      margin-left: $size;
+    }
+
+    &--right {
+      margin-right: $size;
+    }
+
+    &--top {
+      margin-top: $size;
+    }
+
+    &--bottom {
+      margin-bottom: $size;
+    }
+  }
+}
