@@ -1,5 +1,10 @@
 .l-app {
   display: grid;
+
+  &--full {
+    min-height: 100vh;
+  }
+
   // grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
 
   &--config-1 {
@@ -37,7 +42,7 @@
         1fr
         [screen-end ];
 
-      > .l-globalbar {
+      > .l-bar {
         grid-column: sidebar-start / sidebar-end;
       }
 
@@ -67,7 +72,7 @@
         $globalbar-width
         [screen-end sidebar-end];
 
-      > .l-globalbar {
+      > .l-bar {
         grid-column: sidebar-start / sidebar-end;
       }
 
