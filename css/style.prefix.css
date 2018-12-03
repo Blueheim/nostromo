@@ -1310,6 +1310,8 @@ button {
 
 .l-app {
   display: grid; }
+  .l-app--full {
+    min-height: 100vh; }
   .l-app--config-1 {
     grid-template-columns: [screen-start] 1fr [screen-end]; }
     .l-app--config-1 > .l-header {
@@ -1323,7 +1325,7 @@ button {
   @media only screen and (min-width: 75em) {
     .l-app--config-2 {
       grid-template-columns: [screen-start sidebar-start] 25vh [sidebar-end] 1fr [screen-end]; }
-      .l-app--config-2 > .l-globalbar {
+      .l-app--config-2 > .l-bar {
         grid-column: sidebar-start / sidebar-end; }
       .l-app--config-2 > .l-header {
         grid-column: sidebar-end / screen-end;
@@ -1337,7 +1339,7 @@ button {
   @media only screen and (min-width: 75em) {
     .l-app--config-3 {
       grid-template-columns: [screen-start] 1fr [sidebar-start] 25vh [screen-end sidebar-end]; }
-      .l-app--config-3 > .l-globalbar {
+      .l-app--config-3 > .l-bar {
         grid-column: sidebar-start / sidebar-end; }
       .l-app--config-3 > .l-header {
         grid-column: screen-start / sidebar-start;
@@ -1440,7 +1442,7 @@ button {
       .l-section > .l-content {
         width: 80%; } }
 
-.l-globalbar--fixed {
+.l-bar--fixed {
   position: fixed;
   z-index: 10;
   width: 100%; }
