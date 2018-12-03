@@ -1300,6 +1300,9 @@ button {
 .m-sw-hg--light {
   box-shadow: 0 2rem 6rem rgba(0, 0, 0, 0.95); }
 
+.m-fullheight {
+  min-height: 100vh; }
+
 /* LAYOUT */
 @media only screen and (min-width: 75em) {
   .l-nav-burger {
@@ -1312,8 +1315,6 @@ button {
   display: grid; }
   .l-app--dense {
     grid-auto-flow: row dense; }
-  .l-app--full {
-    min-height: 100vh; }
   .l-app--config-1 {
     grid-template-columns: [screen-start] 1fr [screen-end]; }
     .l-app--config-1 > .l-header {
@@ -1515,14 +1516,14 @@ button {
     grid-template-columns: [section-start] 1fr [section-end]; }
   .l-section--auto {
     grid-template-columns: [section-start] repeat(auto-fit, minmax(0, 1fr)) [section-end]; }
-  .l-section > .l-content {
+  .l-section__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
     grid-gap: 2rem;
     align-items: start;
     margin: auto; }
     @media only screen and (min-width: 75em) {
-      .l-section > .l-content {
+      .l-section__content {
         width: 80%; } }
 
 .l-bar--fixed {

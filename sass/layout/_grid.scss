@@ -5,10 +5,6 @@
     grid-auto-flow: row dense;
   }
 
-  &--full {
-    min-height: 100vh;
-  }
-
   // grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
 
   &--config-1 {
