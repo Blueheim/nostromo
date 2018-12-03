@@ -1,6 +1,10 @@
 .l-app {
   display: grid;
 
+  &--dense {
+    grid-auto-flow: row dense;
+  }
+
   &--full {
     min-height: 100vh;
   }

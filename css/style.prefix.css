@@ -1310,6 +1310,8 @@ button {
 
 .l-app {
   display: grid; }
+  .l-app--dense {
+    grid-auto-flow: row dense; }
   .l-app--full {
     min-height: 100vh; }
   .l-app--config-1 {
