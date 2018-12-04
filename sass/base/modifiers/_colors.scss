@@ -16,6 +16,11 @@
     background-color: color('primary');
     color: color('font-primary');
 
+    &--reverse {
+      background-color: color('font-primary');
+      color: color('primary');
+    }
+
     &--invert {
       background-color: invert(color('primary'));
       color: invert(color('font-primary'));
@@ -74,6 +79,11 @@
     background-color: color('secondary');
     color: color('font-secondary');
 
+    &--reverse {
+      background-color: color('font-secondary');
+      color: color('secondary');
+    }
+
     &--invert {
       background-color: invert(color('secondary'));
       color: invert(color('font-secondary'));
@@ -131,6 +141,11 @@
   &-tertiary {
     background-color: color('tertiary');
     color: color('font-tertiary');
+
+    &--reverse {
+      background-color: color('font-tertiary');
+      color: color('tertiary');
+    }
 
     &--invert {
       background-color: invert(color('tertiary'));
