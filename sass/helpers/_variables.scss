@@ -2,6 +2,8 @@
 By Xavier 'Blueheim' Deroeux
 */
 
+$themes: 'primary', 'secondary', 'tertiary', 'valid', 'invalid', 'info', 'alert';
+
 // 1rem settings
 
 //1rem = 8px, 8/16 = 50%
@@ -32,7 +34,7 @@ $sizes: (
     'hg': 5rem,
   // Huge
     'xh': 6rem,
-  // Very huge,,
+  // Very huge,,,
 ) !default;
 
 /* GRID */

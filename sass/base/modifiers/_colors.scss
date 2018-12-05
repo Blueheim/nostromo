@@ -1,194 +1,70 @@
+@each $theme in $themes {
+  $color: $theme;
+  $color-light: $theme + '-light';
+  $color-dark: $theme + '-dark';
+  $font-color: 'font-' + $theme;
+  $font-color-light: 'font-' + $theme + '-light';
+  $font-color-dark: 'font-' + $theme + '-dark';
+
+  .m-#{$theme} {
+    background-color: color($color);
+    color: color($font-color);
+
+    &--reverse {
+      background-color: color($font-color);
+      color: color($color);
+    }
+
+    &--invert {
+      background-color: invert(color($color));
+      color: invert(color($font-color));
+    }
+
+    &--comp {
+      background-color: complement(color($color));
+      color: complement(color($font-color));
+    }
+
+    &-light {
+      background-color: color($color-light);
+      color: color($font-color-light);
+    }
+
+    &-dark {
+      background-color: color($color-dark);
+      color: color($font-color-dark);
+    }
+  }
+
+  .m-text-#{$color} {
+    color: color(#{$color});
+
+    &-light {
+      color: color($color-light);
+    }
+
+    &-dark {
+      color: color($color-dark);
+    }
+  }
+}
+
 .m {
-  // PRIMARY
-  &-text-primary {
-    color: color('primary');
+  &-grey-1 {
+    background-color: color('grey-dark-1');
+    color: color('grey-light-1');
   }
 
-  &-text-primary-light {
-    color: color('primary-light');
+  &-grey-2 {
+    background-color: color('grey-dark-2');
+    color: color('grey-light-2');
   }
 
-  &-text-primary-dark {
-    color: color('primary-dark');
+  &-grey-3 {
+    background-color: color('grey-dark-3');
+    color: color('grey-light-3');
   }
 
-  &-primary {
-    background-color: color('primary');
-    color: color('font-primary');
-
-    &--reverse {
-      background-color: color('font-primary');
-      color: color('primary');
-    }
-
-    &--invert {
-      background-color: invert(color('primary'));
-      color: invert(color('font-primary'));
-    }
-
-    &--comp {
-      background-color: complement(color('primary'));
-      color: complement(color('font-primary'));
-    }
-
-    &-light {
-      background-color: color('primary-light');
-      color: color('font-primary-light');
-
-      &--invert {
-        background-color: invert(color('primary-light'));
-        color: invert(color('font-primary-light'));
-      }
-
-      &--comp {
-        background-color: complement(color('primary-light'));
-        color: complement(color('font-primary-light'));
-      }
-    }
-
-    &-dark {
-      background-color: color('primary-dark');
-      color: color('font-primary-dark');
-
-      &--invert {
-        background-color: invert(color('primary-dark'));
-        color: invert(color('font-primary-dark'));
-      }
-
-      &--comp {
-        background-color: complement(color('primary-dark'));
-        color: complement(color('font-primary-dark'));
-      }
-    }
-  }
-
-  // SECONDARY
-  &-text-secondary {
-    color: color('secondary');
-  }
-
-  &-text-secondary-light {
-    color: color('secondary-light');
-  }
-
-  &-text-secondary-dark {
-    color: color('secondary-dark');
-  }
-
-  &-secondary {
-    background-color: color('secondary');
-    color: color('font-secondary');
-
-    &--reverse {
-      background-color: color('font-secondary');
-      color: color('secondary');
-    }
-
-    &--invert {
-      background-color: invert(color('secondary'));
-      color: invert(color('font-secondary'));
-    }
-
-    &--comp {
-      background-color: complement(color('secondary'));
-      color: complement(color('font-secondary'));
-    }
-
-    &-light {
-      background-color: color('secondary-light');
-      color: color('font-secondary-light');
-
-      &--invert {
-        background-color: invert(color('secondary-light'));
-        color: invert(color('font-secondary-light'));
-      }
-
-      &--comp {
-        background-color: complement(color('secondary-light'));
-        color: complement(color('font-secondary-light'));
-      }
-    }
-
-    &-dark {
-      background-color: color('secondary-dark');
-      color: color('font-secondary-dark');
-
-      &--invert {
-        background-color: invert(color('secondary-dark'));
-        color: invert(color('font-secondary-dark'));
-      }
-
-      &--comp {
-        background-color: complement(color('secondary-dark'));
-        color: complement(color('font-secondary-dark'));
-      }
-    }
-  }
-
-  // TERTIARY
-  &-text-tertiary {
-    color: color('tertiary');
-  }
-
-  &-text-tertiary-light {
-    color: color('tertiary-light');
-  }
-
-  &-text-tertiary-dark {
-    color: color('tertiary-dark');
-  }
-
-  &-tertiary {
-    background-color: color('tertiary');
-    color: color('font-tertiary');
-
-    &--reverse {
-      background-color: color('font-tertiary');
-      color: color('tertiary');
-    }
-
-    &--invert {
-      background-color: invert(color('tertiary'));
-      color: invert(color('font-tertiary'));
-    }
-
-    &--comp {
-      background-color: complement(color('tertiary'));
-      color: complement(color('font-tertiary'));
-    }
-
-    &-light {
-      background-color: color('tertiary-light');
-      color: color('font-tertiary-light');
-
-      &--invert {
-        background-color: invert(color('tertiary-light'));
-        color: invert(color('font-tertiary-light'));
-      }
-
-      &--comp {
-        background-color: complement(color('tertiary-light'));
-        color: complement(color('font-tertiary-light'));
-      }
-    }
-
-    &-dark {
-      background-color: color('tertiary-dark');
-      color: color('font-tertiary-dark');
-
-      &--invert {
-        background-color: invert(color('tertiary-dark'));
-        color: invert(color('font-tertiary-dark'));
-      }
-
-      &--comp {
-        background-color: complement(color('tertiary-dark'));
-        color: complement(color('font-tertiary-dark'));
-      }
-    }
-  }
-
-  // GREY
   &-text-grey-light-1 {
     color: color('grey-light-1');
   }
@@ -211,20 +87,5 @@
 
   &-text-grey-dark-3 {
     color: color('grey-dark-3');
-  }
-
-  &-grey-1 {
-    background-color: color('grey-dark-1');
-    color: color('grey-light-1');
-  }
-
-  &-grey-2 {
-    background-color: color('grey-dark-2');
-    color: color('grey-light-2');
-  }
-
-  &-grey-3 {
-    background-color: color('grey-dark-3');
-    color: color('grey-light-3');
   }
 }

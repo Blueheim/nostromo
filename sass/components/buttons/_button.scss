@@ -81,57 +81,76 @@
     }
   }
 
-  &.m-primary {
-    &.btn--e3 {
-      background: $gd-prim-multi-r;
+  @each $theme in $themes {
+    $color: $theme;
+    $color-light: $theme + '-light';
+    $color-dark: $theme + '-dark';
+    $font-color: 'font-' + $theme;
+    $font-color-light: 'font-' + $theme + '-light';
+    $font-color-dark: 'font-' + $theme + '-dark';
 
-      &::before {
-        background: $gd-prim-multi-r;
+    &.m-#{$theme} {
+      &:hover {
+        background-color: color($color-dark);
+        color: 'font-' + $theme + '-dark';
+      }
+
+      &::after {
+        background-color: color($color);
       }
     }
-
-    &:hover {
-      background-color: color('primary-dark');
-    }
-
-    &::after {
-      background-color: color('primary');
-    }
   }
+  // &.m-primary {
+  //   &.btn--e3 {
+  //     background: $gd-prim-multi-r;
 
-  &.m-secondary {
-    &.btn--e3 {
-      background: $gd-sec-multi-r;
+  //     &::before {
+  //       background: $gd-prim-multi-r;
+  //     }
+  //   }
 
-      &::before {
-        background: $gd-sec-multi-r;
-      }
-    }
+  //   &:hover {
+  //     background-color: color('primary-dark');
+  //   }
 
-    &:hover {
-      background-color: color('secondary-dark');
-    }
+  //   &::after {
+  //     background-color: color('primary');
+  //   }
+  // }
 
-    &::after {
-      background-color: color('secondary');
-    }
-  }
+  // &.m-secondary {
+  //   &.btn--e3 {
+  //     background: $gd-sec-multi-r;
 
-  &.m-tertiary {
-    &.btn--e3 {
-      background: $gd-tert-multi-r;
+  //     &::before {
+  //       background: $gd-sec-multi-r;
+  //     }
+  //   }
 
-      &::before {
-        background: $gd-tert-multi-r;
-      }
-    }
+  //   &:hover {
+  //     background-color: color('secondary-dark');
+  //   }
 
-    &:hover {
-      background-color: color('tertiary-dark');
-    }
+  //   &::after {
+  //     background-color: color('secondary');
+  //   }
+  // }
 
-    &::after {
-      background-color: color('tertiary');
-    }
-  }
+  // &.m-tertiary {
+  //   &.btn--e3 {
+  //     background: $gd-tert-multi-r;
+
+  //     &::before {
+  //       background: $gd-tert-multi-r;
+  //     }
+  //   }
+
+  //   &:hover {
+  //     background-color: color('tertiary-dark');
+  //   }
+
+  //   &::after {
+  //     background-color: color('tertiary');
+  //   }
+  // }
 }

@@ -7,7 +7,7 @@ $div-value: 2;
 @each $suffix, $size in $sizes {
   $size: $size / $div-value;
 
-  .m-radius-#{$suffix} {
+  .m-rounded-#{$suffix} {
     border-radius: $size;
 
     &--left {
@@ -32,7 +32,7 @@ $div-value: 2;
   }
 }
 
-.m-radius-xx {
+.m-rounded-xx {
   border-radius: 180286px;
 
   &--left {
