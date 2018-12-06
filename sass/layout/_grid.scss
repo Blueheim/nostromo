@@ -59,12 +59,14 @@
 
       > .l-main {
         grid-column: sidebar-end / screen-end;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end];
       }
 
       > .l-footer {
         grid-column: sidebar-end / screen-end;
+        grid-row: 3 / 4;
       }
     }
   }
@@ -90,12 +92,14 @@
 
       > .l-main {
         grid-column: screen-start / sidebar-start;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end];
       }
 
       > .l-footer {
         grid-column: screen-start / sidebar-start;
+        grid-row: 3 / 4;
       }
     }
   }
@@ -128,12 +132,14 @@
 
       > .l-main {
         grid-column: sidebar-left-end / sidebar-right-start;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end];
       }
 
       > .l-footer {
         grid-column: sidebar-left-end / sidebar-right-start;
+        grid-row: 3 / 4;
       }
     }
   }
@@ -161,10 +167,12 @@
         grid-column: sidebar-end / screen-end;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end];
+        grid-row: 2 / 3;
       }
 
       > .l-footer {
         grid-column: sidebar-end / screen-end;
+        grid-row: 3 / 4;
       }
     }
   }
@@ -197,12 +205,14 @@
 
       > .l-main {
         grid-column: sidebar-left-end / sidebar-right-start;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end];
       }
 
       > .l-footer {
         grid-column: sidebar-left-end / sidebar-right-start;
+        grid-row: 3 / 4;
       }
     }
   }
@@ -230,10 +240,12 @@
         grid-column: screen-start / sidebar-start;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end];
+        grid-row: 2 / 3;
       }
 
       > .l-footer {
         grid-column: screen-start / sidebar-start;
+        grid-row: 3 / 4;
       }
     }
   }
@@ -249,6 +261,7 @@
 
       > .l-bar {
         grid-column: sidebar-start / sidebar-end;
+        grid-row: span 1;
       }
 
       > .l-header {
@@ -258,12 +271,14 @@
 
       > .l-main {
         grid-column: screen-start / sidebar-start;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end];
       }
 
       > .l-footer {
         grid-column: screen-start / screen-end;
+        grid-row: 3 / 4;
       }
     }
   }
@@ -279,6 +294,7 @@
 
       > .l-bar {
         grid-column: sidebar-start / sidebar-end;
+        grid-row: span 1;
       }
 
       > .l-header {
@@ -288,12 +304,14 @@
 
       > .l-main {
         grid-column: sidebar-end / screen-end;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end];
       }
 
       > .l-footer {
         grid-column: screen-start / screen-end;
+        grid-row: 3 / 4;
       }
     }
   }

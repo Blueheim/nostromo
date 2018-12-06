@@ -1502,10 +1502,12 @@ button {
         grid-row: 1 / 2; }
       .l-app--config-2 > .l-main {
         grid-column: sidebar-end / screen-end;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end]; }
       .l-app--config-2 > .l-footer {
-        grid-column: sidebar-end / screen-end; } }
+        grid-column: sidebar-end / screen-end;
+        grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-3 {
       grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(25vh, max-content) [screen-end sidebar-end]; }
@@ -1517,10 +1519,12 @@ button {
         grid-row: 1 / 2; }
       .l-app--config-3 > .l-main {
         grid-column: screen-start / sidebar-start;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end]; }
       .l-app--config-3 > .l-footer {
-        grid-column: screen-start / sidebar-start; } }
+        grid-column: screen-start / sidebar-start;
+        grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-4 {
       grid-template-columns: [screen-start sidebar-left-start] minmax(25vh, max-content) [sidebar-left-end] 1fr [sidebar-right-start] minmax(25vh, max-content) [screen-end sidebar-right-end]; }
@@ -1535,10 +1539,12 @@ button {
         grid-row: 1 / 2; }
       .l-app--config-4 > .l-main {
         grid-column: sidebar-left-end / sidebar-right-start;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end]; }
       .l-app--config-4 > .l-footer {
-        grid-column: sidebar-left-end / sidebar-right-start; } }
+        grid-column: sidebar-left-end / sidebar-right-start;
+        grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-5 {
       grid-template-columns: [screen-start sidebar-start] minmax(25vh, max-content) [sidebar-end] 1fr [screen-end]; }
@@ -1551,9 +1557,11 @@ button {
       .l-app--config-5 > .l-main {
         grid-column: sidebar-end / screen-end;
         display: grid;
-        grid-template-columns: [main-start] 1fr [main-end]; }
+        grid-template-columns: [main-start] 1fr [main-end];
+        grid-row: 2 / 3; }
       .l-app--config-5 > .l-footer {
-        grid-column: sidebar-end / screen-end; } }
+        grid-column: sidebar-end / screen-end;
+        grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-6 {
       grid-template-columns: [screen-start sidebar-left-start] minmax(25vh, max-content) [sidebar-left-end] 1fr [sidebar-right-start] minmax(25vh, max-content) [screen-end sidebar-right-end]; }
@@ -1568,10 +1576,12 @@ button {
         grid-row: 1 / 2; }
       .l-app--config-6 > .l-main {
         grid-column: sidebar-left-end / sidebar-right-start;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end]; }
       .l-app--config-6 > .l-footer {
-        grid-column: sidebar-left-end / sidebar-right-start; } }
+        grid-column: sidebar-left-end / sidebar-right-start;
+        grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-7 {
       grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(25vh, max-content) [screen-end sidebar-end]; }
@@ -1584,37 +1594,45 @@ button {
       .l-app--config-7 > .l-main {
         grid-column: screen-start / sidebar-start;
         display: grid;
-        grid-template-columns: [main-start] 1fr [main-end]; }
+        grid-template-columns: [main-start] 1fr [main-end];
+        grid-row: 2 / 3; }
       .l-app--config-7 > .l-footer {
-        grid-column: screen-start / sidebar-start; } }
+        grid-column: screen-start / sidebar-start;
+        grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-8 {
       grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(25vh, max-content) [screen-end sidebar-end]; }
       .l-app--config-8 > .l-bar {
-        grid-column: sidebar-start / sidebar-end; }
+        grid-column: sidebar-start / sidebar-end;
+        grid-row: span 1; }
       .l-app--config-8 > .l-header {
         grid-column: screen-start / screen-end;
         grid-row: 1 / 2; }
       .l-app--config-8 > .l-main {
         grid-column: screen-start / sidebar-start;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end]; }
       .l-app--config-8 > .l-footer {
-        grid-column: screen-start / screen-end; } }
+        grid-column: screen-start / screen-end;
+        grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-9 {
       grid-template-columns: [screen-start sidebar-start] minmax(25vh, max-content) [sidebar-end] 1fr [screen-end]; }
       .l-app--config-9 > .l-bar {
-        grid-column: sidebar-start / sidebar-end; }
+        grid-column: sidebar-start / sidebar-end;
+        grid-row: span 1; }
       .l-app--config-9 > .l-header {
         grid-column: screen-start / screen-end;
         grid-row: 1 / 2; }
       .l-app--config-9 > .l-main {
         grid-column: sidebar-end / screen-end;
+        grid-row: 2 / 3;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end]; }
       .l-app--config-9 > .l-footer {
-        grid-column: screen-start / screen-end; } }
+        grid-column: screen-start / screen-end;
+        grid-row: 3 / 4; } }
 
 .grid {
   /* 12 col content grid */ }
