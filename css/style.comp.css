@@ -1475,7 +1475,8 @@ button {
   background-color: transparent; }
 
 .l-app {
-  display: grid; }
+  display: grid;
+  grid-auto-rows: min-content; }
   .l-app--dense {
     grid-auto-flow: row dense; }
   .l-app--config-1 {
@@ -1492,7 +1493,8 @@ button {
     .l-app--config-2 {
       grid-template-columns: [screen-start sidebar-start] minmax(25vh, max-content) [sidebar-end] 1fr [screen-end]; }
       .l-app--config-2 > .l-bar {
-        grid-column: sidebar-start / sidebar-end; }
+        grid-column: sidebar-start / sidebar-end;
+        grid-row: span 3; }
       .l-app--config-2 > .l-header {
         grid-column: sidebar-end / screen-end;
         grid-row: 1 / 2; }
@@ -1506,7 +1508,8 @@ button {
     .l-app--config-3 {
       grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(25vh, max-content) [screen-end sidebar-end]; }
       .l-app--config-3 > .l-bar {
-        grid-column: sidebar-start / sidebar-end; }
+        grid-column: sidebar-start / sidebar-end;
+        grid-row: span 3; }
       .l-app--config-3 > .l-header {
         grid-column: screen-start / sidebar-start;
         grid-row: 1 / 2; }
@@ -1520,9 +1523,11 @@ button {
     .l-app--config-4 {
       grid-template-columns: [screen-start sidebar-left-start] minmax(25vh, max-content) [sidebar-left-end] 1fr [sidebar-right-start] minmax(25vh, max-content) [screen-end sidebar-right-end]; }
       .l-app--config-4 > .l-bar--left {
-        grid-column: sidebar-left-start / sidebar-left-end; }
+        grid-column: sidebar-left-start / sidebar-left-end;
+        grid-row: span 3; }
       .l-app--config-4 > .l-bar--right {
-        grid-column: sidebar-right-start / sidebar-right-end; }
+        grid-column: sidebar-right-start / sidebar-right-end;
+        grid-row: span 3; }
       .l-app--config-4 > .l-header {
         grid-column: sidebar-left-end / sidebar-right-start;
         grid-row: 1 / 2; }
@@ -1536,7 +1541,8 @@ button {
     .l-app--config-5 {
       grid-template-columns: [screen-start sidebar-start] minmax(25vh, max-content) [sidebar-end] 1fr [screen-end]; }
       .l-app--config-5 > .l-bar {
-        grid-column: sidebar-start / sidebar-end; }
+        grid-column: sidebar-start / sidebar-end;
+        grid-row: span 2; }
       .l-app--config-5 > .l-header {
         grid-column: screen-start / screen-end;
         grid-row: 1 / 2; }
@@ -1550,9 +1556,11 @@ button {
     .l-app--config-6 {
       grid-template-columns: [screen-start sidebar-left-start] minmax(25vh, max-content) [sidebar-left-end] 1fr [sidebar-right-start] minmax(25vh, max-content) [screen-end sidebar-right-end]; }
       .l-app--config-6 > .l-bar--left {
-        grid-column: sidebar-left-start / sidebar-left-end; }
+        grid-column: sidebar-left-start / sidebar-left-end;
+        grid-row: span 2; }
       .l-app--config-6 > .l-bar--right {
-        grid-column: sidebar-right-start / sidebar-right-end; }
+        grid-column: sidebar-right-start / sidebar-right-end;
+        grid-row: span 2; }
       .l-app--config-6 > .l-header {
         grid-column: screen-start / screen-end;
         grid-row: 1 / 2; }
@@ -2143,6 +2151,9 @@ button {
   transition: all 0.3s;
   display: flex;
   width: 100%; }
+  .control__input,
+  .control__select select {
+    padding: 0.7rem 2rem; }
   .control__helper {
     display: flex;
     justify-content: start;
@@ -2161,8 +2172,7 @@ button {
 
 .control__input {
   flex-grow: 1;
-  order: 0;
-  padding: 0.7rem 2rem; }
+  order: 0; }
   .control__input--1 {
     display: block;
     color: #fffff8;
@@ -2201,9 +2211,8 @@ button {
     display: block;
     background: none;
     cursor: pointer;
-    width: 100%;
-    height: 10rem;
-    border: none; }
+    border: none;
+    border-radius: 0; }
   .control__select::after {
     content: '';
     position: absolute;
@@ -2211,10 +2220,36 @@ button {
     right: 2rem;
     height: 0;
     width: 0;
-    border-top: 2rem solid #333;
-    border-left: 2rem solid transparent;
-    border-right: 2rem solid transparent;
-    pointer-events: none; }
+    pointer-events: none;
+    transform: translateY(-50%); }
+  .control__select.m-primary::after {
+    border-top: 1rem solid #fffff8;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; }
+  .control__select.m-secondary::after {
+    border-top: 1rem solid #fffff8;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; }
+  .control__select.m-tertiary::after {
+    border-top: 1rem solid #fffff8;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; }
+  .control__select.m-valid::after {
+    border-top: 1rem solid #fffff8;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; }
+  .control__select.m-invalid::after {
+    border-top: 1rem solid #fffff8;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; }
+  .control__select.m-info::after {
+    border-top: 1rem solid #fffff8;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; }
+  .control__select.m-alert::after {
+    border-top: 1rem solid #fffff8;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; }
 
 .control__switch .switch-handler {
   position: relative;
@@ -2279,8 +2314,6 @@ button {
       animation-delay: 0.4s; }
 
 .icon {
-  height: 2rem;
-  width: 2rem;
   color: #fffff8;
   fill: #fffff8; }
 

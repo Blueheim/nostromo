@@ -1,5 +1,6 @@
 .l-app {
   display: grid;
+  grid-auto-rows: min-content;
 
   &--dense {
     grid-auto-flow: row dense;
@@ -44,6 +45,7 @@
 
       > .l-bar {
         grid-column: sidebar-start / sidebar-end;
+        grid-row: span 3;
       }
 
       > .l-header {
@@ -74,6 +76,7 @@
 
       > .l-bar {
         grid-column: sidebar-start / sidebar-end;
+        grid-row: span 3;
       }
 
       > .l-header {
@@ -106,10 +109,12 @@
 
       > .l-bar--left {
         grid-column: sidebar-left-start / sidebar-left-end;
+        grid-row: span 3;
       }
 
       > .l-bar--right {
         grid-column: sidebar-right-start / sidebar-right-end;
+        grid-row: span 3;
       }
 
       > .l-header {
@@ -140,6 +145,7 @@
 
       > .l-bar {
         grid-column: sidebar-start / sidebar-end;
+        grid-row: span 2;
       }
 
       > .l-header {
@@ -172,10 +178,12 @@
 
       > .l-bar--left {
         grid-column: sidebar-left-start / sidebar-left-end;
+        grid-row: span 2;
       }
 
       > .l-bar--right {
         grid-column: sidebar-right-start / sidebar-right-end;
+        grid-row: span 2;
       }
 
       > .l-header {
