@@ -1735,7 +1735,7 @@ button {
         grid-column: screen-start / screen-end;
         grid-row: 1 / 2; }
       .l-app--config-9 > .l-main {
-        grid-column: screen-start / sidebar-start;
+        grid-column: sidebar-end / screen-end;
         display: grid;
         grid-template-columns: [main-start] 1fr [main-end]; }
       .l-app--config-9 > .l-footer {
