@@ -15,8 +15,8 @@ $weight-1: 10% !default;
 $weight-2: 20% !default;
 $weight-3: 30% !default;
 
-$white: #fffff8; // hsl(0, 0%, 100%);
-$black: hsl(0, 0%, 0%);
+$white: #fffff8 !default; // hsl(0, 0%, 100%) !default;
+$black: hsl(0, 0%, 0%) !default;
 
 $blue: hsl(279, 88, 68) !default;
 $blue-light: tint($blue, $weight-2) !default;
@@ -30,19 +30,19 @@ $purple: #f66456 !default;
 $purple-light: tint($purple, $weight-2) !default;
 $purple-dark: shade($purple, $weight-2) !default;
 
-$valid: #2ecc71;
+$valid: #2ecc71 !default;
 $valid-light: tint($valid, $weight-2) !default;
 $valid-dark: shade($valid, $weight-2) !default;
 
-$invalid: #e74c3c;
+$invalid: #e74c3c !default;
 $invalid-light: tint($invalid, $weight-2) !default;
 $invalid-dark: shade($invalid, $weight-2) !default;
 
-$info: #3498db;
+$info: #3498db !default;
 $info-light: tint($info, $weight-2) !default;
 $info-dark: shade($info, $weight-2) !default;
 
-$alert: #f39c12;
+$alert: #f39c12 !default;
 $alert-light: tint($alert, $weight-2) !default;
 $alert-dark: shade($alert, $weight-2) !default;
 
@@ -53,16 +53,16 @@ $alert-dark: shade($alert, $weight-2) !default;
 /* Grey Color Scheme */
 //$grey: #777 !default;
 
-$grey-light-1: #faf9f9;
-$grey-light-2: #f4f2f2;
-$grey-light-3: #f0eeee;
+$grey-light-1: #faf9f9 !default;
+$grey-light-2: #f4f2f2 !default;
+$grey-light-3: #f0eeee !default;
 
 $grey-dark-1: #333 !default;
 $grey-dark-2: #777 !default;
 $grey-dark-3: #999 !default;
 
 /* FONTS */
-$lato: 'Lato', sans-serif;
+$lato: 'Lato', sans-serif !default;
 
 $colors: (
   'white': $white,
