@@ -214,6 +214,7 @@
 
       > .l-bar {
         grid-column: sidebar-start / sidebar-end;
+        grid-row: span 2;
       }
 
       > .l-header {
@@ -241,6 +242,36 @@
         [sidebar-start]
         minmax($globalbar-width, max-content)
         [screen-end sidebar-end];
+
+      > .l-bar {
+        grid-column: sidebar-start / sidebar-end;
+      }
+
+      > .l-header {
+        grid-column: screen-start / screen-end;
+        grid-row: 1 / 2;
+      }
+
+      > .l-main {
+        grid-column: screen-start / sidebar-start;
+        display: grid;
+        grid-template-columns: [main-start] 1fr [main-end];
+      }
+
+      > .l-footer {
+        grid-column: screen-start / screen-end;
+      }
+    }
+  }
+
+  &--config-9 {
+    @include respond-to('large') {
+      grid-template-columns:
+        [screen-start sidebar-start]
+        minmax($globalbar-width, max-content)
+        [sidebar-end]
+        1fr
+        [screen-end ];
 
       > .l-bar {
         grid-column: sidebar-start / sidebar-end;
