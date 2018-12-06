@@ -1598,6 +1598,8 @@ button {
   grid-auto-rows: min-content; }
   .l-app--dense {
     grid-auto-flow: row dense; }
+  .l-app--auto-rows {
+    grid-auto-rows: auto; }
   .l-app--config-1 {
     grid-template-columns: [screen-start] 1fr [screen-end]; }
     .l-app--config-1 > .l-header {

@@ -6,6 +6,10 @@
     grid-auto-flow: row dense;
   }
 
+  &--auto-rows {
+    grid-auto-rows: auto;
+  }
+
   // grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
 
   &--config-1 {
