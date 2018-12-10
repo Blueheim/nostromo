@@ -47,8 +47,7 @@
       transition: opacity 0.2s;
       background-color: currentColor;
     }
-
-    &--circle {
+    &--rounded {
       border-radius: 50%;
 
       &::after {

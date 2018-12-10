@@ -2578,9 +2578,9 @@ button {
       opacity: 0;
       transition: opacity 0.2s;
       background-color: currentColor; }
-    .control__radio-element--circle {
+    .control__radio-element--rounded {
       border-radius: 50%; }
-      .control__radio-element--circle::after {
+      .control__radio-element--rounded::after {
         border-radius: 50%; }
 
 .control__radio-input:checked ~ .control__radio .control__radio-element::after {
