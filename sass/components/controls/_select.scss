@@ -9,6 +9,12 @@
     cursor: pointer;
     border: none;
     border-radius: 0;
+
+    // option {
+    //   &[data-image] {
+    //     background-image: attr(data-image url, '');
+    //   }
+    // }
   }
 
   &::after {

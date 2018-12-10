@@ -1,24 +1,52 @@
 .control__switch {
+  background-color: rgba(0, 0, 0, 0.25);
+  position: relative;
+  height: 2rem;
+
   .switch-handler {
     position: relative;
     display: inline-block;
     width: 4rem;
-    height: 2rem;
-    background-color: rgba(0, 0, 0, 0.25);
-    border-radius: 2rem;
-    transition: all 0.3s;
+    height: 100%;
     cursor: pointer;
+
+    // border-radius: 2rem;
+    transition: all 0.3s;
 
     &::after {
       content: '';
       position: absolute;
-      width: 18px;
-      height: 18px;
-      border-radius: 18px;
+      width: calc(2rem - 2px);
+      height: calc(100% - 2px);
+      // border-radius: 18px;
       background-color: white;
       top: 1px;
       left: 1px;
       transition: all 0.3s;
+    }
+  }
+
+  @each $suffix, $size in $sizes {
+    $size: $size / $rounded-div;
+
+    &.m-rounded-#{$suffix} {
+      .switch-handler {
+        border-radius: $size;
+
+        &::after {
+          border-radius: $size;
+        }
+      }
+    }
+  }
+
+  &.m-rounded-xx {
+    .switch-handler {
+      border-radius: 180286px;
+
+      &::after {
+        border-radius: 180286px;
+      }
     }
   }
 
@@ -28,10 +56,16 @@
   }
 
   .switch-box:checked + .switch-handler::after {
-    transform: translateX(20px);
+    transform: translateX(2rem);
   }
 
-  .switch-box:checked + .switch-handler {
-    background-color: #7983ff;
+  @each $theme in $themes {
+    $color: $theme;
+
+    &.m-#{$theme} {
+      .switch-box:checked + .switch-handler {
+        background-color: color($color);
+      }
+    }
   }
 }

@@ -4,10 +4,14 @@
   &:visited {
     position: relative;
     //text-transform: uppercase;
-    padding: size('ty') size('sm');
+    //padding: size('ty') size('sm');
     display: inline-block;
     transition: all $transition-duration;
     z-index: 1;
+  }
+
+  &__text {
+    padding-left: 1rem;
   }
 
   &--e1 {

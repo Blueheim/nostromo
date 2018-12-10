@@ -2,8 +2,9 @@
 name: Control
 ---
 
-import '../../docs.scss'
-import DocumentationWrapper from '../DocumentationWrapper.js'
+import '../../docs.scss';
+import DocumentationWrapper from '../DocumentationWrapper.js';
+import spainIcon from '../../img/spain.svg';
 
 # Controls
 
@@ -17,27 +18,27 @@ Base class: `control__input`
 
 <DocumentationWrapper>
   <div class="control u-mb-md">
-    <input type="text"  class="control__input m-primary" placeholder="Rechercher" />
+    <input type="text" class="control__input m-primary" placeholder="Rechercher" />
   </div>
 </DocumentationWrapper>
 
 <DocumentationWrapper>
- <div class="control u-mb-md">
+  <div class="control u-mb-md">
     <button class="btn m-primary m-r10-left">
-        <i class="fa fa-search icon"></i>
+      <i class="fa fa-search icon" />
     </button>
-    <input type="text"  class="control__input m-secondary m-r10-right" placeholder="Rechercher" />
+    <input type="text" class="control__input m-secondary m-r10-right" placeholder="Rechercher" />
   </div>
 </DocumentationWrapper>
 
 <DocumentationWrapper>
- <div class="control ">
-   <button class="btn m-primary m-r10-left">
-        <i class="fa fa-search icon"></i>
+  <div class="control ">
+    <button class="btn m-primary m-r10-left">
+      <i class="fa fa-search icon" />
     </button>
-    <input type="text"  class="control__input m-tertiary" placeholder="Rechercher" />
-     <button class="btn m-primary m-r10-right">
-        <i class="fa fa-search icon"></i>
+    <input type="text" class="control__input m-tertiary" placeholder="Rechercher" />
+    <button class="btn m-primary m-r10-right">
+      <i class="fa fa-search icon" />
     </button>
   </div>
 </DocumentationWrapper>
@@ -49,18 +50,80 @@ First level element
 Base class: `control__select`
 
 <DocumentationWrapper>
- <div class="control ">
+  <div class="control ">
     <div class="control__select m-primary">
       <select>
-      <option value="France">France</option>
-      <option value="Allemagne">Allemagne</option>
-      <option value="Japon">Japon</option>
-      <option value="Russie">Russie</option>
-    </select>
+        <option value="France">France</option>
+        <option value="Allemagne">Allemagne</option>
+        <option value="Japon">Japon</option>
+        <option value="Russie">Russie</option>
+      </select>
     </div>
-    
-    
-    
+  </div>
+</DocumentationWrapper>
+
+With icon
+
+<DocumentationWrapper>
+  <div class="control ">
+    <div class="control__select m-primary">
+      <select>
+        <option value="France" style={{ backgroundColor: 'red' }}>
+          France
+        </option>
+        <option value="Allemagne" style={{ backgroundColor: 'red' }}>
+          Allemagne
+        </option>
+        <option value="Japon" style={{ backgroundColor: 'red' }}>
+          Japon
+        </option>
+        <option value="Russie" style={{ backgroundColor: 'red' }}>
+          Russie
+        </option>
+      </select>
+    </div>
+  </div>
+</DocumentationWrapper>
+
+## Radio
+
+<DocumentationWrapper>
+  <div class="form__group u-margin-bottom-medium">
+    <div class="control control--center m-margin-sm--bottom">
+      <div class="control__radio-group">
+        <input type="radio" class="control__radio-input" id="small" name="size" />
+        <label for="small" class="control__radio">
+          <span class="control__radio-element control__radio-element--circle" />
+          <span class="control__radio-text">Option 1</span>
+        </label>
+      </div>
+       <div class="control__radio-group m-primary--reverse">
+        <input type="radio" class="control__radio-input" id="large" name="size" />
+        <label for="large" class="control__radio">
+          <span class="control__radio-element  control__radio-element" />
+          <span class="control__radio-text m-text-grey-dark-1">Option 2</span>
+        </label>
+      </div>
+    </div>
+
+     <div class="control control--center ">
+      <div class="control__radio-group">
+        <input type="radio" class="control__radio-input" id="small" name="size" />
+        <label for="small" class="control__radio">
+          <span class="control__radio-element control__radio-element--circle" />
+          <span class="control__radio-text">Option 1</span>
+          <span class="control__radio-icon"><img src={spainIcon} /></span>
+        </label>
+      </div>
+       <div class="control__radio-group m-primary--reverse">
+        <input type="radio" class="control__radio-input" id="large" name="size" />
+        <label for="large" class="control__radio">
+          <span class="control__radio-element  control__radio-element" />
+          <span class="control__radio-text m-text-grey-dark-1">Option 2</span>
+        </label>
+      </div>
+    </div>
+
   </div>
 </DocumentationWrapper>
 
@@ -71,11 +134,21 @@ First level element
 Base class: `control__switch`
 
 <DocumentationWrapper>
- <div class="control ">
-    <div class="control__switch">
+  <div class="control ">
+    <div class="control__switch m-primary">
       <input type="checkbox" id="toggle" class="switch-box" />
-      <label for="toggle" class="switch-handler"></label> 
+      <label for="toggle" class="switch-handler" />
     </div>
-  
+  </div>
+</DocumentationWrapper>
+
+Rounded
+
+<DocumentationWrapper>
+  <div class="control ">
+    <div class="control__switch m-valid m-rounded-xx">
+      <input type="checkbox" id="toggle2" class="switch-box" />
+      <label for="toggle2" class="switch-handler" />
+    </div>
   </div>
 </DocumentationWrapper>

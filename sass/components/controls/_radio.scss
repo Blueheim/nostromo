@@ -1,0 +1,63 @@
+.control__radio {
+  @include flex-center;
+  position: relative;
+  cursor: pointer;
+
+  &-group {
+    @include flex-center;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &-input {
+    display: none;
+  }
+
+  &-text {
+    margin-left: 3.5rem;
+  }
+
+  &-icon {
+    @include flex-center;
+    height: 100%;
+    width: 3rem;
+    margin-left: 1rem;
+  }
+
+  &-element {
+    display: inline-block;
+    position: absolute;
+    height: 3rem;
+    width: 3rem;
+    border: 5px solid currentColor;
+    left: 0;
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      height: 1.3rem;
+      width: 1.3rem;
+      transform: translate(-50%, -50%);
+      display: block;
+      opacity: 0;
+      transition: opacity 0.2s;
+      background-color: currentColor;
+    }
+
+    &--circle {
+      border-radius: 50%;
+
+      &::after {
+        border-radius: 50%;
+      }
+    }
+  }
+}
+
+.control__radio-input:checked ~ .control__radio .control__radio-element::after {
+  opacity: 1;
+}

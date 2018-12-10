@@ -1,48 +1,71 @@
 ---
 name: Button
 ---
-import { Playground } from 'docz'
-import '../../docs.scss'
-import DocumentationWrapper from '../DocumentationWrapper.js'
+
+import { Playground } from 'docz';
+import '../../docs.scss';
+import DocumentationWrapper from '../DocumentationWrapper.js';
 
 # Buttons
 
-Base class: `btn`  
+Base class: `btn`
 
 ## Basic
 
 <Playground>
-<DocumentationWrapper>
-  <a class="btn m-grey-1">Click Me!</a>
-  <a class="btn m-grey-2">Click Me!</a>
-  <a class="btn m-grey-3">Click Me!</a>
-  <a class="btn m-primary">Click Me!</a>
-  <a class="btn m-secondary">Click Me!</a>
-  <a class="btn m-tertiary">Click Me!</a>
-  <a class="btn m-valid">Click Me!</a>
-  <a class="btn m-invalid">Click Me!</a>
-  <a class="btn m-info">Click Me!</a>
-  <a class="btn m-alert">Click Me!</a>
-</DocumentationWrapper>
+  <DocumentationWrapper>
+    <a class="btn m-grey-1">Click Me!</a>
+    <a class="btn m-grey-2">Click Me!</a>
+    <a class="btn m-grey-3">Click Me!</a>
+    <a class="btn m-primary">Click Me!</a>
+    <a class="btn m-secondary">Click Me!</a>
+    <a class="btn m-tertiary">Click Me!</a>
+    <a class="btn m-valid">Click Me!</a>
+    <a class="btn m-invalid">Click Me!</a>
+    <a class="btn m-info">Click Me!</a>
+    <a class="btn m-alert">Click Me!</a>
+  </DocumentationWrapper>
 </Playground>
-
 
 ## Rounded
 
 <Playground>
-<DocumentationWrapper>
-  <a class="btn m-grey-1 m-rounded-xt">Click Me!</a>
-  <a class="btn m-grey-2 m-rounded-xt">Click Me!</a>
-  <a class="btn m-grey-3 m-rounded-xt">Click Me!</a>
-  <a class="btn m-primary m-rounded-xt">Click Me!</a>
-  <a class="btn m-secondary m-rounded-ty">Click Me!</a>
-  <a class="btn m-tertiary m-rounded-xt">Click Me!</a>
-  <a class="btn m-valid m-rounded-xt">Click Me!</a>
-  <a class="btn m-invalid m-rounded-xt">Click Me!</a>
-  <a class="btn m-info m-rounded-xt">Click Me!</a>
-  <a class="btn m-alert m-rounded-xt">Click Me!</a>
-</DocumentationWrapper>
+  <DocumentationWrapper>
+    <a class="btn m-grey-1 m-rounded-xt">Click Me!</a>
+    <a class="btn m-grey-2 m-rounded-xt">Click Me!</a>
+    <a class="btn m-grey-3 m-rounded-xt">Click Me!</a>
+    <a class="btn m-primary m-rounded-xt">Click Me!</a>
+    <a class="btn m-secondary m-rounded-ty">Click Me!</a>
+    <a class="btn m-tertiary m-rounded-xt">Click Me!</a>
+    <a class="btn m-valid m-rounded-xt">Click Me!</a>
+    <a class="btn m-invalid m-rounded-xt">Click Me!</a>
+    <a class="btn m-info m-rounded-xt">Click Me!</a>
+    <a class="btn m-alert m-rounded-xt">Click Me!</a>
+  </DocumentationWrapper>
 </Playground>
+
+## With icon
+
+<DocumentationWrapper>
+  <a class="btn m-alert m-rounded-xt">
+    <i class="fa fa-search icon" />
+    <span class="btn__text">Click Me!</span>
+  </a>
+</DocumentationWrapper>
+
+## Button icon
+
+<DocumentationWrapper>
+  <button class="btn m-alert m-padding-sm m-rounded-xx">
+    <i class="fa fa-search icon m-size-sm" />
+  </button>
+  <button class="btn m-valid m-rounded-sm">
+    <i class="fa fa-search icon" />
+  </button>
+  <button class="btn m-alert m-rounded-xt">
+    <i class="fa fa-search icon" />
+  </button>
+</DocumentationWrapper>
 
 ## Effects
 
@@ -69,5 +92,3 @@ Added class: `btn--e3`
   <a className="btn btn--secondary btn--r1 btn--e3 u-mr-md">Click Me!</a>
   <a className="btn btn--tertiary btn--r1 btn--e3">Click Me!</a>
 </DocumentationWrapper>
-
-

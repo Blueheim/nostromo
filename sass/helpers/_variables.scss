@@ -34,7 +34,7 @@ $sizes: (
     'hg': 5rem,
   // Huge
     'xh': 6rem,
-  // Very huge,,,,
+  // Very huge,,,,,
 ) !default;
 
 /* GRID */
@@ -72,3 +72,5 @@ $scale-7: 1.7 !default;
 $scale-8: 1.8 !default;
 $scale-9: 1.9 !default;
 $scale-10: 2 !default;
+
+$rounded-div: 2;
