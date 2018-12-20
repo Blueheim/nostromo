@@ -2428,7 +2428,10 @@ button {
     width: 0;
     pointer-events: none;
     -webkit-transform: translateY(-50%);
-            transform: translateY(-50%); }
+            transform: translateY(-50%);
+    border-top: 1rem solid currentColor;
+    border-left: 1rem solid transparent;
+    border-right: 1rem solid transparent; }
   .control__select.m-primary::after {
     border-top: 1rem solid #fffff8;
     border-left: 1rem solid transparent;
