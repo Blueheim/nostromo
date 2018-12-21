@@ -2509,7 +2509,7 @@ button {
       border-color: #fffff8; }
 
 .control__checkbox-input:checked ~ .control__checkbox .control__checkbox-element {
-  background-color: currentColor; }
+  background-color: #999; }
   .control__checkbox-input:checked ~ .control__checkbox .control__checkbox-element::after {
     opacity: 1; }
 

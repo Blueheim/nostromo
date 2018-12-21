@@ -83,7 +83,7 @@
 
 .control__checkbox-input:checked ~ .control__checkbox {
   .control__checkbox-element {
-    background-color: currentColor;
+    background-color: color('grey-dark-3');
 
     &::after {
       opacity: 1;
