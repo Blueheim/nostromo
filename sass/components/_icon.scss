@@ -3,4 +3,18 @@
   // width: 2rem;
   color: currentColor;
   fill: currentColor;
+
+  @each $theme in $themes {
+    $color: $theme;
+    $color-light: $theme + '-light';
+    $color-dark: $theme + '-dark';
+    $font-color: 'font-' + $theme;
+    $font-color-light: 'font-' + $theme + '-light';
+    $font-color-dark: 'font-' + $theme + '-dark';
+
+    &.m-#{$theme} {
+      color: color($color);
+      fill: color($color);
+    }
+  }
 }

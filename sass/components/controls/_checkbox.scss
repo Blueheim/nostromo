@@ -1,0 +1,106 @@
+.control__checkbox {
+  @include flex-center;
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+
+  &-group {
+    @include flex-center;
+
+    &:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+
+  &-input {
+    display: none;
+  }
+
+  &-text {
+    margin-left: 3.5rem;
+  }
+
+  &-icon {
+    @include flex-center;
+    height: 100%;
+    width: 3rem;
+    margin-left: 1rem;
+  }
+
+  &-element {
+    display: inline-block;
+    position: absolute;
+    height: 2rem;
+    width: 2rem;
+    background-color: color('grey-light-3');
+    left: 0;
+    transition: background-color 0.2s;
+
+    &::after {
+      content: '';
+      position: absolute;
+      display: block;
+      left: 50%;
+      top: 50%;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: translate(-50%, -50%) rotate(45deg);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    &--rounded {
+      border-radius: 50%;
+
+      &::after {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  @each $theme in $themes {
+    $color: $theme;
+    $color-light: $theme + '-light';
+    $color-dark: $theme + '-dark';
+    $font-color: 'font-' + $theme;
+    $font-color-light: 'font-' + $theme + '-light';
+    $font-color-dark: 'font-' + $theme + '-dark';
+
+    &.m-#{$theme} {
+      background-color: transparent;
+
+      .control__checkbox-element {
+        &::after {
+          border-color: color($font-color);
+        }
+      }
+    }
+  }
+}
+
+.control__checkbox-input:checked ~ .control__checkbox {
+  .control__checkbox-element {
+    background-color: currentColor;
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  @each $theme in $themes {
+    $color: $theme;
+    $color-light: $theme + '-light';
+    $color-dark: $theme + '-dark';
+    $font-color: 'font-' + $theme;
+    $font-color-light: 'font-' + $theme + '-light';
+    $font-color-dark: 'font-' + $theme + '-dark';
+
+    &.m-#{$theme} {
+      .control__checkbox-element {
+        background-color: color($color);
+      }
+    }
+  }
+}

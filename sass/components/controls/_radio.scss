@@ -2,6 +2,7 @@
   @include flex-center;
   position: relative;
   cursor: pointer;
+  user-select: none;
 
   &-group {
     @include flex-center;
@@ -29,9 +30,9 @@
   &-element {
     display: inline-block;
     position: absolute;
-    height: 3rem;
-    width: 3rem;
-    border: 5px solid currentColor;
+    height: 2rem;
+    width: 2rem;
+    border: 3px solid currentColor;
     left: 0;
 
     &::after {
@@ -39,8 +40,8 @@
       position: absolute;
       top: 50%;
       left: 50%;
-      height: 1.3rem;
-      width: 1.3rem;
+      height: 80%;
+      width: 80%;
       transform: translate(-50%, -50%);
       display: block;
       opacity: 0;

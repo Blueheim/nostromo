@@ -8,37 +8,37 @@ import spainIcon from '../../img/spain.svg';
 
 # Controls
 
-Root class: `control`
+Root className: `control`
 
 ## Input
 
 First level element
 
-Base class: `control__input`
+Base className: `control__input`
 
 <DocumentationWrapper>
-  <div class="control u-mb-md">
-    <input type="text" class="control__input m-primary" placeholder="Rechercher" />
+  <div className="control u-mb-md">
+    <input type="text" className="control__input m-primary" placeholder="Rechercher" />
   </div>
 </DocumentationWrapper>
 
 <DocumentationWrapper>
-  <div class="control u-mb-md">
-    <button class="btn m-primary m-r10-left">
-      <i class="fa fa-search icon" />
+  <div className="control u-mb-md">
+    <button className="btn m-primary m-r10-left">
+      <i className="fa fa-search icon" />
     </button>
-    <input type="text" class="control__input m-secondary m-r10-right" placeholder="Rechercher" />
+    <input type="text" className="control__input m-secondary m-r10-right" placeholder="Rechercher" />
   </div>
 </DocumentationWrapper>
 
 <DocumentationWrapper>
-  <div class="control ">
-    <button class="btn m-primary m-r10-left">
-      <i class="fa fa-search icon" />
+  <div className="control ">
+    <button className="btn m-primary m-r10-left">
+      <i className="fa fa-search icon" />
     </button>
-    <input type="text" class="control__input m-tertiary" placeholder="Rechercher" />
-    <button class="btn m-primary m-r10-right">
-      <i class="fa fa-search icon" />
+    <input type="text" className="control__input m-tertiary" placeholder="Rechercher" />
+    <button className="btn m-primary m-r10-right">
+      <i className="fa fa-search icon" />
     </button>
   </div>
 </DocumentationWrapper>
@@ -47,11 +47,11 @@ Base class: `control__input`
 
 First level element
 
-Base class: `control__select`
+Base className: `control__select`
 
 <DocumentationWrapper>
-  <div class="control ">
-    <div class="control__select m-primary">
+  <div className="control ">
+    <div className="control__select m-primary">
       <select>
         <option value="France">France</option>
         <option value="Allemagne">Allemagne</option>
@@ -65,8 +65,8 @@ Base class: `control__select`
 With icon
 
 <DocumentationWrapper>
-  <div class="control ">
-    <div class="control__select m-primary">
+  <div className="control ">
+    <div className="control__select m-primary">
       <select>
         <option value="France" style={{ backgroundColor: 'red' }}>
           France
@@ -88,38 +88,38 @@ With icon
 ## Radio
 
 <DocumentationWrapper>
-  <div class="form__group u-margin-bottom-medium">
-    <div class="control control--center m-margin-sm--bottom">
-      <div class="control__radio-group m-rounded-xt">
-        <input type="radio" class="control__radio-input" id="small" name="size" />
-        <label for="small" class="control__radio">
-          <span class="control__radio-element" />
-          <span class="control__radio-text">Option 1</span>
+  <div className="htmlForm__group u-margin-bottom-medium">
+    <div className="control control--center m-margin-sm--bottom">
+      <div className="control__radio-group m-rounded-xt">
+        <input type="radio" className="control__radio-input" id="small" name="size" />
+        <label htmlFor="small" className="control__radio">
+          <span className="control__radio-element" />
+          <span className="control__radio-text">Option 1</span>
         </label>
       </div>
-       <div class="control__radio-group ">
-        <input type="radio" class="control__radio-input" id="large" name="size" />
-        <label for="large" class="control__radio m-primary--reverse">
-          <span class="control__radio-element control__radio-element--rounded" />
-          <span class="control__radio-text m-text-grey-dark-1">Option 2</span>
+       <div className="control__radio-group ">
+        <input type="radio" className="control__radio-input" id="large" name="size" />
+        <label htmlFor="large" className="control__radio m-primary--reverse">
+          <span className="control__radio-element control__radio-element--rounded" />
+          <span className="control__radio-text m-text-grey-dark-1">Option 2</span>
         </label>
       </div>
     </div>
 
-     <div class="control control--center ">
-      <div class="control__radio-group">
-        <input type="radio" class="control__radio-input" id="small" name="size" />
-        <label for="small" class="control__radio">
-          <span class="control__radio-element control__radio-element--circle" />
-          <span class="control__radio-text">Option 1</span>
-          <span class="control__radio-icon"><img src={spainIcon} /></span>
+     <div className="control control--center ">
+      <div className="control__radio-group">
+        <input type="radio" className="control__radio-input" id="small" name="size" />
+        <label htmlFor="small" className="control__radio">
+          <span className="control__radio-element control__radio-element--circle" />
+          <span className="control__radio-text">Option 1</span>
+          <span className="control__radio-icon"><img src={spainIcon} /></span>
         </label>
       </div>
-       <div class="control__radio-group m-primary--reverse">
-        <input type="radio" class="control__radio-input" id="large" name="size" />
-        <label for="large" class="control__radio">
-          <span class="control__radio-element  control__radio-element" />
-          <span class="control__radio-text m-text-grey-dark-1">Option 2</span>
+       <div className="control__radio-group m-primary--reverse">
+        <input type="radio" className="control__radio-input" id="large" name="size" />
+        <label htmlFor="large" className="control__radio">
+          <span className="control__radio-element " />
+          <span className="control__radio-text m-text-grey-dark-1">Option 2</span>
         </label>
       </div>
     </div>
@@ -131,13 +131,25 @@ With icon
 
 First level element
 
-Base class: `control__checkbox`
+Base className: `control__checkbox`
 
 <DocumentationWrapper>
-  <div class="control ">
-    <div class="control__checkbox">
-      <input type="checkbox" id="toggle" />
-      <label for="toggle" />
+  <div className="control ">
+    <div className="control__checkbox-group">
+      <input type="checkbox" className="control__checkbox-input" id="live" name="live" />
+      <label htmlFor="live" className="control__checkbox">
+        <span className="control__checkbox-element " />
+        <span className="control__checkbox-text m-text-grey-dark-1">Live</span>
+      </label>
+    </div>
+  </div>
+  <div className="control ">
+    <div className="control__checkbox-group">
+      <input type="checkbox" className="control__checkbox-input" id="action" name="action" />
+      <label htmlFor="action" className="control__checkbox m-primary">
+        <span className="control__checkbox-element " />
+        <span className="control__checkbox-text m-text-grey-dark-1">Live</span>
+      </label>
     </div>
   </div>
 </DocumentationWrapper>
@@ -146,13 +158,13 @@ Base class: `control__checkbox`
 
 First level element
 
-Base class: `control__switch`
+Base className: `control__switch`
 
 <DocumentationWrapper>
-  <div class="control ">
-    <div class="control__switch m-primary">
-      <input type="checkbox" id="toggle" class="switch-box" />
-      <label for="toggle" class="switch-handler" />
+  <div className="control ">
+    <div className="control__switch m-primary">
+      <input type="checkbox" id="toggle" className="switch-box" />
+      <label htmlFor="toggle" className="switch-handler" />
     </div>
   </div>
 </DocumentationWrapper>
@@ -160,10 +172,10 @@ Base class: `control__switch`
 Rounded
 
 <DocumentationWrapper>
-  <div class="control ">
-    <div class="control__switch m-valid m-rounded-xx">
-      <input type="checkbox" id="toggle2" class="switch-box" />
-      <label for="toggle2" class="switch-handler" />
+  <div className="control ">
+    <div className="control__switch m-valid m-rounded-xx">
+      <input type="checkbox" id="toggle2" className="switch-box" />
+      <label htmlFor="toggle2" className="switch-handler" />
     </div>
   </div>
 </DocumentationWrapper>
