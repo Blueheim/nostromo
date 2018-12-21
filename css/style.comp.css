@@ -2445,7 +2445,8 @@ button {
   .control__checkbox-input {
     display: none; }
   .control__checkbox-text {
-    margin-left: 3.5rem; }
+    margin-left: 3.5rem;
+    color: #999; }
   .control__checkbox-icon {
     display: flex;
     justify-content: center;
