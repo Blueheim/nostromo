@@ -2747,24 +2747,31 @@ button {
   color: currentColor;
   fill: currentColor; }
   .icon.m-primary {
+    background-color: transparent;
     color: #c366f5;
     fill: #c366f5; }
   .icon.m-secondary {
+    background-color: transparent;
     color: #8879e6;
     fill: #8879e6; }
   .icon.m-tertiary {
+    background-color: transparent;
     color: #f66456;
     fill: #f66456; }
   .icon.m-valid {
+    background-color: transparent;
     color: #2ecc71;
     fill: #2ecc71; }
   .icon.m-invalid {
+    background-color: transparent;
     color: #e74c3c;
     fill: #e74c3c; }
   .icon.m-info {
+    background-color: transparent;
     color: #3498db;
     fill: #3498db; }
   .icon.m-alert {
+    background-color: transparent;
     color: #f39c12;
     fill: #f39c12; }
 

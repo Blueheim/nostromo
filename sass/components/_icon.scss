@@ -13,6 +13,7 @@
     $font-color-dark: 'font-' + $theme + '-dark';
 
     &.m-#{$theme} {
+      background-color: transparent;
       color: color($color);
       fill: color($color);
     }
