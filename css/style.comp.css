@@ -1478,6 +1478,10 @@ button {
 .l-nav--transparent {
   background-color: transparent; }
 
+.l-nav--fixed {
+  position: fixed;
+  z-index: 10; }
+
 .l-app {
   display: grid;
   grid-auto-rows: min-content; }
