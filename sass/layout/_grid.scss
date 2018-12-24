@@ -24,17 +24,19 @@
 
     > .l-header {
       grid-column: screen-start / screen-end;
-      //grid-row: 1 / 2;
+      grid-row: 1 / 2;
     }
 
     > .l-main {
       grid-column: screen-start / screen-end;
+      grid-row: 2 / 3;
       display: grid;
       grid-template-columns: [main-start] 1fr [main-end];
     }
 
     > .l-footer {
       grid-column: screen-start / screen-end;
+      grid-row: 3 / 4;
     }
   }
 

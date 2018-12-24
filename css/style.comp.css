@@ -311,11 +311,12 @@ textarea:focus {
   animation-fill-mode: backwards; }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", sans-serif, "Source Sans Pro", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   color: #999;
   font-weight: 400;
-  line-height: 1.6;
-  font-size: 1.6rem; }
+  line-height: 1.5;
+  font-size: 1.6rem;
+  word-spacing: 1px; }
 
 .l-header__title {
   display: block;
@@ -445,6 +446,8 @@ html {
   -webkit-font-smoothing: antialiased;
   text-size-adjust: 100%;
   text-rendering: optimizeLegibility;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
   font-size: 62.5%; }
 
 body {
@@ -1485,13 +1488,16 @@ button {
   .l-app--config-1 {
     grid-template-columns: [screen-start] 1fr [screen-end]; }
     .l-app--config-1 > .l-header {
-      grid-column: screen-start / screen-end; }
+      grid-column: screen-start / screen-end;
+      grid-row: 1 / 2; }
     .l-app--config-1 > .l-main {
       grid-column: screen-start / screen-end;
+      grid-row: 2 / 3;
       display: grid;
       grid-template-columns: [main-start] 1fr [main-end]; }
     .l-app--config-1 > .l-footer {
-      grid-column: screen-start / screen-end; }
+      grid-column: screen-start / screen-end;
+      grid-row: 3 / 4; }
   @media only screen and (min-width: 75em) {
     .l-app--config-2 {
       grid-template-columns: [screen-start sidebar-start] minmax(25vh, max-content) [sidebar-end] 1fr [screen-end]; }
