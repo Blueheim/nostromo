@@ -5,7 +5,7 @@
 }
 
 .l-nav {
-  @include size(100%);
+  width: 100%;
 
   &--transparent {
     @include transparent;

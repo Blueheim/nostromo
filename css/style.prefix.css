@@ -1592,8 +1592,7 @@ button {
     display: none !important; } }
 
 .l-nav {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
   .l-nav--transparent {
     background-color: transparent; }
   .l-nav--fixed {
