@@ -93,38 +93,6 @@
   margin-bottom: size('xh') !important;
 }
 
-/* CLIPPING */
-
-// Rectangle
-
-.u-clip-rec-1 {
-  @extend %clip-1;
-
-  &-inverted {
-    @extend %clip-1-inverted;
-  }
-}
-
-.u-clip-rec-2 {
-  @extend %clip-2;
-
-  &-inverted {
-    @extend %clip-2-inverted;
-  }
-}
-
-.u-clip-rec-3 {
-  @extend %clip-3;
-}
-
-.u-clip-ellipse-1 {
-  @extend %clip-ellipse-1;
-}
-
-.u-clip-ellipse-2 {
-  @extend %clip-ellipse-2;
-}
-
 //Ellipse
 
 /* ANIMATIONS */

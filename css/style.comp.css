@@ -16,37 +16,37 @@ By Xavier 'Blueheim' Deroeux
 /* THEME GRADIENTS */
 /* Shadows */
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .u-clip-rec-1 {
+  .m-clip-r1 {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 0% 100%); } }
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .u-clip-rec-1-inverted {
+  .m-clip-r1-inverted {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 85%);
     clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 85%); } }
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .u-clip-rec-2 {
+  .m-clip-r2 {
     -webkit-clip-path: polygon(100% 0%, 100% 50%, 100% 85%, 50% 100%, 0 85%, 0 0);
     clip-path: polygon(100% 0%, 100% 50%, 100% 85%, 50% 100%, 0 85%, 0 0); } }
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .u-clip-rec-2-inverted {
+  .m-clip-r2-inverted {
     -webkit-clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 0);
     clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 50% 85%, 0 100%, 0 0); } }
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .u-clip-rec-3 {
+  .m-clip-r3 {
     -webkit-clip-path: circle(71.9% at 51% 27%);
     clip-path: circle(71.9% at 51% 27%); } }
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .u-clip-ellipse-1 {
+  .m-clip-el1 {
     -webkit-clip-path: ellipse(100% 99% at 50% 100%);
     clip-path: ellipse(100% 99% at 50% 100%); } }
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
-  .u-clip-ellipse-2 {
+  .m-clip-el2 {
     -webkit-clip-path: ellipse(100% 99% at 50% 0%);
     clip-path: ellipse(100% 99% at 50% 0%); } }
 
@@ -296,7 +296,6 @@ textarea:focus {
 .u-mb-vh {
   margin-bottom: 6rem !important; }
 
-/* CLIPPING */
 /* ANIMATIONS */
 .u-anim-mil {
   animation: moveInLeft 2s ease-out 0.75s;
@@ -1470,6 +1469,7 @@ button {
   .m-padding-xh--bottom {
     padding-bottom: 6rem; }
 
+/* CLIPPING */
 /* LAYOUT */
 @media only screen and (min-width: 75em) {
   .l-nav-burger {

@@ -1,0 +1,31 @@
+/* CLIPPING */
+
+// Rectangle
+
+.m-clip-r1 {
+  @extend %clip-1;
+
+  &-inverted {
+    @extend %clip-1-inverted;
+  }
+}
+
+.m-clip-r2 {
+  @extend %clip-2;
+
+  &-inverted {
+    @extend %clip-2-inverted;
+  }
+}
+
+.m-clip-r3 {
+  @extend %clip-3;
+}
+
+.m-clip-el1 {
+  @extend %clip-ellipse-1;
+}
+
+.m-clip-el2 {
+  @extend %clip-ellipse-2;
+}
