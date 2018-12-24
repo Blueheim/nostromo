@@ -1846,6 +1846,12 @@ button {
     background-image: linear-gradient(120deg, #e0428f 0%, #f66456 100%);
     border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%; }
 
+.l-hero {
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  width: 100%; }
+
 .l-section {
   grid-column: main-start / main-end;
   display: grid;
