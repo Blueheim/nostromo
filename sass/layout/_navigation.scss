@@ -5,6 +5,8 @@
 }
 
 .l-nav {
+  @include size(100%);
+
   &--transparent {
     @include transparent;
   }
