@@ -8,3 +8,8 @@
 .m-flex-center {
   @include flex-center;
 }
+
+.m-flex-column-center {
+  @include flex-center;
+  flex-direction: column;
+}

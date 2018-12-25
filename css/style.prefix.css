@@ -1662,6 +1662,12 @@ button {
   justify-content: center;
   align-items: center; }
 
+.m-flex-column-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
 /* CLIPPING */
 .m-ov-b-v-sk-40:before {
   content: '';
