@@ -1,15 +1,11 @@
+@import './functions';
 /*
 By Xavier 'Blueheim' Deroeux
-*/
-
-// DEFAULT THEME
-
+*/ // DEFAULT THEME
 // COLORS
-
 // Best practices:
 // Prefer HSL definition then RGB
 // Use mix instead of darken and lighten
-
 /* Theme Color Scheme */
 $weight-1: 10% !default;
 $weight-2: 20% !default;
