@@ -1,5 +1,26 @@
 @each $suffix, $size in $sizes {
-  .m-size-#{$suffix} {
+  .m-fsize-#{$suffix} {
     font-size: $size;
+  }
+}
+
+@each $theme in $themes {
+  $color: $theme;
+  $color-light: $theme + '-light';
+  $color-dark: $theme + '-dark';
+  $font-color: 'font-' + $theme;
+  $font-color-light: 'font-' + $theme + '-light';
+  $font-color-dark: 'font-' + $theme + '-dark';
+
+  .m-etched-text-#{$theme} {
+    text-shadow: 0 1px color($color);
+
+    &-light {
+      text-shadow: 0 1px color($color-light);
+    }
+
+    &-dark {
+      text-shadow: 0 1px color($color-dark);
+    }
   }
 }

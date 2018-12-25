@@ -1,9 +1,10 @@
 import React from 'react';
+import magnifier from '../img/magnifying-glass.svg';
 
 export default function SvgWrapper() {
   return (
-    <svg className="search__icon">
-      <use xlinkHref="img/sprite.svg#icon-magnifying-glass" />
+    <svg className="icon">
+      <use className="icon m-primary" xlinkHref={magnifier} />
     </svg>
   );
 }
