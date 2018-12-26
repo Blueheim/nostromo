@@ -7,6 +7,10 @@ import DocumentationWrapper from '../DocumentationWrapper.js';
 import SvgWrapper from '../SvgWrapper.js';
 import image from '../../img/image.jpg';
 import magnifier from '../../img/magnifying-glass.svg';
+import affinityLogo from '../../img/affinity-designer.png';
+import htmlLogo from '../../img/html.png';
+import cssLogo from '../../img/css.png';
+import sassLogo from '../../img/sass.png';
 
 # Cards
 
@@ -44,6 +48,47 @@ Tertiary class: `card--tertiary`
       </div>
       <div className="card__footer m-padding-xt u-justify-end">
         <i className="fa fa-search m-text-white" />
+      </div>
+    </div>
+
+  </div>
+
+  <div style={{ height: 40 + 'rem', width: 18 + 'rem' }} class="card card--vertical">
+    <div class="card__side card__side--front m-rounded-ty m-sw-sm--dark">
+       <div className="card__logo m-text-white m-bg-gd-primary--rb m-padding-xt m-rounded-xx">
+            <i className="fa fa-search m-fsize-md" />
+       </div>
+       <div className="card__header m-bg-gd-primary--rb m-clip-r1">
+      
+      
+        <div className="card__title m-text-font-primary">
+          test
+        </div>
+      </div>
+      <div className="card__body">
+        <ul className="list">
+          <li class="list-item">User interviews</li>
+          <li class="list-item">UX B2B context</li>
+          <li class="list-item">Progressive disclosure</li>
+          <li class="list-item">Wireframing - UI Design</li>
+        </ul>
+      </div>
+      <div className="card__footer m-padding-xt">
+        <p class="title u-tc m-padding-ty--bottom">Tools</p>
+        <div class="icon-list">
+          <a className="image-link">
+            <img src={affinityLogo} />
+          </a>
+          <a className="image-link">
+            <img src={htmlLogo} />
+          </a>
+          <a className="image-link">
+            <img src={cssLogo} />
+          </a>
+          <a className="image-link">
+            <img src={sassLogo} />
+          </a>
+        </div>
       </div>
     </div>
 

@@ -47,6 +47,18 @@
       color: color($color-dark);
     }
   }
+
+  .m-text-font-#{$color} {
+    color: color(#{$font-color});
+
+    &-light {
+      color: color($font-color-light);
+    }
+
+    &-dark {
+      color: color($font-color-dark);
+    }
+  }
 }
 
 .m {

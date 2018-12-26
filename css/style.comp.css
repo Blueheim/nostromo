@@ -888,6 +888,13 @@ button {
   .m-text-primary-dark {
     color: #9c51c4; }
 
+.m-text-font-primary {
+  color: #ffffff; }
+  .m-text-font-primary-light {
+    color: #999; }
+  .m-text-font-primary-dark {
+    color: #999; }
+
 .m-secondary {
   background-color: #8879e6;
   color: #ffffff; }
@@ -913,6 +920,13 @@ button {
     color: #a094eb; }
   .m-text-secondary-dark {
     color: #6d61b8; }
+
+.m-text-font-secondary {
+  color: #ffffff; }
+  .m-text-font-secondary-light {
+    color: #999; }
+  .m-text-font-secondary-dark {
+    color: #999; }
 
 .m-tertiary {
   background-color: #f66456;
@@ -940,6 +954,13 @@ button {
   .m-text-tertiary-dark {
     color: #c55045; }
 
+.m-text-font-tertiary {
+  color: #ffffff; }
+  .m-text-font-tertiary-light {
+    color: #999; }
+  .m-text-font-tertiary-dark {
+    color: #999; }
+
 .m-valid {
   background-color: #2ecc71;
   color: #ffffff; }
@@ -965,6 +986,13 @@ button {
     color: #58d68d; }
   .m-text-valid-dark {
     color: #25a35a; }
+
+.m-text-font-valid {
+  color: #ffffff; }
+  .m-text-font-valid-light {
+    color: #ffffff; }
+  .m-text-font-valid-dark {
+    color: #ffffff; }
 
 .m-invalid {
   background-color: #e74c3c;
@@ -992,6 +1020,13 @@ button {
   .m-text-invalid-dark {
     color: #b93d30; }
 
+.m-text-font-invalid {
+  color: #ffffff; }
+  .m-text-font-invalid-light {
+    color: #ffffff; }
+  .m-text-font-invalid-dark {
+    color: #ffffff; }
+
 .m-info {
   background-color: #3498db;
   color: #ffffff; }
@@ -1018,6 +1053,13 @@ button {
   .m-text-info-dark {
     color: #2a7aaf; }
 
+.m-text-font-info {
+  color: #ffffff; }
+  .m-text-font-info-light {
+    color: #ffffff; }
+  .m-text-font-info-dark {
+    color: #ffffff; }
+
 .m-alert {
   background-color: #f39c12;
   color: #ffffff; }
@@ -1043,6 +1085,13 @@ button {
     color: #f5b041; }
   .m-text-alert-dark {
     color: #c27d0e; }
+
+.m-text-font-alert {
+  color: #ffffff; }
+  .m-text-font-alert-light {
+    color: #ffffff; }
+  .m-text-font-alert-dark {
+    color: #ffffff; }
 
 .m-grey-1 {
   background-color: #333;
@@ -2319,13 +2368,37 @@ button {
   @media only screen and (min-width: 75em) {
     .card--flip:hover .card__side--back {
       transform: rotateY(0); } }
-  .card__title {
+  .card__header {
+    position: relative;
     width: 100%;
     overflow: hidden;
-    flex: 0 0 10%;
+    display: flex;
+    height: 5rem;
+    justify-content: space-around;
+    align-items: center; }
+  .card .card__logo {
+    position: absolute;
+    top: 1rem;
+    left: 1rem;
+    z-index: 1;
+    width: 6rem;
+    height: 6rem;
     display: flex;
     justify-content: center;
     align-items: center; }
+  .card .card__title {
+    font-weight: 300;
+    text-transform: uppercase; }
+  .card .card__body .list {
+    padding: 3rem;
+    list-style: none;
+    margin: 0 auto; }
+    .card .card__body .list .list-item {
+      text-align: center;
+      font-size: 1.5rem;
+      padding: 1rem; }
+      .card .card__body .list .list-item:not(:last-child) {
+        border-bottom: 1px solid #f4f2f2; }
   .card__picture {
     background-size: cover;
     background-position: center;
@@ -2336,9 +2409,24 @@ button {
     align-self: stretch; }
     .card__actions > * {
       flex-grow: 1; }
-  .card__footer {
+  .card__footer .title {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center; }
+    .card__footer .title::before, .card__footer .title::after {
+      content: '';
+      height: 1px;
+      display: block;
+      background-color: #f4f2f2; }
+  .card__footer .icon-list {
     display: flex;
-    align-self: stretch; }
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; }
+    .card__footer .icon-list .image-link {
+      display: block;
+      width: 15%; }
 
 .card-feature-1 .card__side--back-1 {
   background-image: linear-gradient(to right top, #c366f5, #c366f5);
@@ -2458,8 +2546,6 @@ button {
   background-color: #ffffff; }
   .box__image {
     position: absolute;
-    width: 100px;
-    height: 100px;
     border-radius: 50%;
     overflow: hidden; }
     .box__image--shift-top {
