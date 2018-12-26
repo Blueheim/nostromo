@@ -1,0 +1,41 @@
+.box {
+  display: flex;
+  position: relative;
+  transition: 0.5s;
+  background-color: color('white');
+
+  &__image {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &--shift-top {
+      top: 0;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &--shift-bottom {
+      bottom: 0;
+      left: 50%;
+      transform: translate(-50%, 50%);
+    }
+
+    &--shift-left {
+      top: 50%;
+      left: 0;
+      transform: translate(-50%, -50%);
+    }
+
+    &--shift-right {
+      top: 50%;
+      right: 0;
+      transform: translate(50%, -50%);
+    }
+  }
+
+  &__content {
+  }
+}

@@ -1,0 +1,13 @@
+.image {
+  width: 100%;
+
+  &--contain-center {
+    object-fit: contain;
+    object-position: center;
+  }
+
+  &--cover-center {
+    object-fit: cover;
+    object-position: center;
+  }
+}
