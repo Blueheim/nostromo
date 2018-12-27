@@ -42,3 +42,9 @@
     animation-name: scaleInX;
   }
 }
+
+.m-anim-bouncein {
+  &--top {
+    animation-name: bounceInTop;
+  }
+}
