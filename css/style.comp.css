@@ -2489,7 +2489,7 @@ button {
     .nav--panel .nav__actions .nav-action--1 {
       color: white;
       font-weight: bold; }
-  .nav--panel .close-cta {
+  .nav--panel .nav__close-cta {
     position: absolute;
     right: 2rem;
     top: 2rem;
@@ -2551,6 +2551,9 @@ button {
     @media only screen and (min-width: 75em) {
       .nav--bar__logo .logo {
         height: 3.5rem; } }
+  .nav--bar .nav__show-cta {
+    width: 3rem;
+    height: 3rem; }
 
 .btn, .btn:link, .btn:visited {
   position: relative;

@@ -32,7 +32,7 @@
       }
     }
 
-    .close-cta {
+    .nav__close-cta {
       position: absolute;
       right: 2rem;
       top: 2rem;
@@ -143,9 +143,6 @@
 
     &__logo {
       @include flex-center;
-      // position: absolute;
-      // top: 4rem;
-      // left: 4rem;
 
       @include respond-to('large') {
       }
@@ -156,6 +153,11 @@
           height: 3.5rem;
         }
       }
+    }
+
+    .nav__show-cta {
+      width: 3rem;
+      height: 3rem;
     }
   }
 }
