@@ -1825,6 +1825,9 @@ button {
   align-items: center;
   flex-direction: column; }
 
+.m-opacity-0 {
+  opacity: 0; }
+
 /* CLIPPING */
 .m-ov-b-v-sk-40:before {
   content: '';
