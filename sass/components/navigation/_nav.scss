@@ -141,7 +141,7 @@
       @include flex-center;
     }
 
-    &__logo {
+    .nav__logo {
       @include flex-center;
 
       @include respond-to('large') {

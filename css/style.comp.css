@@ -2544,12 +2544,12 @@ button {
     display: flex;
     justify-content: center;
     align-items: center; }
-  .nav--bar__logo {
+  .nav--bar .nav__logo {
     display: flex;
     justify-content: center;
     align-items: center; }
     @media only screen and (min-width: 75em) {
-      .nav--bar__logo .logo {
+      .nav--bar .nav__logo .logo {
         height: 3.5rem; } }
   .nav--bar .nav__show-cta {
     width: 3rem;
