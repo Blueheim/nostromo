@@ -1877,59 +1877,35 @@ button {
 
 /* Hover transition */
 /* Animation classes */
-.m-anim-duration-ease-in-quad {
-  animation-duration: cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+.m-anim-duration-1 {
+  animation-duration: 1.1s; }
 
-.m-anim-duration-ease-in-cubic {
-  animation-duration: cubic-bezier(0.55, 0.055, 0.675, 0.19); }
+.m-anim-duration-2 {
+  animation-duration: 1.2s; }
 
-.m-anim-duration-ease-in-quart {
-  animation-duration: cubic-bezier(0.895, 0.03, 0.685, 0.22); }
+.m-anim-duration-3 {
+  animation-duration: 1.3s; }
 
-.m-anim-duration-ease-in-quint {
-  animation-duration: cubic-bezier(0.755, 0.05, 0.855, 0.06); }
+.m-anim-duration-4 {
+  animation-duration: 1.4s; }
 
-.m-anim-duration-ease-in-expo {
-  animation-duration: cubic-bezier(0.95, 0.05, 0.795, 0.035); }
+.m-anim-duration-5 {
+  animation-duration: 1.5s; }
 
-.m-anim-duration-ease-in-circ {
-  animation-duration: cubic-bezier(0.6, 0.04, 0.98, 0.335); }
+.m-anim-duration-6 {
+  animation-duration: 1.6s; }
 
-.m-anim-duration-ease-out-quad {
-  animation-duration: cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+.m-anim-duration-7 {
+  animation-duration: 1.7s; }
 
-.m-anim-duration-ease-out-cubic {
-  animation-duration: cubic-bezier(0.215, 0.61, 0.355, 1); }
+.m-anim-duration-8 {
+  animation-duration: 1.8s; }
 
-.m-anim-duration-ease-out-quart {
-  animation-duration: cubic-bezier(0.165, 0.84, 0.44, 1); }
+.m-anim-duration-9 {
+  animation-duration: 1.9s; }
 
-.m-anim-duration-ease-out-quint {
-  animation-duration: cubic-bezier(0.23, 1, 0.32, 1); }
-
-.m-anim-duration-ease-out-expo {
-  animation-duration: cubic-bezier(0.19, 1, 0.22, 1); }
-
-.m-anim-duration-ease-out-circ {
-  animation-duration: cubic-bezier(0.075, 0.82, 0.165, 1); }
-
-.m-anim-duration-ease-in-out-quad {
-  animation-duration: cubic-bezier(0.455, 0.03, 0.515, 0.955); }
-
-.m-anim-duration-ease-in-out-cubic {
-  animation-duration: cubic-bezier(0.645, 0.045, 0.355, 1); }
-
-.m-anim-duration-ease-in-out-quart {
-  animation-duration: cubic-bezier(0.77, 0, 0.175, 1); }
-
-.m-anim-duration-ease-in-out-quint {
-  animation-duration: cubic-bezier(0.86, 0, 0.07, 1); }
-
-.m-anim-duration-ease-in-out-expo {
-  animation-duration: cubic-bezier(1, 0, 0, 1); }
-
-.m-anim-duration-ease-in-out-circ {
-  animation-duration: cubic-bezier(0.785, 0.135, 0.15, 0.86); }
+.m-anim-duration-10 {
+  animation-duration: 2s; }
 
 .m-anim-delay-1 {
   animation-delay: 1.1s; }

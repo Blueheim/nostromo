@@ -6,7 +6,7 @@
 
 /* Animation classes */
 
-@each $suffix, $timing in $timings {
+@each $suffix, $timing in $durations {
   .m-anim-duration-#{$suffix} {
     animation-duration: $timing;
   }
