@@ -1,3 +1,7 @@
+.u-display-none {
+  display: none !important;
+}
+
 .u-bg-transparent {
   background-color: transparent !important;
 }
@@ -5,7 +9,7 @@
 /* Width */
 
 .u-w-100 {
-  width: 100%;
+  width: 100% !important;
 }
 
 /* Height */
@@ -46,15 +50,15 @@
 
 /* TEXT  */
 
-.u-tc {
+.u-text-center {
   text-align: center !important;
 }
 
-.u-tl {
+.u-text-left {
   text-align: left !important;
 }
 
-.u-tr {
+.u-text-right {
   text-align: right !important;
 }
 
@@ -110,20 +114,11 @@
   margin-bottom: size('xh') !important;
 }
 
-//Ellipse
+// Delay
 
-/* ANIMATIONS */
-.u-anim-mil {
-  animation: moveInLeft 2s ease-out 0.75s;
-  animation-fill-mode: backwards;
-}
-
-.u-anim-mir {
-  animation: moveInRight 2s ease-out 0.75s;
-  animation-fill-mode: backwards;
-}
-
-.u-anim-mib {
-  animation: moveInBottom 1.5s ease-out 0.75s;
-  animation-fill-mode: backwards;
+@each $suffix, $delay in $delays {
+  .u-delay-#{$suffix} {
+    transition-delay: $delay !important;
+    animation-delay: $delay !important;
+  }
 }

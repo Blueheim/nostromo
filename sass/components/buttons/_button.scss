@@ -45,7 +45,7 @@
       box-shadow: $shadow-dark-small;
 
       &::after {
-        transform: scaleX($scale-4) scaleY($scale-6);
+        //transform: scaleX($scale-4) scaleY($scale-6);
         opacity: 0;
       }
     }
@@ -68,7 +68,7 @@
       height: 100%;
       width: 100%;
       background-size: 400%;
-      transform: scale($scale-1);
+      //transform: scale($scale-1);
       opacity: 0;
       transition: all $transition-duration;
       z-index: -1;

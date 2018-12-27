@@ -1,3 +1,44 @@
+/* Hover transition */
+
 .m-anim-hv-sc-1:hover {
-  transform: scale($scale-1);
+  //transform: scale($scale-1);
+}
+
+/* Animation classes */
+
+@each $suffix, $timing in $timings {
+  .m-anim-duration-#{$suffix} {
+    animation-duration: $timing;
+  }
+}
+
+@each $suffix, $delay in $delays {
+  .m-anim-delay-#{$suffix} {
+    animation-delay: $delay;
+  }
+}
+
+.m-anim-forwards {
+  animation-fill-mode: forwards;
+}
+
+.m-anim-backwards {
+  animation-fill-mode: backwards;
+}
+
+/* ANIMATIONS */
+.m-anim-movein {
+  &--l {
+    animation-name: moveInLeft;
+  }
+
+  &--r {
+    animation-name: moveInRight;
+  }
+}
+
+.m-anim-scalein {
+  &--x {
+    animation-name: scaleInX;
+  }
 }

@@ -1,0 +1,31 @@
+.m-trans-prop-none {
+  transition-property: none;
+}
+
+.m-trans-prop-all {
+  transition-property: all;
+}
+
+.m-trans-prop-opacity {
+  transition-property: opacity;
+}
+
+.m-trans-prop-transform {
+  transition-property: transform;
+}
+
+.m-trans-prop-fontsize {
+  transition-property: font-size;
+}
+
+@each $suffix, $duration in $duration {
+  .m-trans-duration-#{$suffix} {
+    transition-duration: $duration;
+  }
+}
+
+@each $suffix, $delay in $delays {
+  .m-trans-delay-#{$suffix} {
+    transition-delay: $delay;
+  }
+}
