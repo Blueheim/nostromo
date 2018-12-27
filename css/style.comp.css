@@ -1971,6 +1971,36 @@ button {
 .m-anim-bouncein--top {
   animation-name: bounceInTop; }
 
+.m-trans-timing-linear {
+  transition-timing-function: linear; }
+
+.m-anim-timing-linear {
+  animation-timing-function: linear; }
+
+.m-trans-timing-ease {
+  transition-timing-function: ease; }
+
+.m-anim-timing-ease {
+  animation-timing-function: ease; }
+
+.m-trans-timing-ease-in {
+  transition-timing-function: ease-in; }
+
+.m-anim-timing-ease-in {
+  animation-timing-function: ease-in; }
+
+.m-trans-timing-ease-out {
+  transition-timing-function: ease-out; }
+
+.m-anim-timing-ease-out {
+  animation-timing-function: ease-out; }
+
+.m-trans-timing-ease-in-out {
+  transition-timing-function: ease-in-out; }
+
+.m-anim-timing-ease-in-out {
+  animation-timing-function: ease-in-out; }
+
 .m-trans-timing-ease-in-quad {
   transition-timing-function: cubic-bezier(0.55, 0.085, 0.68, 0.53); }
 
