@@ -2,6 +2,22 @@
   display: none !important;
 }
 
+.u-scalex-0 {
+  transform: scaleX(0) !important;
+}
+
+.u-scalex-1 {
+  transform: scaleX(1) !important;
+}
+
+.u-scaley-0 {
+  transform: scaleY(0) !important;
+}
+
+.u-scaley-1 {
+  transform: scaleX(1) !important;
+}
+
 .u-bg-transparent {
   background-color: transparent !important;
 }
@@ -115,10 +131,3 @@
 }
 
 // Delay
-
-@each $suffix, $delay in $delays {
-  .u-delay-#{$suffix} {
-    transition-delay: $delay !important;
-    animation-delay: $delay !important;
-  }
-}

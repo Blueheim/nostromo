@@ -1,0 +1,25 @@
+$origins: (
+  'l': left,
+  'r': right,
+  'c': center,
+  't': top,
+  'b': bottom,
+  'tl': top left,
+  'tr': top right,
+  'bl': bottom left,
+  'br': bottom right,
+);
+
+@each $suffix, $origin in $origins {
+  .m-origin-#{$suffix} {
+    transform-origin: $origin;
+  }
+}
+
+.m-scalex-0 {
+  transform: scaleX(0);
+}
+
+.m-scalex-1 {
+  transform: scaleX(1);
+}

@@ -1,6 +1,9 @@
 @each $suffix, $timing in $timings {
-  .m-timing-#{$suffix} {
+  .m-trans-timing-#{$suffix} {
     transition-timing-function: $timing;
+  }
+
+  .m-anim-timing-#{$suffix} {
     animation-timing-function: $timing;
   }
 }

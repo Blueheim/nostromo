@@ -6,8 +6,8 @@
     //text-transform: uppercase;
     //padding: size('ty') size('sm');
     @include flex-center;
-    transition: all $transition-duration;
     z-index: 1;
+    cursor: pointer;
   }
 
   &__text {
