@@ -1,8 +1,6 @@
 .box {
   display: flex;
   position: relative;
-  transition: 0.5s;
-  background-color: color('white');
 
   &__image {
     position: absolute;

@@ -2734,7 +2734,8 @@ button {
 .l-section {
   grid-column: main-start / main-end;
   display: grid;
-  width: 100%; }
+  width: 100%;
+  padding: 15rem 0; }
   .l-section--simple {
     grid-template-columns: [section-start] 1fr [section-end]; }
   .l-section--auto {
@@ -3313,9 +3314,7 @@ button {
 
 .box {
   display: flex;
-  position: relative;
-  transition: 0.5s;
-  background-color: #ffffff; }
+  position: relative; }
   .box__image {
     position: absolute;
     border-radius: 50%;
