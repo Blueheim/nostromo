@@ -1,6 +1,6 @@
 {
   "name": "nostromo-css",
-  "version": "0.1.55",
+  "version": "0.1.56",
   "description": "My modern CSS Toolkit. Based on Flexbox and grids.",
   "main": "default.scss",
   "scripts": {
