@@ -2765,9 +2765,11 @@ button {
     position: absolute;
     right: 2rem;
     top: 2rem;
-    width: 3rem;
-    height: 3rem;
     color: #ffffff; }
+    @media only screen and (min-width: 75em) {
+      .nav--panel .nav__close-cta {
+        width: 5rem;
+        height: 5rem; } }
 
 .nav--bar {
   display: flex;

@@ -36,9 +36,12 @@
       position: absolute;
       right: 2rem;
       top: 2rem;
-      width: 3rem;
-      height: 3rem;
+
       color: color('white');
+
+      @include respond-to('large') {
+        @include size(5rem);
+      }
     }
   }
 
