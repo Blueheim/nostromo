@@ -338,27 +338,27 @@ body {
   font-size: 1.6rem;
   word-spacing: 1px; }
 
-.l-header__title {
+.main-title {
   display: block;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  font-weight: 300; }
   @media only screen and (min-width: 75em) {
-    .l-header__title {
-      font-size: 5rem;
-      letter-spacing: 1em / 2; } }
+    .main-title {
+      font-size: 5rem; } }
 
-.l-header__subtitle {
+.main-subtitle {
   display: block;
   font-weight: 700;
   text-transform: uppercase; }
   @media only screen and (min-width: 75em) {
-    .l-header__subtitle {
+    .main-subtitle {
       font-size: 3rem;
       letter-spacing: 1.5rem; } }
 
-.l-header__text {
+.main__text {
   display: block; }
   @media only screen and (min-width: 75em) {
-    .l-header__text {
+    .main__text {
       font-size: 3rem; } }
 
 .l-section__title {
@@ -1448,6 +1448,10 @@ button {
     margin-top: 1rem; }
   .m-margin-xt--bottom {
     margin-bottom: 1rem; }
+  .m-margin-xt--vert {
+    margin: 1rem 0; }
+  .m-margin-xt--hori {
+    margin: 0 1rem; }
 
 .m-margin-ty {
   margin: 1.6rem; }
@@ -1459,6 +1463,10 @@ button {
     margin-top: 1.6rem; }
   .m-margin-ty--bottom {
     margin-bottom: 1.6rem; }
+  .m-margin-ty--vert {
+    margin: 1.6rem 0; }
+  .m-margin-ty--hori {
+    margin: 0 1.6rem; }
 
 .m-margin-xs {
   margin: 2rem; }
@@ -1470,6 +1478,10 @@ button {
     margin-top: 2rem; }
   .m-margin-xs--bottom {
     margin-bottom: 2rem; }
+  .m-margin-xs--vert {
+    margin: 2rem 0; }
+  .m-margin-xs--hori {
+    margin: 0 2rem; }
 
 .m-margin-sm {
   margin: 2.5rem; }
@@ -1481,6 +1493,10 @@ button {
     margin-top: 2.5rem; }
   .m-margin-sm--bottom {
     margin-bottom: 2.5rem; }
+  .m-margin-sm--vert {
+    margin: 2.5rem 0; }
+  .m-margin-sm--hori {
+    margin: 0 2.5rem; }
 
 .m-margin-md {
   margin: 3rem; }
@@ -1492,6 +1508,10 @@ button {
     margin-top: 3rem; }
   .m-margin-md--bottom {
     margin-bottom: 3rem; }
+  .m-margin-md--vert {
+    margin: 3rem 0; }
+  .m-margin-md--hori {
+    margin: 0 3rem; }
 
 .m-margin-lg {
   margin: 3.5rem; }
@@ -1503,6 +1523,10 @@ button {
     margin-top: 3.5rem; }
   .m-margin-lg--bottom {
     margin-bottom: 3.5rem; }
+  .m-margin-lg--vert {
+    margin: 3.5rem 0; }
+  .m-margin-lg--hori {
+    margin: 0 3.5rem; }
 
 .m-margin-xl {
   margin: 4rem; }
@@ -1514,6 +1538,10 @@ button {
     margin-top: 4rem; }
   .m-margin-xl--bottom {
     margin-bottom: 4rem; }
+  .m-margin-xl--vert {
+    margin: 4rem 0; }
+  .m-margin-xl--hori {
+    margin: 0 4rem; }
 
 .m-margin-hg {
   margin: 5rem; }
@@ -1525,6 +1553,10 @@ button {
     margin-top: 5rem; }
   .m-margin-hg--bottom {
     margin-bottom: 5rem; }
+  .m-margin-hg--vert {
+    margin: 5rem 0; }
+  .m-margin-hg--hori {
+    margin: 0 5rem; }
 
 .m-margin-xh {
   margin: 6rem; }
@@ -1536,6 +1568,10 @@ button {
     margin-top: 6rem; }
   .m-margin-xh--bottom {
     margin-bottom: 6rem; }
+  .m-margin-xh--vert {
+    margin: 6rem 0; }
+  .m-margin-xh--hori {
+    margin: 0 6rem; }
 
 .m-padding-xt {
   padding: 1rem; }
@@ -1547,6 +1583,10 @@ button {
     padding-top: 1rem; }
   .m-padding-xt--bottom {
     padding-bottom: 1rem; }
+  .m-padding-xt--vert {
+    padding: 1rem 0; }
+  .m-padding-xt--hori {
+    padding: 0 1rem; }
 
 .m-padding-ty {
   padding: 1.6rem; }
@@ -1558,6 +1598,10 @@ button {
     padding-top: 1.6rem; }
   .m-padding-ty--bottom {
     padding-bottom: 1.6rem; }
+  .m-padding-ty--vert {
+    padding: 1.6rem 0; }
+  .m-padding-ty--hori {
+    padding: 0 1.6rem; }
 
 .m-padding-xs {
   padding: 2rem; }
@@ -1569,6 +1613,10 @@ button {
     padding-top: 2rem; }
   .m-padding-xs--bottom {
     padding-bottom: 2rem; }
+  .m-padding-xs--vert {
+    padding: 2rem 0; }
+  .m-padding-xs--hori {
+    padding: 0 2rem; }
 
 .m-padding-sm {
   padding: 2.5rem; }
@@ -1580,6 +1628,10 @@ button {
     padding-top: 2.5rem; }
   .m-padding-sm--bottom {
     padding-bottom: 2.5rem; }
+  .m-padding-sm--vert {
+    padding: 2.5rem 0; }
+  .m-padding-sm--hori {
+    padding: 0 2.5rem; }
 
 .m-padding-md {
   padding: 3rem; }
@@ -1591,6 +1643,10 @@ button {
     padding-top: 3rem; }
   .m-padding-md--bottom {
     padding-bottom: 3rem; }
+  .m-padding-md--vert {
+    padding: 3rem 0; }
+  .m-padding-md--hori {
+    padding: 0 3rem; }
 
 .m-padding-lg {
   padding: 3.5rem; }
@@ -1602,6 +1658,10 @@ button {
     padding-top: 3.5rem; }
   .m-padding-lg--bottom {
     padding-bottom: 3.5rem; }
+  .m-padding-lg--vert {
+    padding: 3.5rem 0; }
+  .m-padding-lg--hori {
+    padding: 0 3.5rem; }
 
 .m-padding-xl {
   padding: 4rem; }
@@ -1613,6 +1673,10 @@ button {
     padding-top: 4rem; }
   .m-padding-xl--bottom {
     padding-bottom: 4rem; }
+  .m-padding-xl--vert {
+    padding: 4rem 0; }
+  .m-padding-xl--hori {
+    padding: 0 4rem; }
 
 .m-padding-hg {
   padding: 5rem; }
@@ -1624,6 +1688,10 @@ button {
     padding-top: 5rem; }
   .m-padding-hg--bottom {
     padding-bottom: 5rem; }
+  .m-padding-hg--vert {
+    padding: 5rem 0; }
+  .m-padding-hg--hori {
+    padding: 0 5rem; }
 
 .m-padding-xh {
   padding: 6rem; }
@@ -1635,6 +1703,10 @@ button {
     padding-top: 6rem; }
   .m-padding-xh--bottom {
     padding-bottom: 6rem; }
+  .m-padding-xh--vert {
+    padding: 6rem 0; }
+  .m-padding-xh--hori {
+    padding: 0 6rem; }
 
 .m-abs-center {
   position: absolute;
@@ -2148,6 +2220,7 @@ button {
     display: none !important; } }
 
 .l-nav {
+  height: 10vmin;
   width: 100%; }
   .l-nav--transparent {
     background-color: transparent; }
@@ -2179,7 +2252,7 @@ button {
       grid-row: 3 / 4; }
   @media only screen and (min-width: 75em) {
     .l-app--config-2 {
-      grid-template-columns: [screen-start sidebar-start] minmax(25vh, max-content) [sidebar-end] 1fr [screen-end]; }
+      grid-template-columns: [screen-start sidebar-start] minmax(20%, max-content) [sidebar-end] 1fr [screen-end]; }
       .l-app--config-2 > .l-bar {
         grid-column: sidebar-start / sidebar-end;
         grid-row: span 3; }
@@ -2196,7 +2269,7 @@ button {
         grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-3 {
-      grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(25vh, max-content) [screen-end sidebar-end]; }
+      grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(20%, max-content) [screen-end sidebar-end]; }
       .l-app--config-3 > .l-bar {
         grid-column: sidebar-start / sidebar-end;
         grid-row: span 3; }
@@ -2213,7 +2286,7 @@ button {
         grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-4 {
-      grid-template-columns: [screen-start sidebar-left-start] minmax(25vh, max-content) [sidebar-left-end] 1fr [sidebar-right-start] minmax(25vh, max-content) [screen-end sidebar-right-end]; }
+      grid-template-columns: [screen-start sidebar-left-start] minmax(20%, max-content) [sidebar-left-end] 1fr [sidebar-right-start] minmax(20%, max-content) [screen-end sidebar-right-end]; }
       .l-app--config-4 > .l-bar--left {
         grid-column: sidebar-left-start / sidebar-left-end;
         grid-row: span 3; }
@@ -2233,7 +2306,7 @@ button {
         grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-5 {
-      grid-template-columns: [screen-start sidebar-start] minmax(25vh, max-content) [sidebar-end] 1fr [screen-end]; }
+      grid-template-columns: [screen-start sidebar-start] minmax(20%, max-content) [sidebar-end] 1fr [screen-end]; }
       .l-app--config-5 > .l-bar {
         grid-column: sidebar-start / sidebar-end;
         grid-row: span 2; }
@@ -2250,7 +2323,7 @@ button {
         grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-6 {
-      grid-template-columns: [screen-start sidebar-left-start] minmax(25vh, max-content) [sidebar-left-end] 1fr [sidebar-right-start] minmax(25vh, max-content) [screen-end sidebar-right-end]; }
+      grid-template-columns: [screen-start sidebar-left-start] minmax(20%, max-content) [sidebar-left-end] 1fr [sidebar-right-start] minmax(20%, max-content) [screen-end sidebar-right-end]; }
       .l-app--config-6 > .l-bar--left {
         grid-column: sidebar-left-start / sidebar-left-end;
         grid-row: span 2; }
@@ -2270,7 +2343,7 @@ button {
         grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-7 {
-      grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(25vh, max-content) [screen-end sidebar-end]; }
+      grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(20%, max-content) [screen-end sidebar-end]; }
       .l-app--config-7 > .l-bar {
         grid-column: sidebar-start / sidebar-end;
         grid-row: span 2; }
@@ -2287,7 +2360,7 @@ button {
         grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-8 {
-      grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(25vh, max-content) [screen-end sidebar-end]; }
+      grid-template-columns: [screen-start] 1fr [sidebar-start] minmax(20%, max-content) [screen-end sidebar-end]; }
       .l-app--config-8 > .l-bar {
         grid-column: sidebar-start / sidebar-end;
         grid-row: span 1; }
@@ -2304,7 +2377,7 @@ button {
         grid-row: 3 / 4; } }
   @media only screen and (min-width: 75em) {
     .l-app--config-9 {
-      grid-template-columns: [screen-start sidebar-start] minmax(25vh, max-content) [sidebar-end] 1fr [screen-end]; }
+      grid-template-columns: [screen-start sidebar-start] minmax(20%, max-content) [sidebar-end] 1fr [screen-end]; }
       .l-app--config-9 > .l-bar {
         grid-column: sidebar-start / sidebar-end;
         grid-row: span 1; }
@@ -2331,22 +2404,20 @@ button {
 
 .l-header {
   position: relative; }
+  + .l-nav .l-header__content {
+    height: calc(100vh - $navbar-height); }
   .l-header__content {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-    color: #ffffff;
     width: 100%;
     height: 100%; }
     @media only screen and (min-width: 75em) {
-      .l-header__content {
-        margin: auto; }
-        .l-header__content .content {
-          padding-top: 14rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: stretch;
-          align-items: start; } }
+      .l-header__content .content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start; } }
     .l-header__content--center {
       align-self: center;
       text-align: center; }
@@ -2555,8 +2626,7 @@ button {
         flex: 0 0 5%; } }
   @media only screen and (min-width: 75em) {
     .nav--bar .nav__show-cta {
-      width: 5rem;
-      height: 5rem; } }
+      flex: 0 0 5%; } }
 
 .btn, .btn:link, .btn:visited {
   position: relative;
