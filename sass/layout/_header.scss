@@ -12,7 +12,7 @@
   @include respond-to('large') {
   }
 
-  + .l-nav &__content {
+  > .l-nav + &__content {
     height: calc(100vh - $navbar-height);
   }
 
@@ -20,7 +20,7 @@
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-    @include size(100%);
+    width: 100%;
 
     @include respond-to('large') {
       .content {
