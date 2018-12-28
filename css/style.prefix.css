@@ -2473,7 +2473,7 @@ button {
     display: none !important; } }
 
 .l-nav {
-  height: 10vmin;
+  height: 10vh;
   width: 100%; }
   .l-nav--transparent {
     background-color: transparent; }
@@ -2668,7 +2668,7 @@ button {
 .l-header {
   position: relative; }
   .l-header > .l-nav + .l-header__content {
-    height: calc(100vh - $navbar-height); }
+    height: calc(100vh - 10vh); }
   .l-header__content {
     position: relative;
     display: grid;
