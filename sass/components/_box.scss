@@ -2,7 +2,7 @@
   display: flex;
   position: relative;
 
-  .box--vert {
+  &.box--vert {
     flex-direction: column;
   }
 

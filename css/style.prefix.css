@@ -1939,6 +1939,9 @@ button {
   -webkit-transform: skewY(-5deg) scale(1.5);
           transform: skewY(-5deg) scale(1.5); }
 
+.m-bg-primary {
+  background-color: #c366f5; }
+
 .m-bg-gd-primary--t {
   background: linear-gradient(to top, #cf84f7, #9c51c4); }
 
@@ -1959,6 +1962,9 @@ button {
 
 .m-bg-gd-primary--rb {
   background: linear-gradient(to right bottom, #cf84f7, #9c51c4); }
+
+.m-bg-secondary {
+  background-color: #8879e6; }
 
 .m-bg-gd-secondary--t {
   background: linear-gradient(to top, #a094eb, #6d61b8); }
@@ -1981,6 +1987,9 @@ button {
 .m-bg-gd-secondary--rb {
   background: linear-gradient(to right bottom, #a094eb, #6d61b8); }
 
+.m-bg-tertiary {
+  background-color: #f66456; }
+
 .m-bg-gd-tertiary--t {
   background: linear-gradient(to top, #f88378, #c55045); }
 
@@ -2001,6 +2010,9 @@ button {
 
 .m-bg-gd-tertiary--rb {
   background: linear-gradient(to right bottom, #f88378, #c55045); }
+
+.m-bg-valid {
+  background-color: #2ecc71; }
 
 .m-bg-gd-valid--t {
   background: linear-gradient(to top, #58d68d, #25a35a); }
@@ -2023,6 +2035,9 @@ button {
 .m-bg-gd-valid--rb {
   background: linear-gradient(to right bottom, #58d68d, #25a35a); }
 
+.m-bg-invalid {
+  background-color: #e74c3c; }
+
 .m-bg-gd-invalid--t {
   background: linear-gradient(to top, #ec7063, #b93d30); }
 
@@ -2043,6 +2058,9 @@ button {
 
 .m-bg-gd-invalid--rb {
   background: linear-gradient(to right bottom, #ec7063, #b93d30); }
+
+.m-bg-info {
+  background-color: #3498db; }
 
 .m-bg-gd-info--t {
   background: linear-gradient(to top, #5dade2, #2a7aaf); }
@@ -2065,6 +2083,9 @@ button {
 .m-bg-gd-info--rb {
   background: linear-gradient(to right bottom, #5dade2, #2a7aaf); }
 
+.m-bg-alert {
+  background-color: #f39c12; }
+
 .m-bg-gd-alert--t {
   background: linear-gradient(to top, #f5b041, #c27d0e); }
 
@@ -2085,6 +2106,9 @@ button {
 
 .m-bg-gd-alert--rb {
   background: linear-gradient(to right bottom, #f5b041, #c27d0e); }
+
+.m-bg-white {
+  background-color: #ffffff; }
 
 .m-trans-prop-none {
   transition-property: none; }
@@ -3323,7 +3347,7 @@ button {
 .box {
   display: flex;
   position: relative; }
-  .box .box--vert {
+  .box.box--vert {
     flex-direction: column; }
   .box__image {
     position: absolute;

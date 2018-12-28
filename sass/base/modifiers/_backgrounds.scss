@@ -3,6 +3,10 @@
   $color-light: $theme + '-light';
   $color-dark: $theme + '-dark';
 
+  .m-bg-#{$theme} {
+    background-color: color($color);
+  }
+
   .m-bg-gd-#{$theme} {
     &--t {
       background: gradient-linear(to top, color($color-light), color($color-dark));
@@ -32,4 +36,8 @@
       background: gradient-linear(to right bottom, color($color-light), color($color-dark));
     }
   }
+}
+
+.m-bg-white {
+  background-color: color('white');
 }
