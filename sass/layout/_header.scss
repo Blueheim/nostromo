@@ -12,7 +12,7 @@
   @include respond-to('large') {
   }
 
-  > .l-nav + &__content {
+  > .l-nav + .l-header__content {
     height: calc(100vh - $navbar-height);
   }
 

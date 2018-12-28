@@ -2667,7 +2667,7 @@ button {
 
 .l-header {
   position: relative; }
-  > .l-nav + .l-header__content {
+  .l-header > .l-nav + .l-header__content {
     height: calc(100vh - $navbar-height); }
   .l-header__content {
     position: relative;
