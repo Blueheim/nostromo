@@ -41,6 +41,11 @@ By Xavier 'Blueheim' Deroeux
     clip-path: circle(71.9% at 51% 27%); } }
 
 @supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
+  .m-clip-r4 {
+    -webkit-clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%);
+    clip-path: polygon(25% 0%, 100% 1%, 100% 100%, 25% 100%, 0% 50%); } }
+
+@supports (clip-path: polygon(0 0)) or (-webkit-clip-path: polygon(0 0)) {
   .m-clip-el1 {
     -webkit-clip-path: ellipse(100% 99% at 50% 100%);
     clip-path: ellipse(100% 99% at 50% 100%); } }
