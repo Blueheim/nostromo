@@ -2,9 +2,12 @@
   display: flex;
   position: relative;
 
+  .box--vert {
+    flex-direction: column;
+  }
+
   &__image {
     position: absolute;
-    border-radius: 50%;
     overflow: hidden;
 
     &--shift-top {
@@ -30,6 +33,9 @@
       right: 0;
       transform: translate(50%, -50%);
     }
+  }
+
+  &__title {
   }
 
   &__content {

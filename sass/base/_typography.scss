@@ -8,76 +8,59 @@ body {
   word-spacing: 1px;
 }
 
-.main {
-  &-title {
-    display: block;
-    text-transform: uppercase;
-    font-weight: 300;
+.title {
+  display: inline-block;
 
-    // background-image: linear-gradient(to right, color('primary-light'), color('secondary'));
-    // -webkit-background-clip: text;
-    // background-clip: text;
-    //color: transparent;
+  &-1 {
+    text-transform: uppercase;
+    letter-spacing: size('md');
 
     @include respond-to('large') {
       font-size: size('hg');
     }
   }
 
-  &-subtitle {
-    display: block;
-    font-weight: 700;
-    // color: color('font-subtitle-header');
+  &-2 {
     text-transform: uppercase;
+    letter-spacing: size('xs');
 
-    @include respond-to('large') {
-      font-size: size('md');
-      letter-spacing: size('md') / 2;
-    }
-  }
-
-  &__text {
-    display: block;
     @include respond-to('large') {
       font-size: size('md');
     }
   }
-}
 
-.l-section__title {
-  text-transform: uppercase;
+  &-3 {
+    text-transform: uppercase;
+    letter-spacing: size('xt');
 
-  @include respond-to('large') {
-    font-size: size('md');
-    letter-spacing: size('md') / 2;
+    @include respond-to('large') {
+      font-size: size('sm');
+    }
+  }
+
+  &--primary {
+    color: transparent;
+    background-image: linear-gradient(to right, color('primary-light'), color('primary-dark'));
+    background-clip: text;
+  }
+
+  &--secondary {
+    color: transparent;
+    background-image: linear-gradient(to right, color('secondary-light'), color('secondary-dark'));
+    background-clip: text;
+  }
+
+  &--tertiary {
+    color: transparent;
+    background-image: linear-gradient(to right, color('tertiary-light'), color('tertiary-dark'));
+    background-clip: text;
   }
 }
 
-.title-primary {
-  font-size: size('md');
-  text-transform: uppercase;
-  font-weight: 700;
-  display: inline-block;
-  background-image: linear-gradient(to right, color('primary-light'), color('secondary'));
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  letter-spacing: size('xs') / 2;
-  transition: all 0.2s;
-
-  &:hover {
-    transform: scale(1.1);
-    text-shadow: 0.5rem 1rem 2rem transparentize(color('black'), 0.8);
-  }
+.text {
 }
 
-.title-secondary {
-  font-size: size('sm');
-  color: color('font-title-secondary');
-  font-weight: 700;
-  text-transform: uppercase;
-}
-
-.title-tertiary {
-  color: color('font-title-tertiary');
-}
+// &:hover {
+//   transform: scale(1.1);
+//   text-shadow: 0.5rem 1rem 2rem transparentize(color('black'), 0.8);
+// }
