@@ -2821,11 +2821,12 @@ button {
     justify-content: center;
     align-items: center; }
     @media only screen and (min-width: 75em) {
-      .nav--bar .nav__logo .logo {
-        height: 3.5rem; } }
-  .nav--bar .nav__show-cta {
-    width: 3rem;
-    height: 3rem; }
+      .nav--bar .nav__logo {
+        flex: 0 0 5%; } }
+  @media only screen and (min-width: 75em) {
+    .nav--bar .nav__show-cta {
+      width: 5rem;
+      height: 5rem; } }
 
 .btn, .btn:link, .btn:visited {
   position: relative;
@@ -3717,6 +3718,10 @@ button {
     background-color: transparent;
     color: #f39c12;
     fill: #f39c12; }
+
+.svg-icon {
+  height: 100%;
+  width: 100%; }
 
 /* PAGES */
 /* THEMES */

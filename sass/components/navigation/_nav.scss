@@ -145,19 +145,21 @@
       @include flex-center;
 
       @include respond-to('large') {
+        flex: 0 0 5%;
       }
 
-      .logo {
-        @include respond-to('large') {
-          // @include size(8rem);
-          height: 3.5rem;
-        }
-      }
+      // .logo {
+      //   @include respond-to('large') {
+      //     // @include size(8rem);
+      //     width: 100%;
+      //   }
+      // }
     }
 
     .nav__show-cta {
-      width: 3rem;
-      height: 3rem;
+      @include respond-to('large') {
+        @include size(5rem);
+      }
     }
   }
 }
