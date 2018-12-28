@@ -12,23 +12,23 @@
   @include respond-to('large') {
   }
 
+  + .l-nav &__content {
+    height: calc(100vh - $navbar-height);
+  }
+
   &__content {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-    color: color('white');
     @include size(100%);
 
     @include respond-to('large') {
       .content {
-        padding-top: 14rem;
         display: flex;
         flex-direction: column;
-        justify-content: stretch;
+        justify-content: center;
         align-items: start;
       }
-
-      margin: auto;
     }
 
     &--center {

@@ -161,7 +161,8 @@
 
     .nav__show-cta {
       @include respond-to('large') {
-        @include size(5rem);
+        //@include size(5rem);
+        flex: 0 0 5%;
       }
     }
   }

@@ -17,5 +17,13 @@
     &--bottom {
       margin-bottom: $size;
     }
+
+    &--vert {
+      margin: $size 0;
+    }
+
+    &--hori {
+      margin: 0 $size;
+    }
   }
 }

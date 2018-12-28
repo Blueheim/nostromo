@@ -8,12 +8,11 @@ body {
   word-spacing: 1px;
 }
 
-.l-header {
-  &__title {
+.main {
+  &-title {
     display: block;
-    // color: color('font-title-header');
-
     text-transform: uppercase;
+    font-weight: 300;
 
     // background-image: linear-gradient(to right, color('primary-light'), color('secondary'));
     // -webkit-background-clip: text;
@@ -22,11 +21,10 @@ body {
 
     @include respond-to('large') {
       font-size: size('hg');
-      letter-spacing: 1em / 2;
     }
   }
 
-  &__subtitle {
+  &-subtitle {
     display: block;
     font-weight: 700;
     // color: color('font-subtitle-header');

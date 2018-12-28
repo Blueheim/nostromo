@@ -17,5 +17,13 @@
     &--bottom {
       padding-bottom: $size;
     }
+
+    &--vert {
+      padding: $size 0;
+    }
+
+    &--hori {
+      padding: 0 $size;
+    }
   }
 }
