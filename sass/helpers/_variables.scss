@@ -4,17 +4,6 @@ By Xavier 'Blueheim' Deroeux
 
 $themes: 'primary', 'secondary', 'tertiary', 'valid', 'invalid', 'info', 'alert' !default;
 
-// 1rem settings
-
-//1rem = 8px, 8/16 = 50%
-$size-percent-small: 50% !default;
-
-// 1rem = 10px; 10px/16px = 62.5%
-$size-percent-default: 62.5% !default;
-
-//1rem = 12px, 12/16 = 75%
-$size-percent-big: 75% !default;
-
 /* SIZES */
 $sizes: (
   'xt': 1rem,
@@ -34,7 +23,7 @@ $sizes: (
     'hg': 5rem,
   // Huge
     'xh': 6rem,
-  // Very huge,,,,,,,,,,,,,,,
+  // Very huge,,,,,,,,,,,,,,,,,
 ) !default;
 
 /* GRID */
@@ -42,6 +31,21 @@ $sizes: (
 $globalbar-width: 20% !default;
 $navbar-height: 10vh !default;
 $content-margin: 2.5rem !default;
+
+// 1rem settings
+
+$root-percent-size: (
+  //1rem = 6px, 6/16 = 37.5%
+    'tiny': 37.5%,
+  //1rem = 8px, 8/16 = 50%
+    'small': 50%,
+  // 1rem = 10px; 10px/16px = 62.5%
+    'medium': 62.5%,
+  //1rem = 12px, 12/16 = 75%
+    'large': 75%,
+  //1rem = 14px, 14/16 = 87.5%
+    'huge': 87.5%
+) !default;
 
 /* BREAKPOINTS */
 $breakpoints: (

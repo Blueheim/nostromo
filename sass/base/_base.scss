@@ -10,7 +10,25 @@ html {
   text-rendering: optimizeLegibility;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-size: $size-percent-default;
+
+  //Mobile first
+  font-size: map-get($root-percent-size, 'tiny');
+
+  @include respond-to('small') {
+    font-size: map-get($root-percent-size, 'small');
+  }
+
+  @include respond-to('medium') {
+    font-size: map-get($root-percent-size, 'medium');
+  }
+
+  @include respond-to('large') {
+    font-size: map-get($root-percent-size, 'large');
+  }
+
+  @include respond-to('huge') {
+    font-size: map-get($root-percent-size, 'huge');
+  }
 }
 
 body {

@@ -18,6 +18,7 @@ dk: dark
 dl: delay
 dp: display
 dr: duration
+en: end
 et: etched
 fm: fill-mode
 fw: forwards
@@ -28,6 +29,7 @@ gr: grid
 h: horizontal
 hv: hover
 iv: invert
+jc: justify-content
 l: left
 lg: large
 lt: light

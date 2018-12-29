@@ -15,11 +15,11 @@
   .m-tx-et-#{$theme} {
     text-shadow: 0 1px color($color);
 
-    &-lt {
+    &-light {
       text-shadow: 0 1px color($color-light);
     }
 
-    &-dk {
+    &-dark {
       text-shadow: 0 1px color($color-dark);
     }
   }
