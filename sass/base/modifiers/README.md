@@ -40,6 +40,7 @@ op: opacity
 ov: overlay
 pd: padding
 pp: property
+sa: space-around
 sc: scale
 sk: skew
 sm: small

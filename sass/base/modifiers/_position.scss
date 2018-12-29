@@ -9,6 +9,12 @@
   @include flex-center;
 }
 
+.m-fx--sa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .m-al--st {
   align-self: start;
 }

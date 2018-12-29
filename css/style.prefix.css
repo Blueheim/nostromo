@@ -4771,6 +4771,11 @@ button {
   justify-content: center;
   align-items: center; }
 
+.m-fx--sa {
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
+
 .m-al--st {
   align-self: start; }
 
@@ -5654,7 +5659,10 @@ button {
   .l-section--simple {
     grid-template-columns: [section-start] 1fr [section-end]; }
   .l-section--auto {
-    grid-template-columns: [section-start] repeat(auto-fit, minmax(0, 1fr)) [section-end]; }
+    grid-template-columns: [section-start] repeat(auto-fit, minmax(100vw, 1fr)) [section-end]; }
+    @media only screen and (min-width: 75em) {
+      .l-section--auto {
+        grid-template-columns: [section-start] repeat(auto-fit, minmax(0, 1fr)) [section-end]; } }
   .l-section__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));

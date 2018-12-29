@@ -9,7 +9,11 @@
   }
 
   &--auto {
-    grid-template-columns: [section-start] repeat(auto-fit, minmax(0, 1fr)) [section-end];
+    grid-template-columns: [section-start] repeat(auto-fit, minmax(100vw, 1fr)) [section-end];
+
+    @include respond-to('large') {
+      grid-template-columns: [section-start] repeat(auto-fit, minmax(0, 1fr)) [section-end];
+    }
   }
 
   &__content {
