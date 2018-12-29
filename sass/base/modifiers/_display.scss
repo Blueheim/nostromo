@@ -1,0 +1,15 @@
+.m-opacity-0 {
+  opacity: 0;
+}
+
+.m-removed {
+  display: none;
+}
+
+@each $name, $value in $breakpoints {
+  .m-removed-#{$breakpoint} {
+    @include respond-to($name) {
+      display: none;
+    }
+  }
+}

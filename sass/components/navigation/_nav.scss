@@ -146,6 +146,7 @@
 
     .nav__logo {
       @include flex-center;
+      flex: 0 0 5%;
 
       @include respond-to('large') {
         flex: 0 0 5%;
@@ -160,6 +161,7 @@
     }
 
     .nav__show-cta {
+      flex: 0 0 5%;
       @include respond-to('large') {
         //@include size(5rem);
         flex: 0 0 5%;

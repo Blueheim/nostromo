@@ -1928,9 +1928,6 @@ button {
   align-items: center;
   flex-direction: column; }
 
-.m-opacity-0 {
-  opacity: 0; }
-
 /* CLIPPING */
 .m-ov-b-v-sk-40:before {
   content: '';
@@ -2710,13 +2707,11 @@ button {
     position: relative;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-    width: 100%; }
-    @media only screen and (min-width: 75em) {
-      .l-header__content .content {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: start; } }
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start; }
     .l-header__content--center {
       align-self: center;
       text-align: center; }
@@ -2929,13 +2924,16 @@ button {
   .nav--bar .nav__logo {
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+    flex: 0 0 5%; }
     @media only screen and (min-width: 75em) {
       .nav--bar .nav__logo {
         flex: 0 0 5%; } }
-  @media only screen and (min-width: 75em) {
-    .nav--bar .nav__show-cta {
-      flex: 0 0 5%; } }
+  .nav--bar .nav__show-cta {
+    flex: 0 0 5%; }
+    @media only screen and (min-width: 75em) {
+      .nav--bar .nav__show-cta {
+        flex: 0 0 5%; } }
 
 .btn, .btn:link, .btn:visited {
   position: relative;
