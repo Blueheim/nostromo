@@ -20,20 +20,20 @@
       background: gradient-linear(to left, color($color-light), color($color-dark));
     }
 
-    &--lt {
-      background: gradient-linear(to left top, color($color-light), color($color-dark));
+    &--tl {
+      background: gradient-linear(to top left, color($color-light), color($color-dark));
     }
 
-    &--lb {
-      background: gradient-linear(to left bottom, color($color-light), color($color-dark));
+    &--bl {
+      background: gradient-linear(to bottom left, color($color-light), color($color-dark));
     }
 
-    &--rt {
-      background: gradient-linear(to right top, color($color-light), color($color-dark));
+    &--tr {
+      background: gradient-linear(to top right, color($color-light), color($color-dark));
     }
 
-    &--rb {
-      background: gradient-linear(to right bottom, color($color-light), color($color-dark));
+    &--br {
+      background: gradient-linear(to bottom right, color($color-light), color($color-dark));
     }
   }
 }

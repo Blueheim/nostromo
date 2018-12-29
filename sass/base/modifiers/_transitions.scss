@@ -1,31 +1,31 @@
-.m-trans-prop-none {
+.m-tn-pp-none {
   transition-property: none;
 }
 
-.m-trans-prop-all {
+.m-tn-pp-all {
   transition-property: all;
 }
 
-.m-trans-prop-opacity {
+.m-tn-pp-op {
   transition-property: opacity;
 }
 
-.m-trans-prop-transform {
+.m-tn-pp-tf {
   transition-property: transform;
 }
 
-.m-trans-prop-fontsize {
+.m-tn-pp-fs {
   transition-property: font-size;
 }
 
 @each $suffix, $duration in $durations {
-  .m-trans-duration-#{$suffix} {
+  .m-tn-dr-#{$suffix} {
     transition-duration: $duration;
   }
 }
 
 @each $suffix, $delay in $delays {
-  .m-trans-delay-#{$suffix} {
+  .m-tn-dl-#{$suffix} {
     transition-delay: $delay;
   }
 }

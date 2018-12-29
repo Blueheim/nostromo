@@ -1,82 +1,51 @@
 @each $suffix, $size in $sizes {
   $i: index(($sizes), ($suffix $size));
 
-  .m-border-#{$suffix} {
+  .m-bd-#{$suffix} {
     border: #{$i}px solid currentColor;
 
-    &--left {
+    &--l {
       border-left: #{$i}px solid currentColor;
     }
 
-    &--right {
+    &--r {
       border-right: #{$i}px solid currentColor;
     }
 
-    &--top {
+    &--t {
       border-top: #{$i}px solid currentColor;
     }
 
-    &--bottom {
+    &--b {
       border-bottom: #{$i}px solid currentColor;
     }
 
-    &-primary {
-      border: #{$i}px solid color('primary');
+    @each $theme in $themes {
+      $color: $theme;
+      $color-light: $theme + '-light';
+      $color-dark: $theme + '-dark';
+      $font-color: 'font-' + $theme;
+      $font-color-light: 'font-' + $theme + '-light';
+      $font-color-dark: 'font-' + $theme + '-dark';
 
-      &--left {
-        border-left: #{$i}px solid color('primary');
-      }
+      &-#{$theme} {
+        border: #{$i}px solid color($color);
 
-      &--right {
-        border-right: #{$i}px solid color('primary');
-      }
+        &--l {
+          border-left: #{$i}px solid color($color);
+        }
 
-      &--top {
-        border-top: #{$i}px solid color('primary');
-      }
+        &--r {
+          border-right: #{$i}px solid color($color);
+        }
 
-      &--bottom {
-        border-bottom: #{$i}px solid color('primary');
-      }
-    }
+        &--t {
+          border-top: #{$i}px solid color($color);
+        }
 
-    &-secondary {
-      border: #{$i}px solid color('secondary');
-
-      &--left {
-        border-left: #{$i}px solid color('secondary');
-      }
-
-      &--right {
-        border-right: #{$i}px solid color('secondary');
-      }
-
-      &--top {
-        border-top: #{$i}px solid color('secondary');
-      }
-
-      &--bottom {
-        border-bottom: #{$i}px solid color('secondary');
-      }
-    }
-
-    &-tertiary {
-      border: #{$i}px solid color('tertiary');
-
-      &--left {
-        border-left: #{$i}px solid color('tertiary');
-      }
-
-      &--right {
-        border-right: #{$i}px solid color('tertiary');
-      }
-
-      &--top {
-        border-top: #{$i}px solid color('tertiary');
-      }
-
-      &--bottom {
-        border-bottom: #{$i}px solid color('tertiary');
+        &--b {
+          border-bottom: #{$i}px solid color($color);
+        }
       }
     }
   }

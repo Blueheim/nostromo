@@ -1,15 +1,19 @@
-.m-abs-center {
+.m-ab--c {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.m-flex-center {
+.m-fx--c {
   @include flex-center;
 }
 
-.m-flex-column-center {
+.m-al--st {
+  align-self: start;
+}
+
+.m-fx-cl--c {
   @include flex-center;
   flex-direction: column;
 }

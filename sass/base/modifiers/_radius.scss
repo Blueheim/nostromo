@@ -5,50 +5,50 @@
 @each $suffix, $size in $sizes {
   $size: $size / $rounded-div;
 
-  .m-rounded-#{$suffix} {
+  .m-rd-#{$suffix} {
     border-radius: $size;
 
-    &--left {
+    &--l {
       border-top-left-radius: $size;
       border-bottom-left-radius: $size;
     }
 
-    &--right {
+    &--r {
       border-top-right-radius: $size;
       border-bottom-right-radius: $size;
     }
 
-    &--bottom {
+    &--b {
       border-bottom-left-radius: $size;
       border-bottom-right-radius: $size;
     }
 
-    &--top {
+    &--t {
       border-top-left-radius: $size;
       border-top-right-radius: $size;
     }
   }
 }
 
-.m-rounded-xx {
+.m-rd-xx {
   border-radius: 180286px;
 
-  &--left {
+  &--l {
     border-top-left-radius: 180286px;
     border-bottom-left-radius: 180286px;
   }
 
-  &--right {
+  &--r {
     border-top-right-radius: 180286px;
     border-bottom-right-radius: 180286px;
   }
 
-  &--bottom {
+  &--b {
     border-bottom-left-radius: 180286px;
     border-bottom-right-radius: 180286px;
   }
 
-  &--top {
+  &--t {
     border-top-left-radius: 180286px;
     border-top-right-radius: 180286px;
   }

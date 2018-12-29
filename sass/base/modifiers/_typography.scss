@@ -1,5 +1,5 @@
 @each $suffix, $size in $sizes {
-  .m-fsize-#{$suffix} {
+  .m-fs-#{$suffix} {
     font-size: $size;
   }
 }
@@ -12,52 +12,52 @@
   $font-color-light: 'font-' + $theme + '-light';
   $font-color-dark: 'font-' + $theme + '-dark';
 
-  .m-etched-text-#{$theme} {
+  .m-tx-et-#{$theme} {
     text-shadow: 0 1px color($color);
 
-    &-light {
+    &-lt {
       text-shadow: 0 1px color($color-light);
     }
 
-    &-dark {
+    &-dk {
       text-shadow: 0 1px color($color-dark);
     }
   }
 }
 
-.m-weight-100 {
+.m-wt-100 {
   font-weight: 100;
 }
 
-.m-weight-200 {
+.m-wt-200 {
   font-weight: 200;
 }
 
-.m-weight-300 {
+.m-wt-300 {
   font-weight: 300;
 }
 
-.m-weight-400 {
+.m-wt-400 {
   font-weight: 400;
 }
 
-.m-weight-500 {
+.m-wt-500 {
   font-weight: 500;
 }
 
-.m-weight-600 {
+.m-wt-600 {
   font-weight: 600;
 }
 
-.m-weight-700 {
+.m-wt-700 {
   font-weight: 700;
 }
 
-.m-weight-800 {
+.m-wt-800 {
   font-weight: 800;
 }
 
-.m-weight-900 {
+.m-wt-900 {
   font-weight: 900;
 }
 

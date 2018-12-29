@@ -1,33 +1,33 @@
 /* Hover transition */
 
-.m-anim-hv-sc-1:hover {
+.m-an-hv-sc-1:hover {
   //transform: scale($scale-1);
 }
 
 /* Animation classes */
 
 @each $suffix, $timing in $durations {
-  .m-anim-duration-#{$suffix} {
+  .m-an-dr-#{$suffix} {
     animation-duration: $timing;
   }
 }
 
 @each $suffix, $delay in $delays {
-  .m-anim-delay-#{$suffix} {
+  .m-an-dl-#{$suffix} {
     animation-delay: $delay;
   }
 }
 
-.m-anim-forwards {
+.m-an-fw {
   animation-fill-mode: forwards;
 }
 
-.m-anim-backwards {
+.m-an-bw {
   animation-fill-mode: backwards;
 }
 
 /* ANIMATIONS */
-.m-anim-movein {
+.m-an-movein {
   &--l {
     animation-name: moveInLeft;
   }
@@ -37,14 +37,14 @@
   }
 }
 
-.m-anim-scalein {
+.m-an-scalein {
   &--x {
     animation-name: scaleInX;
   }
 }
 
-.m-anim-bouncein {
-  &--top {
+.m-an-bouncein {
+  &--t {
     animation-name: bounceInTop;
   }
 }

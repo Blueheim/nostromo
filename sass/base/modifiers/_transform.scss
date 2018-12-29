@@ -11,15 +11,15 @@ $origins: (
 );
 
 @each $suffix, $origin in $origins {
-  .m-origin-#{$suffix} {
+  .m-og--#{$suffix} {
     transform-origin: $origin;
   }
 }
 
-.m-scalex-0 {
+.m-sc-x--0 {
   transform: scaleX(0);
 }
 
-.m-scalex-1 {
+.m-sc-x--1 {
   transform: scaleX(1);
 }

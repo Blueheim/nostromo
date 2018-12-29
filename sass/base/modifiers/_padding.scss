@@ -1,28 +1,28 @@
 @each $suffix, $size in $sizes {
-  .m-padding-#{$suffix} {
+  .m-pd-#{$suffix} {
     padding: $size;
 
-    &--left {
+    &--l {
       padding-left: $size;
     }
 
-    &--right {
+    &--r {
       padding-right: $size;
     }
 
-    &--top {
+    &--t {
       padding-top: $size;
     }
 
-    &--bottom {
+    &--b {
       padding-bottom: $size;
     }
 
-    &--vert {
+    &--v {
       padding: $size 0;
     }
 
-    &--hori {
+    &--h {
       padding: 0 $size;
     }
   }

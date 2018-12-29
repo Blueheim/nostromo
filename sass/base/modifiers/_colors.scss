@@ -10,17 +10,17 @@
     background-color: color($color);
     color: color($font-color);
 
-    &--reverse {
+    &--rv {
       background-color: color($font-color);
       color: color($color);
     }
 
-    &--invert {
+    &--iv {
       background-color: invert(color($color));
       color: invert(color($font-color));
     }
 
-    &--comp {
+    &--cm {
       background-color: complement(color($color));
       color: complement(color($font-color));
     }
@@ -36,7 +36,7 @@
     }
   }
 
-  .m-text-#{$color} {
+  .m-tx-#{$color} {
     color: color(#{$color});
 
     &-light {
@@ -48,7 +48,7 @@
     }
   }
 
-  .m-text-font-#{$color} {
+  .m-tx-font-#{$color} {
     color: color(#{$font-color});
 
     &-light {
@@ -77,31 +77,31 @@
     color: color('grey-light-3');
   }
 
-  &-text-grey-light-1 {
+  &-tx-grey-light-1 {
     color: color('grey-light-1');
   }
 
-  &-text-grey-light-2 {
+  &-tx-grey-light-2 {
     color: color('grey-light-2');
   }
 
-  &-text-grey-light-3 {
+  &-tx-grey-light-3 {
     color: color('grey-light-3');
   }
 
-  &-text-grey-dark-1 {
+  &-tx-grey-dark-1 {
     color: color('grey-dark-1');
   }
 
-  &-text-grey-dark-2 {
+  &-tx-grey-dark-2 {
     color: color('grey-dark-2');
   }
 
-  &-text-grey-dark-3 {
+  &-tx-grey-dark-3 {
     color: color('grey-dark-3');
   }
 
-  &-text-white {
+  &-tx-white {
     color: color('white');
   }
 }

@@ -1,28 +1,28 @@
 @each $suffix, $size in $sizes {
-  .m-margin-#{$suffix} {
+  .m-mg-#{$suffix} {
     margin: $size;
 
-    &--left {
+    &--l {
       margin-left: $size;
     }
 
-    &--right {
+    &--r {
       margin-right: $size;
     }
 
-    &--top {
+    &--t {
       margin-top: $size;
     }
 
-    &--bottom {
+    &--b {
       margin-bottom: $size;
     }
 
-    &--vert {
+    &--v {
       margin: $size 0;
     }
 
-    &--hori {
+    &--h {
       margin: 0 $size;
     }
   }

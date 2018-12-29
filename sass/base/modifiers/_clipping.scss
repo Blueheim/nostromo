@@ -2,7 +2,7 @@
 
 // Rectangle
 
-.m-clip-r1 {
+.m-cp-rect1 {
   @extend %clip-1;
 
   &-inverted {
@@ -10,7 +10,7 @@
   }
 }
 
-.m-clip-r2 {
+.m-cp-rect2 {
   @extend %clip-2;
 
   &-inverted {
@@ -18,18 +18,18 @@
   }
 }
 
-.m-clip-r3 {
+.m-cp-rect3 {
   @extend %clip-3;
 }
 
-.m-clip-r4 {
+.m-cp-rect4 {
   @extend %clip-4;
 }
 
-.m-clip-el1 {
+.m-cp-el1 {
   @extend %clip-ellipse-1;
 }
 
-.m-clip-el2 {
+.m-cp-el2 {
   @extend %clip-ellipse-2;
 }
