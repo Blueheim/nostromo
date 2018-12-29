@@ -308,21 +308,19 @@ body {
   display: inline-block; }
   .title-1 {
     text-transform: uppercase;
-    letter-spacing: 2rem; }
-    @media only screen and (min-width: 75em) {
-      .title-1 {
-        font-size: 5rem; } }
+    letter-spacing: 2rem;
+    font-size: 6rem; }
   .title-2 {
     text-transform: uppercase;
-    letter-spacing: 1rem; }
-    @media only screen and (min-width: 75em) {
-      .title-2 {
-        font-size: 3rem; } }
+    letter-spacing: 1rem;
+    font-size: 4rem; }
   .title-3 {
-    text-transform: uppercase; }
-    @media only screen and (min-width: 75em) {
-      .title-3 {
-        font-size: 2.5rem; } }
+    text-transform: uppercase;
+    letter-spacing: 1rem;
+    font-size: 3rem; }
+  .title-4 {
+    text-transform: uppercase;
+    font-size: 2.5rem; }
   .title--primary {
     color: transparent;
     background-image: linear-gradient(to right, #cf84f7, #9c51c4);

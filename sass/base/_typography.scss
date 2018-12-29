@@ -14,27 +14,24 @@ body {
   &-1 {
     text-transform: uppercase;
     letter-spacing: size('xs');
-
-    @include respond-to('large') {
-      font-size: size('hg');
-    }
+    font-size: size('xh');
   }
 
   &-2 {
     text-transform: uppercase;
     letter-spacing: size('xt');
-
-    @include respond-to('large') {
-      font-size: size('md');
-    }
+    font-size: size('xl');
   }
 
   &-3 {
     text-transform: uppercase;
+    letter-spacing: size('xt');
+    font-size: size('md');
+  }
 
-    @include respond-to('large') {
-      font-size: size('sm');
-    }
+  &-4 {
+    text-transform: uppercase;
+    font-size: size('sm');
   }
 
   &--primary {
