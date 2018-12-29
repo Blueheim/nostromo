@@ -2060,30 +2060,30 @@ button {
   align-items: center;
   flex-direction: column; }
 
-.m-opacity-0 {
+.m-op-0 {
   opacity: 0; }
 
-.m-removed {
+.m-dp-none {
   display: none; }
 
 @media only screen and (min-width: 37.5em) {
-  .m-removed-tiny {
+  .m-dp-none--tiny {
     display: none; } }
 
 @media only screen and (min-width: 50em) {
-  .m-removed-small {
+  .m-dp-none--small {
     display: none; } }
 
 @media only screen and (min-width: 62.5em) {
-  .m-removed-medium {
+  .m-dp-none--medium {
     display: none; } }
 
 @media only screen and (min-width: 75em) {
-  .m-removed-large {
+  .m-dp-none--large {
     display: none; } }
 
 @media only screen and (min-width: 112.5em) {
-  .m-removed-huge {
+  .m-dp-none--huge {
     display: none; } }
 
 /* CLIPPING */
