@@ -14,13 +14,14 @@
 
   &__content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
     grid-gap: 2rem;
-    align-items: start;
-    margin: auto;
 
     @include respond-to('large') {
+      grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+      align-items: start;
       width: 80%;
+      margin: auto;
     }
   }
 }

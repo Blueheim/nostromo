@@ -26,4 +26,52 @@
       margin: 0 $size;
     }
   }
+
+  @each $name, $value in $breakpoints {
+    @if ($name != 'zero') {
+      .m-mg-#{$suffix}--#{$name} {
+        @include respond-to('zero', $name) {
+          margin: $size;
+        }
+      }
+
+      .m-mg-#{$suffix} {
+        &--l--#{$name} {
+          @include respond-to('zero', $name) {
+            margin-left: $size;
+          }
+        }
+
+        &--r--#{$name} {
+          @include respond-to('zero', $name) {
+            margin-right: $size;
+          }
+        }
+
+        &--t--#{$name} {
+          @include respond-to('zero', $name) {
+            margin-top: $size;
+          }
+        }
+
+        &--b--#{$name} {
+          @include respond-to('zero', $name) {
+            margin-bottom: $size;
+          }
+        }
+
+        &--v--#{$name} {
+          @include respond-to('zero', $name) {
+            margin: $size 0;
+          }
+        }
+
+        &--h--#{$name} {
+          @include respond-to('zero', $name) {
+            margin: 0 $size;
+          }
+        }
+      }
+    }
+  }
 }
