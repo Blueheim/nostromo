@@ -11,6 +11,10 @@
   &--auto {
     grid-template-columns: [section-start] repeat(auto-fit, minmax(100vw, 1fr)) [section-end];
 
+    @include respond-to('small') {
+      grid-template-columns: [section-start] repeat(auto-fit, minmax(40vw, 1fr)) [section-end];
+    }
+
     @include respond-to('large') {
       grid-template-columns: [section-start] repeat(auto-fit, minmax(0, 1fr)) [section-end];
     }
@@ -20,6 +24,10 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
     grid-gap: 2rem;
+
+    @include respond-to('small') {
+      grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
+    }
 
     @include respond-to('large') {
       grid-template-columns: repeat(auto-fit, minmax(0, 1fr));

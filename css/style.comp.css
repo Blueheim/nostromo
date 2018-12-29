@@ -320,7 +320,8 @@ body {
     font-size: 3rem; }
   .title-4 {
     text-transform: uppercase;
-    font-size: 2.5rem; }
+    font-size: 2.5rem;
+    letter-spacing: 1rem; }
   .title--primary {
     color: transparent;
     background-image: linear-gradient(to right, #cf84f7, #9c51c4);
@@ -5394,6 +5395,9 @@ button {
     grid-template-columns: [section-start] 1fr [section-end]; }
   .l-section--auto {
     grid-template-columns: [section-start] repeat(auto-fit, minmax(100vw, 1fr)) [section-end]; }
+    @media only screen and (min-width: 50em) {
+      .l-section--auto {
+        grid-template-columns: [section-start] repeat(auto-fit, minmax(40vw, 1fr)) [section-end]; } }
     @media only screen and (min-width: 75em) {
       .l-section--auto {
         grid-template-columns: [section-start] repeat(auto-fit, minmax(0, 1fr)) [section-end]; } }
@@ -5401,6 +5405,9 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
     grid-gap: 2rem; }
+    @media only screen and (min-width: 50em) {
+      .l-section__content {
+        grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr)); } }
     @media only screen and (min-width: 75em) {
       .l-section__content {
         grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
@@ -5734,7 +5741,6 @@ button {
 
 .card {
   position: relative;
-  min-width: 30rem;
   height: auto;
   transition: all 0.5s;
   transform-style: preserve-3d;
