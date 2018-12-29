@@ -13,7 +13,7 @@ body {
 
   &-1 {
     text-transform: uppercase;
-    letter-spacing: size('md');
+    letter-spacing: size('xs');
 
     @include respond-to('large') {
       font-size: size('hg');
@@ -22,7 +22,7 @@ body {
 
   &-2 {
     text-transform: uppercase;
-    letter-spacing: size('xs');
+    letter-spacing: size('xt');
 
     @include respond-to('large') {
       font-size: size('md');
@@ -31,7 +31,6 @@ body {
 
   &-3 {
     text-transform: uppercase;
-    letter-spacing: size('xt');
 
     @include respond-to('large') {
       font-size: size('sm');

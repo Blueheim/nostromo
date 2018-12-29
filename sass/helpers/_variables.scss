@@ -23,7 +23,7 @@ $sizes: (
     'hg': 5rem,
   // Huge
     'xh': 6rem,
-  // Very huge,,,,,,,,,,,,,,,,,
+  // Very huge,,,,,,,,,,,,,,,,,,,,,,,
 ) !default;
 
 /* GRID */
@@ -49,6 +49,7 @@ $root-percent-size: (
 
 /* BREAKPOINTS */
 $breakpoints: (
+  'zero': 0em,
   //600px
     'tiny': 37.5em,
   //800px
@@ -58,7 +59,7 @@ $breakpoints: (
   //1200px
     'large': 75em,
   //1800px,
-    'huge': 112.5em
+    'huge': 112.5em,
 ) !default;
 
 /* Effects */

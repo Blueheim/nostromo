@@ -312,19 +312,18 @@ body {
   display: inline-block; }
   .title-1 {
     text-transform: uppercase;
-    letter-spacing: 3rem; }
+    letter-spacing: 2rem; }
     @media only screen and (min-width: 75em) {
       .title-1 {
         font-size: 5rem; } }
   .title-2 {
     text-transform: uppercase;
-    letter-spacing: 2rem; }
+    letter-spacing: 1rem; }
     @media only screen and (min-width: 75em) {
       .title-2 {
         font-size: 3rem; } }
   .title-3 {
-    text-transform: uppercase;
-    letter-spacing: 1rem; }
+    text-transform: uppercase; }
     @media only screen and (min-width: 75em) {
       .title-3 {
         font-size: 2.5rem; } }
@@ -2282,23 +2281,23 @@ button {
 .m-dp-none {
   display: none; }
 
-@media only screen and (min-width: 37.5em) {
+@media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-dp-none--tiny {
     display: none; } }
 
-@media only screen and (min-width: 50em) {
+@media only screen and (min-width: 0em) and (max-width: 50em) {
   .m-dp-none--small {
     display: none; } }
 
-@media only screen and (min-width: 62.5em) {
+@media only screen and (min-width: 0em) and (max-width: 62.5em) {
   .m-dp-none--medium {
     display: none; } }
 
-@media only screen and (min-width: 75em) {
+@media only screen and (min-width: 0em) and (max-width: 75em) {
   .m-dp-none--large {
     display: none; } }
 
-@media only screen and (min-width: 112.5em) {
+@media only screen and (min-width: 0em) and (max-width: 112.5em) {
   .m-dp-none--huge {
     display: none; } }
 

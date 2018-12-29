@@ -7,9 +7,11 @@
 }
 
 @each $name, $value in $breakpoints {
-  .m-dp-none--#{$name} {
-    @include respond-to($name) {
-      display: none;
+  @if ($name != 'zero') {
+    .m-dp-none--#{$name} {
+      @include respond-to('zero', $name) {
+        display: none;
+      }
     }
   }
 }
