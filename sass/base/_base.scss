@@ -12,11 +12,7 @@ html {
   -webkit-text-size-adjust: 100%;
 
   //Mobile first
-  font-size: map-get($root-percent-size, 'tiny');
-
-  @include respond-to('small') {
-    font-size: map-get($root-percent-size, 'small');
-  }
+  font-size: map-get($root-percent-size, 'small');
 
   @include respond-to('medium') {
     font-size: map-get($root-percent-size, 'medium');
