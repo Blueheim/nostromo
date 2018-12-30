@@ -11,7 +11,7 @@
   &--auto {
     grid-template-columns: [section-start] repeat(auto-fit, minmax(100vw, 1fr)) [section-end];
 
-    @include respond-to('small') {
+    @include respond-to('tiny') {
       grid-template-columns: [section-start] repeat(auto-fit, minmax(40vw, 1fr)) [section-end];
     }
 
@@ -25,7 +25,7 @@
     grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
     grid-gap: 2rem;
 
-    @include respond-to('small') {
+    @include respond-to('tiny') {
       grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
     }
 

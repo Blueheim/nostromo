@@ -5395,7 +5395,7 @@ button {
     grid-template-columns: [section-start] 1fr [section-end]; }
   .l-section--auto {
     grid-template-columns: [section-start] repeat(auto-fit, minmax(100vw, 1fr)) [section-end]; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 37.5em) {
       .l-section--auto {
         grid-template-columns: [section-start] repeat(auto-fit, minmax(40vw, 1fr)) [section-end]; } }
     @media only screen and (min-width: 75em) {
@@ -5405,7 +5405,7 @@ button {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
     grid-gap: 2rem; }
-    @media only screen and (min-width: 50em) {
+    @media only screen and (min-width: 37.5em) {
       .l-section__content {
         grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr)); } }
     @media only screen and (min-width: 75em) {
