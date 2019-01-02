@@ -4583,6 +4583,11 @@ button {
   justify-content: space-around;
   align-items: center; }
 
+.m-fx--sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
 .m-al--st {
   align-self: start; }
 
