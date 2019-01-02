@@ -5406,6 +5406,22 @@ button {
   -webkit-transform: scaleY(1);
           transform: scaleY(1); }
 
+.m-ts-y--100 {
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%); }
+
+.m-ts-y--90 {
+  -webkit-transform: translateY(90%);
+          transform: translateY(90%); }
+
+.m-ts-y--80 {
+  -webkit-transform: translateY(80%);
+          transform: translateY(80%); }
+
+.m-ts-y--0 {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%); }
+
 /* LAYOUT */
 @media only screen and (min-width: 75em) {
   .l-nav-burger {

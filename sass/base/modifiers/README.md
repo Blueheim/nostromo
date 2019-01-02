@@ -57,6 +57,7 @@ tl: top left
 tm: timing
 tp: transparent
 tr: top right
+ts: translate
 tx: text
 ty: tiny
 v: vertical
