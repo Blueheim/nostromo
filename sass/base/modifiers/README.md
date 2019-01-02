@@ -48,6 +48,7 @@ st: start
 sw: shadow
 r: right
 rd: radius
+rt: rotate
 rv: reverse
 rw: row
 tn: transition
