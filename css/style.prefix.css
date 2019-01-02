@@ -253,8 +253,8 @@ textarea:focus {
           transform: scaleY(0) !important; }
 
 .u-sc-y--1 {
-  -webkit-transform: scaleX(1) !important;
-          transform: scaleX(1) !important; }
+  -webkit-transform: scaleY(1) !important;
+          transform: scaleY(1) !important; }
 
 .u-bg-tp {
   background-color: transparent !important; }
@@ -5397,6 +5397,14 @@ button {
 .m-sc-x--1 {
   -webkit-transform: scaleX(1);
           transform: scaleX(1); }
+
+.m-sc-y--0 {
+  -webkit-transform: scaleY(0);
+          transform: scaleY(0); }
+
+.m-sc-y--1 {
+  -webkit-transform: scaleY(1);
+          transform: scaleY(1); }
 
 /* LAYOUT */
 @media only screen and (min-width: 75em) {
