@@ -5421,13 +5421,25 @@ button {
   -webkit-transform: translateY(100%);
           transform: translateY(100%); }
 
+.m-ts-y--100--rv {
+  -webkit-transform: translateY(-100%);
+          transform: translateY(-100%); }
+
 .m-ts-y--90 {
   -webkit-transform: translateY(90%);
           transform: translateY(90%); }
 
+.m-ts-y--90--rv {
+  -webkit-transform: translateY(-90%);
+          transform: translateY(-90%); }
+
 .m-ts-y--80 {
   -webkit-transform: translateY(80%);
           transform: translateY(80%); }
+
+.m-ts-y--80--rv {
+  -webkit-transform: translateY(-80%);
+          transform: translateY(-80%); }
 
 .m-ts-y--0 {
   -webkit-transform: translateY(0%);

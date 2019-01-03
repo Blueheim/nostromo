@@ -5163,11 +5163,20 @@ button {
 .m-ts-y--100 {
   transform: translateY(100%); }
 
+.m-ts-y--100--rv {
+  transform: translateY(-100%); }
+
 .m-ts-y--90 {
   transform: translateY(90%); }
 
+.m-ts-y--90--rv {
+  transform: translateY(-90%); }
+
 .m-ts-y--80 {
   transform: translateY(80%); }
+
+.m-ts-y--80--rv {
+  transform: translateY(-80%); }
 
 .m-ts-y--0 {
   transform: translateY(0%); }
