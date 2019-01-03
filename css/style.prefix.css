@@ -4780,6 +4780,12 @@ button {
   justify-content: space-between;
   align-items: center; }
 
+.m-fx-cl--sb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column; }
+
 .m-al--st {
   align-self: start; }
 
