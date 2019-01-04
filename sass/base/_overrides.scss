@@ -1,0 +1,120 @@
+.o-dp-none {
+  display: none !important;
+}
+
+.o-op--0 {
+  opacity: 0 !important;
+}
+
+.o-op--1 {
+  opacity: 1 !important;
+}
+
+
+.o-bg-tp {
+  background-color: transparent !important;
+}
+
+/* Width */
+
+.o-w-100 {
+  width: 100% !important;
+}
+
+/* Height */
+
+.o-h-md {
+  height: 8rem !important;
+}
+
+.o-h-50 {
+  height: 50%;
+}
+
+/* Positionning */
+.o-jc-en {
+  justify-content: flex-end !important;
+}
+
+.o-align-self-stretch {
+  align-self: stretch !important;
+}
+
+.o-align-self-start {
+  align-self: flex-start !important;
+}
+
+.o-align-self-end {
+  align-self: flex-end !important;
+}
+
+/* Grid */
+.o-row-span-2 {
+  grid-row: span 2;
+}
+
+.o-row-span-3 {
+  grid-row: span 3;
+}
+
+/* TEXT  */
+
+.o-tx--c {
+  text-align: center !important;
+}
+
+.o-tx--l {
+  text-align: left !important;
+}
+
+.o-tx--r {
+  text-align: right !important;
+}
+
+/* Transforms */
+
+@each $suffix, $origin in $origins {
+  .m-og--#{$suffix} {
+    transform-origin: $origin;
+  }
+}
+
+.o {
+  @each $suffixA, $valueA in $transforms {
+
+    &#{$suffixA} {
+
+      @each $suffixB, $valueB in $valueA {
+          
+          &#{$suffixB} {
+
+            @each $suffixC, $valueC in $valueB {
+
+              @if (type-of($valueC) != 'map') {
+                &#{$suffixC} {
+
+                  transform: #{$valueC} !important;
+                }
+              } @else {
+
+                &#{$suffixC} {
+
+                  @each $suffixD, $valueD in $valueC {
+                  
+                    &#{$suffixD}{
+                      transform: #{$valueD} !important;
+                    }
+
+                  }
+
+                }
+
+               
+              }
+            
+            } 
+        }
+      }
+    }
+  }
+}

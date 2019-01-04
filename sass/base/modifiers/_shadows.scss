@@ -1,51 +1,68 @@
 .m {
-  &-sw-ty {
-    &--dk {
-      box-shadow: $shadow-dark-tiny;
+
+  &-sw {
+
+    box-shadow: 0 0 5px transparentize(color('black'), 0.7);
+
+    @each $theme in $themes {
+      $color: $theme;
+
+      &-#{$theme} {
+        box-shadow: 0 0 5px transparentize(color($color), 0.7);
+      }
     }
 
-    &--lt {
-      box-shadow: $shadow-light-tiny;
+    @each $suffix, $size in $sizes {
+      $x-offset: $size / $shadow-div;
+      $y-offset: $size / $shadow-div;
+      $blur: $size;
+  
+      &-#{$suffix} {
+        box-shadow: 0 0 $blur transparentize(color('black'), 0.7);
+
+        &--x {
+          box-shadow: $x-offset 0 $blur transparentize(color('black'), 0.7);
+
+          &--rv {
+            box-shadow: -$x-offset 0 $blur transparentize(color('black'), 0.7);
+          }
+        }
+
+        &--y {
+          box-shadow: 0 $y-offset $blur transparentize(color('black'), 0.7);
+
+          &--rv {
+            box-shadow: 0 -$y-offset $blur transparentize(color('black'), 0.7);
+          }
+        }
+
+        @each $theme in $themes {
+          $color: $theme;
+    
+          &-#{$theme} {
+            box-shadow: 0 0 $blur transparentize(color($color), 0.7);
+
+            &--x {
+              box-shadow: $x-offset 0 $blur transparentize(color($color), 0.7);
+    
+              &--rv {
+                box-shadow: -$x-offset 0 $blur transparentize(color($color), 0.7);
+              }
+            }
+    
+            &--y {
+              box-shadow: 0 $y-offset $blur transparentize(color($color), 0.7);
+    
+              &--rv {
+                box-shadow: 0 #{-$y-offset} $blur transparentize(color($color), 0.7);
+              }
+            }
+          }
+        }
+      }
+  
     }
+
   }
 
-  &-sw-sm {
-    &--dk {
-      box-shadow: $shadow-dark-small;
-    }
-
-    &--lt {
-      box-shadow: $shadow-light-small;
-    }
-  }
-
-  &-sw-md {
-    &--dk {
-      box-shadow: $shadow-dark-medium;
-    }
-
-    &--lt {
-      box-shadow: $shadow-light-medium;
-    }
-  }
-
-  &-sw-bg {
-    &--dk {
-      box-shadow: $shadow-dark-big;
-    }
-
-    &--lt {
-      box-shadow: $shadow-light-big;
-    }
-  }
-
-  &-sw-hg {
-    &--dk {
-      box-shadow: $shadow-dark-huge;
-    }
-
-    &--lt {
-      box-shadow: $shadow-light-huge;
-    }
-  }
 }

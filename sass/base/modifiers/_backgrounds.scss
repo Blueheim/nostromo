@@ -20,6 +20,10 @@
       background: gradient-linear(to left, color($color-light), color($color-dark));
     }
 
+    &--r {
+      background: gradient-linear(to right, color($color-light), color($color-dark));
+    }
+
     &--tl {
       background: gradient-linear(to top left, color($color-light), color($color-dark));
     }
@@ -40,4 +44,8 @@
 
 .m-bg-white {
   background-color: color('white');
+}
+
+.m-bg-glass {
+  background: rgba(255, 255, 255, .2);
 }

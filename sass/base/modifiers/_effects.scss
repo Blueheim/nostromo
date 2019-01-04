@@ -1,0 +1,12 @@
+$blend-modes:
+('my': multiply,
+'ov': overlay,
+'sn': screen);
+
+.m-bm {
+  @each $suffix, $mode in $blend-modes {
+    &-#{$suffix} {
+      mix-blend-mode: $mode;
+    }
+  }
+}

@@ -1,40 +1,105 @@
-.m-ab--c {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+$flex-properties: 
+('c': center, 
+'sa' : space-around, 
+'sb': space-between, 
+'en': flex-end,
+'st': flex-start);
+
+
+.m-ab {
+
+
+  &-of {
+    &--t {
+      @include absolute($top: 100%, $left: 0, $width: 100%, $height: 100%);
+    }
+
+    &--l {
+      @include absolute($top: 0, $left: -100%, $width: 100%, $height: 100%);
+    }
+
+    &--b {
+      @include absolute($bottom: -100%, $left: 0, $width: 100%, $height: 100%);
+    }
+
+    &--r {
+      @include absolute($top: 0, $right: 100%, $width: 100%, $height: 100%);
+    }
+  }
+
+  &--tl {
+    @include absolute($top: 0, $left: 0, $width: 100%, $height: 100%);
+  }
+
+  &--c {
+    @include absolute($top: 50%, $left: 50%, $width: 100%, $height: 100%);
+  }
+  
 }
 
-.m-fx--c {
-  @include flex-center;
+.m-ab {
+
+  &--tl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &--bl {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  
 }
 
-.m-fx--sa {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+.m-fx {
+  @include flex;
+
+  &-no {
+    flex: none;
+  }
+
+  @each $suffixA, $valueA in $flex-properties  {
+
+    &--#{$suffixA} {
+      @include flex(row, $valueA);
+    
+    }
+
+    &-cl {
+
+      &--#{$suffixA} {
+        @include flex(column, $valueA);
+      }
+    
+    }
+
+    @each $suffixB, $valueB in $flex-properties {
+      &--#{$suffixA}--#{$suffixB} {
+        @include flex(row, $valueA, $valueB);
+      }
+
+      &-cl {
+
+        &--#{$suffixA}--#{$suffixB} {
+          @include flex(column, $valueA, $valueB);
+        }
+      
+      }
+    }
+
+  }
+    
 }
 
-.m-fx--sb {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.m-fx-cl--sb {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: column;
-}
 
 .m-al--st {
   align-self: start;
-}
-
-.m-fx-cl--c {
-  @include flex-center;
-  flex-direction: column;
 }
 
 .m-jc-en {

@@ -22,13 +22,23 @@
   height: $height;
 }
 
+@mixin absolute($top: null, $left: null, $right: null, $bottom: null, $width: null, $height: null) {
+  position: absolute;
+  top: $top;
+  left: $left;
+  right: $right;
+  bottom: $bottom;
+  width: $width;
+  height: $height;
+}
+
 @mixin flex-center() {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-@mixin flex($justify: stretch, $align: stretch, $direction: row) {
+@mixin flex($direction: row, $justify: stretch, $align: stretch) {
   display: flex;
   flex-direction: $direction;
   justify-content: $justify;

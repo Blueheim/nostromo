@@ -1,11 +1,13 @@
 # USED ABBREVIATIONS
 
 ab: absolute
+af: after
 an: animation
 al: align
 bg: background
 bd: border
 b: bottom
+bf: before
 bl: bottom left
 br: bottom right
 c: center
@@ -13,6 +15,7 @@ co: color
 cl: column
 cm: comp
 cp: clip
+bm: blend-mode
 bw: backwards
 dk: dark
 dl: delay
@@ -35,6 +38,9 @@ lg: large
 lt: light
 md: medium
 mg: margin
+my: multiply
+no: none
+of: offset
 og: origin
 op: opacity
 ov: overlay
@@ -42,6 +48,7 @@ pd: padding
 pp: property
 sa: space-around
 sc: scale
+sn: screen
 sk: skew
 sm: small
 st: start

@@ -1,14 +1,3 @@
-$origins: (
-  'l': left,
-  'r': right,
-  'c': center,
-  't': top,
-  'b': bottom,
-  'tl': top left,
-  'tr': top right,
-  'bl': bottom left,
-  'br': bottom right,
-);
 
 @each $suffix, $origin in $origins {
   .m-og--#{$suffix} {
@@ -16,54 +5,42 @@ $origins: (
   }
 }
 
-.m-sc-x--0 {
-  transform: scaleX(0);
-}
+.m {
+  @each $suffixA, $valueA in $transforms {
 
-.m-sc-x--1 {
-  transform: scaleX(1);
-}
+    &#{$suffixA} {
 
-.m-sc-y--0 {
-  transform: scaleY(0);
-}
+      @each $suffixB, $valueB in $valueA {
+          
+          &#{$suffixB} {
 
-.m-sc-y--1 {
-  transform: scaleY(1);
-}
+            @each $suffixC, $valueC in $valueB {
 
-.m-ts-y--100 {
-  transform: translateY(100%);
-}
+              @if (type-of($valueC) != 'map') {
+                &#{$suffixC} {
 
-.m-ts-y--100--rv {
-  transform: translateY(-100%);
-}
+                  transform: #{$valueC};
+                }
+              } @else {
 
-.m-ts-y--90 {
-  transform: translateY(90%);
-}
+                &#{$suffixC} {
 
-.m-ts-y--90--rv {
-  transform: translateY(-90%);
-}
+                  @each $suffixD, $valueD in $valueC {
+                  
+                    &#{$suffixD}{
+                      transform: #{$valueD};
+                    }
 
-.m-ts-y--80 {
-  transform: translateY(80%);
-}
+                  }
 
-.m-ts-y--80--rv {
-  transform: translateY(-80%);
-}
+                }
 
-.m-ts-y--0 {
-  transform: translateY(0%);
-}
-
-.m-rt--90 {
-  transform: rotate(90deg);
-}
-
-.m-rt--180 {
-  transform: rotate(180deg);
+               
+              }
+            
+            } 
+        }
+      }
+    }
+  }
 }
