@@ -22,14 +22,12 @@
   height: $height;
 }
 
-@mixin absolute($top: null, $left: null, $right: null, $bottom: null, $width: null, $height: null) {
+@mixin absolute($top: null, $left: null, $right: null, $bottom: null) {
   position: absolute;
   top: $top;
   left: $left;
   right: $right;
   bottom: $bottom;
-  width: $width;
-  height: $height;
 }
 
 @mixin flex-center() {

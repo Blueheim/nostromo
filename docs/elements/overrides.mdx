@@ -1,0 +1,46 @@
+---
+name: Overrides
+---
+
+import { Playground } from 'docz';
+import '../../docs.scss'
+import DocumentationWrapper from '../DocumentationWrapper.js'
+
+# Overrrides
+
+Overrides bypass natural specificity with !important keyword. Most likely to be used temporary to hide an element, 
+trigger a transition effect...
+
+Should be fine tuned with !notveryimportant and !veryimportant in the future.
+
+prefix: `.o-`
+
+Follow the same convention than their `.m-` counterpart
+
+# Display
+
+`.o-dp--no`: override display to none
+`.o-op--1`:  override opacity to 1
+`.o-op--0`: override opacity to 0
+
+# Transforms
+
+## Origin
+
+`.o-og-{l | r | c | t | b | tl | tr | bl | br }`
+
+## Translate
+
+`o-ts[ -x | -y ]--{ 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 }[--rv]`
+
+## Scale
+
+`o-sc[ -x | -y ]--{ 0 | 1 }`
+
+## Rotate
+
+`o-rt--{ 90 | 180 }`
+
+# Skew
+
+`o-sk[ -x | -y ]--{ 0 | 10 | 20 | 30 | 40 | 50 | 60 | 70 | 80 | 90 | 100 }[--rv]`

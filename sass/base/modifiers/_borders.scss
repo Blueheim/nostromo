@@ -4,19 +4,19 @@
   .m-bd-#{$suffix} {
     border: #{$i}px solid currentColor;
 
-    &--l {
+    &-l {
       border-left: #{$i}px solid currentColor;
     }
 
-    &--r {
+    &-r {
       border-right: #{$i}px solid currentColor;
     }
 
-    &--t {
+    &-t {
       border-top: #{$i}px solid currentColor;
     }
 
-    &--b {
+    &-b {
       border-bottom: #{$i}px solid currentColor;
     }
 
@@ -31,19 +31,19 @@
       &-#{$theme} {
         border: #{$i}px solid color($color);
 
-        &--l {
+        &-l {
           border-left: #{$i}px solid color($color);
         }
 
-        &--r {
+        &-r {
           border-right: #{$i}px solid color($color);
         }
 
-        &--t {
+        &-t {
           border-top: #{$i}px solid color($color);
         }
 
-        &--b {
+        &-b {
           border-bottom: #{$i}px solid color($color);
         }
       }

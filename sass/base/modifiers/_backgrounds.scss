@@ -8,35 +8,35 @@
   }
 
   .m-bg-gd-#{$theme} {
-    &--t {
+    &-t {
       background: gradient-linear(to top, color($color-light), color($color-dark));
     }
 
-    &--b {
+    &-b {
       background: gradient-linear(to bottom, color($color-light), color($color-dark));
     }
 
-    &--l {
+    &-l {
       background: gradient-linear(to left, color($color-light), color($color-dark));
     }
 
-    &--r {
+    &-r {
       background: gradient-linear(to right, color($color-light), color($color-dark));
     }
 
-    &--tl {
+    &-tl {
       background: gradient-linear(to top left, color($color-light), color($color-dark));
     }
 
-    &--bl {
+    &-bl {
       background: gradient-linear(to bottom left, color($color-light), color($color-dark));
     }
 
-    &--tr {
+    &-tr {
       background: gradient-linear(to top right, color($color-light), color($color-dark));
     }
 
-    &--br {
+    &-br {
       background: gradient-linear(to bottom right, color($color-light), color($color-dark));
     }
   }

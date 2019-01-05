@@ -10,17 +10,17 @@
     background-color: color($color);
     color: color($font-color);
 
-    &--rv {
+    &-rv {
       background-color: color($font-color);
       color: color($color);
     }
 
-    &--iv {
+    &-iv {
       background-color: invert(color($color));
       color: invert(color($font-color));
     }
 
-    &--cm {
+    &-cm {
       background-color: complement(color($color));
       color: complement(color($font-color));
     }

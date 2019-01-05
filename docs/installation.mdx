@@ -1,0 +1,74 @@
+---
+name: Installation
+---
+
+# Quick installation instructions
+
+Command: `npm i nostromo-css`
+
+css file location: 'nostromo-css/css/style.css';
+
+# Customization with sass
+
+Configure your project to work with sass with or without a loader.
+
+Create a sass file in your project folder:
+
+Example: `src/sass/nostromo.config.scss`
+
+In this file add:
+
+<div style={{ backgroundColor: '#EEF' }}>
+<p>@charset "utf-8";<br/>
+@import 'node_modules/nostromo-css/sass/helpers/variables';<br/>
+@import 'node_modules/nostromo-css/sass/helpers/theme';</p>
+</div>
+
+<div style={{ backgroundColor: '#EEF' }}>
+Add your customization:
+
+<div style={{ fontFamily: 'monospace', whiteSpace: 'pre-wrap', wordWrap: 'break-word' }}>
+$my-sizes: (
+    'md': 3.3rem,
+    'xh': 6.5rem,
+) !default;
+</div>
+
+<div style={{ fontFamily: 'monospace', whiteSpace: 'pre' }}>
+$my-root-sizes: (
+    'tiny': 40%,
+    'huge': 80%
+) !default;
+</div>
+
+<pre>
+$my-colors: (
+  'primary': #0984e3,
+  'alert': orange,
+  'font-info': grey
+);
+</pre>
+
+<pre>
+$my-fonts: (
+  'primary': 'Roboto', sans serif
+  'secondary': 'Lato', sans serif
+);
+</pre>
+
+// Merge
+
+<div style={{ fontFamily: 'monospace', whiteSpace: 'pre-line', wordWrap: 'break-word' }}>
+$route-sizes: map-merge($route-sizes, $my-root-sizes);
+$sizes: map-merge($sizes, $my-sizes);
+$colors: map-merge($colors, $my-colors);
+$fonts: map-merge($fonts, $my-fonts);
+</div>
+
+
+<pre>
+@import 'node_modules/nostromo-css/default.scss';
+</pre>
+
+</div>
+

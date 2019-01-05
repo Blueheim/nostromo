@@ -8,6 +8,7 @@ bg: background
 bd: border
 b: bottom
 bf: before
+bk: block
 bl: bottom left
 br: bottom right
 c: center
@@ -21,6 +22,7 @@ dk: dark
 dl: delay
 dp: display
 dr: duration
+ef: effect
 en: end
 et: etched
 fm: fill-mode
@@ -30,6 +32,7 @@ fx: flex
 gd: gradient
 gr: grid
 h: horizontal
+ht: height
 hv: hover
 iv: invert
 jc: justify-content
@@ -48,6 +51,7 @@ pd: padding
 pp: property
 sa: space-around
 sc: scale
+sh: stretch
 sn: screen
 sk: skew
 sm: small
@@ -58,6 +62,7 @@ rd: radius
 rt: rotate
 rv: reverse
 rw: row
+tc: top center
 tn: transition
 tf: transform
 t: top
@@ -70,6 +75,7 @@ tx: text
 ty: tiny
 v: vertical
 wt: weight
+wd: width
 x: x
 xt: very tiny
 xs: very small

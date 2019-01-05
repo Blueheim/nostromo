@@ -12,18 +12,18 @@ html {
   -webkit-text-size-adjust: 100%;
 
   //Mobile first
-  font-size: map-get($root-percent-size, 'small');
+  font-size: map-get($root-sizes, 'small');
 
   @include respond-to('medium') {
-    font-size: map-get($root-percent-size, 'medium');
+    font-size: map-get($root-sizes, 'medium');
   }
 
   @include respond-to('large') {
-    font-size: map-get($root-percent-size, 'large');
+    font-size: map-get($root-sizes, 'large');
   }
 
   @include respond-to('huge') {
-    font-size: map-get($root-percent-size, 'huge');
+    font-size: map-get($root-sizes, 'huge');
   }
 }
 

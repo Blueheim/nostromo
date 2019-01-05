@@ -28,23 +28,23 @@
 
 /* ANIMATIONS */
 .m-an-movein {
-  &--l {
+  &-l {
     animation-name: moveInLeft;
   }
 
-  &--r {
+  &-r {
     animation-name: moveInRight;
   }
 }
 
 .m-an-scalein {
-  &--x {
+  &-x {
     animation-name: scaleInX;
   }
 }
 
 .m-an-bouncein {
-  &--t {
+  &-t {
     animation-name: bounceInTop;
   }
 }

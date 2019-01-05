@@ -20,18 +20,18 @@
       &-#{$suffix} {
         box-shadow: 0 0 $blur transparentize(color('black'), 0.7);
 
-        &--x {
+        &-x {
           box-shadow: $x-offset 0 $blur transparentize(color('black'), 0.7);
 
-          &--rv {
+          &-rv {
             box-shadow: -$x-offset 0 $blur transparentize(color('black'), 0.7);
           }
         }
 
-        &--y {
+        &-y {
           box-shadow: 0 $y-offset $blur transparentize(color('black'), 0.7);
 
-          &--rv {
+          &-rv {
             box-shadow: 0 -$y-offset $blur transparentize(color('black'), 0.7);
           }
         }
@@ -42,18 +42,18 @@
           &-#{$theme} {
             box-shadow: 0 0 $blur transparentize(color($color), 0.7);
 
-            &--x {
+            &-x {
               box-shadow: $x-offset 0 $blur transparentize(color($color), 0.7);
     
-              &--rv {
+              &-rv {
                 box-shadow: -$x-offset 0 $blur transparentize(color($color), 0.7);
               }
             }
     
-            &--y {
+            &-y {
               box-shadow: 0 $y-offset $blur transparentize(color($color), 0.7);
     
-              &--rv {
+              &-rv {
                 box-shadow: 0 #{-$y-offset} $blur transparentize(color($color), 0.7);
               }
             }

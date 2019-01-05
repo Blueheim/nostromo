@@ -1,18 +1,18 @@
-.m-op--0 {
+.m-op-0 {
   opacity: 0;
 }
 
-.m-op--1 {
+.m-op-1 {
   opacity: 1;
 }
 
-.m-dp-none {
+.m-dp-no {
   display: none;
 }
 
 @each $name, $value in $breakpoints {
   @if ($name != 'zero') {
-    .m-dp-none--#{$name} {
+    .m-dp-no-#{$name} {
       @include respond-to('zero', $name) {
         display: none;
       }

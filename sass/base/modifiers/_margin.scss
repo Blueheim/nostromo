@@ -2,28 +2,30 @@
   .m-mg-#{$suffix} {
     margin: $size;
 
-    &--l {
+    &-l {
       margin-left: $size;
     }
 
-    &--r {
+    &-r {
       margin-right: $size;
     }
 
-    &--t {
+    &-t {
       margin-top: $size;
     }
 
-    &--b {
+    &-b {
       margin-bottom: $size;
     }
 
-    &--v {
-      margin: $size 0;
+    &-v {
+      margin-top: $size;
+      margin-bottom: $size;
     }
 
-    &--h {
-      margin: 0 $size;
+    &-h {
+      margin-left: $size;
+      margin-right: $size;
     }
   }
 
@@ -36,37 +38,37 @@
       }
 
       .m-mg-#{$suffix} {
-        &--l--#{$name} {
+        &-l-#{$name} {
           @include respond-to('zero', $name) {
             margin-left: $size;
           }
         }
 
-        &--r--#{$name} {
+        &-r-#{$name} {
           @include respond-to('zero', $name) {
             margin-right: $size;
           }
         }
 
-        &--t--#{$name} {
+        &-t-#{$name} {
           @include respond-to('zero', $name) {
             margin-top: $size;
           }
         }
 
-        &--b--#{$name} {
+        &-b-#{$name} {
           @include respond-to('zero', $name) {
             margin-bottom: $size;
           }
         }
 
-        &--v--#{$name} {
+        &-v-#{$name} {
           @include respond-to('zero', $name) {
             margin: $size 0;
           }
         }
 
-        &--h--#{$name} {
+        &-h-#{$name} {
           @include respond-to('zero', $name) {
             margin: 0 $size;
           }

@@ -3,10 +3,24 @@ $blend-modes:
 'ov': overlay,
 'sn': screen);
 
-.m-bm {
+.m-ef-bm {
   @each $suffix, $mode in $blend-modes {
     &-#{$suffix} {
       mix-blend-mode: $mode;
     }
   }
 }
+
+.m-ef-hv--1 {
+  &:hover {
+    transform: translateY(10%);
+    box-shadow: 0 1rem 2rem transparentize(color('black'), 0.7);
+  }
+
+  &:active,
+  &focus {
+    transform: translateY(5%);
+    box-shadow: 0 0.5rem 1rem transparentize(color('black'), 0.7);
+  }
+}
+

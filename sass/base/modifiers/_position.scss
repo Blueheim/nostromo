@@ -3,62 +3,61 @@ $flex-properties:
 'sa' : space-around, 
 'sb': space-between, 
 'en': flex-end,
+'sh': stretch,
 'st': flex-start);
 
+$absolute-offset-properties:
+(
+  //Order: top left bottom right
+  't': null 0 100% null,
+  'l': 0 null null 100%,
+  'b': 100% 0 null null,
+  'r': 0 100% null null,
+  'tl': null null 100% 100%,
+  'tr': null 100% 100% null,
+  'bl': 100% null null 100%,
+  'br': 100% 100% null null
+);
+
+$absolute-center-properties:
+(
+  //Order: top left bottom right
+  'c': 50% 50% null null,
+  'tc': 0 50% null null,
+  'lc': 50% 0 null null,
+  'bc': null 50% 0 null,
+  'rc': 50% null null 0
+);
+
 
 .m-ab {
 
+  @include absolute($top: 0, $left: 0);
 
   &-of {
-    &--t {
-      @include absolute($top: 100%, $left: 0, $width: 100%, $height: 100%);
-    }
 
-    &--l {
-      @include absolute($top: 0, $left: -100%, $width: 100%, $height: 100%);
-    }
-
-    &--b {
-      @include absolute($bottom: -100%, $left: 0, $width: 100%, $height: 100%);
-    }
-
-    &--r {
-      @include absolute($top: 0, $right: 100%, $width: 100%, $height: 100%);
+    @each $suffix, $value in $absolute-offset-properties {
+      &-#{$suffix} {
+        @include absolute($top: nth($value, 1), $left: nth($value, 2), $bottom: nth($value, 3), $right: nth($value, 4));
+      }
     }
   }
 
-  &--tl {
-    @include absolute($top: 0, $left: 0, $width: 100%, $height: 100%);
-  }
-
-  &--c {
-    @include absolute($top: 50%, $left: 50%, $width: 100%, $height: 100%);
-  }
-  
-}
-
-.m-ab {
-
-  &--tl {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  &--bl {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  @each $suffix, $value in $absolute-center-properties {
+    &-#{$suffix} {
+      @include absolute($top: nth($value, 1), $left: nth($value, 2), $bottom: nth($value, 3), $right: nth($value, 4));
+    }
   }
   
 }
 
 .m-fx {
+
   @include flex;
+
+  &-cl {
+    @include flex(column);
+  }
 
   &-no {
     flex: none;
@@ -66,39 +65,33 @@ $flex-properties:
 
   @each $suffixA, $valueA in $flex-properties  {
 
-    &--#{$suffixA} {
-      @include flex(row, $valueA);
-    
-    }
-
-    &-cl {
-
-      &--#{$suffixA} {
-        @include flex(column, $valueA);
-      }
-    
-    }
-
     @each $suffixB, $valueB in $flex-properties {
-      &--#{$suffixA}--#{$suffixB} {
-        @include flex(row, $valueA, $valueB);
+
+      &-#{$suffixA}-#{$suffixB} {
+        @include flex(row, $justify: $valueA, $align: $valueB);
+      }
+
+      &-#{$suffixB}-#{$suffixA} {
+        @include flex(row, $justify: $valueB, $align: $valueA);
       }
 
       &-cl {
 
-        &--#{$suffixA}--#{$suffixB} {
-          @include flex(column, $valueA, $valueB);
+        &-#{$suffixA}-#{$suffixB} {
+          @include flex(row, $justify: $valueA, $align: $valueB);
+        }
+  
+        &-#{$suffixB}-#{$suffixA} {
+          @include flex(row, $justify: $valueB, $align: $valueA);
         }
       
       }
     }
-
   }
-    
 }
 
 
-.m-al--st {
+.m-al-st {
   align-self: start;
 }
 
@@ -106,14 +99,14 @@ $flex-properties:
   justify-content: flex-end;
 }
 
-.m-tx--c {
+.m-tx-c {
   text-align: center;
 }
 
-.m-tx--l {
+.m-tx-l {
   text-align: left;
 }
 
-.m-tx--r {
+.m-tx-r {
   text-align: right;
 }

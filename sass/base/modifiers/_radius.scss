@@ -8,22 +8,22 @@
   .m-rd-#{$suffix} {
     border-radius: $size;
 
-    &--l {
+    &-l {
       border-top-left-radius: $size;
       border-bottom-left-radius: $size;
     }
 
-    &--r {
+    &-r {
       border-top-right-radius: $size;
       border-bottom-right-radius: $size;
     }
 
-    &--b {
+    &-b {
       border-bottom-left-radius: $size;
       border-bottom-right-radius: $size;
     }
 
-    &--t {
+    &-t {
       border-top-left-radius: $size;
       border-top-right-radius: $size;
     }
@@ -33,22 +33,22 @@
 .m-rd-xx {
   border-radius: 180286px;
 
-  &--l {
+  &-l {
     border-top-left-radius: 180286px;
     border-bottom-left-radius: 180286px;
   }
 
-  &--r {
+  &-r {
     border-top-right-radius: 180286px;
     border-bottom-right-radius: 180286px;
   }
 
-  &--b {
+  &-b {
     border-bottom-left-radius: 180286px;
     border-bottom-right-radius: 180286px;
   }
 
-  &--t {
+  &-t {
     border-top-left-radius: 180286px;
     border-top-right-radius: 180286px;
   }

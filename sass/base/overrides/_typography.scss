@@ -1,0 +1,17 @@
+@each $suffix, $size in $sizes {
+  .o-fs-#{$suffix} {
+    font-size: $size !important;
+  }
+}
+
+.o-tx--c {
+  text-align: center !important;
+}
+
+.o-tx--l {
+  text-align: left !important;
+}
+
+.o-tx--r {
+  text-align: right !important;
+}

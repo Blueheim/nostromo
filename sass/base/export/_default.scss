@@ -1,7 +1,6 @@
 @charset 'utf-8';
 
 @import '../reset';
-@import '../overrides';
 @import '../typography';
 @import '../timings';
 @import '../animations';
@@ -23,3 +22,7 @@
 @import '../modifiers/animations';
 @import '../modifiers/timings';
 @import '../modifiers/transform';
+@import '../overrides/display';
+@import '../overrides/sizes';
+@import '../overrides/transforms';
+@import '../overrides/typography';

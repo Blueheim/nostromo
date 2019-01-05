@@ -2,71 +2,73 @@
   .m-pd-#{$suffix} {
     padding: $size;
 
-    &--l {
+    &-l {
       padding-left: $size;
     }
 
-    &--r {
+    &-r {
       padding-right: $size;
     }
 
-    &--t {
+    &-t {
       padding-top: $size;
     }
 
-    &--b {
+    &-b {
       padding-bottom: $size;
     }
 
-    &--v {
-      padding: $size 0;
+    &-v {
+      padding-top: $size;
+      padding-bottom: $size;
     }
 
-    &--h {
-      padding: 0 $size;
+    &-h {
+      padding-left: $size;
+      padding-right: $size;
     }
   }
 
   @each $name, $value in $breakpoints {
     @if ($name != 'zero') {
-      .m-pd-#{$suffix}--#{$name} {
+      .m-pd-#{$suffix}-#{$name} {
         @include respond-to('zero', $name) {
           padding: $size;
         }
       }
 
       .m-pd-#{$suffix} {
-        &--l--#{$name} {
+        &-l-#{$name} {
           @include respond-to('zero', $name) {
             padding-left: $size;
           }
         }
 
-        &--r--#{$name} {
+        &-r-#{$name} {
           @include respond-to('zero', $name) {
             padding-right: $size;
           }
         }
 
-        &--t--#{$name} {
+        &-t-#{$name} {
           @include respond-to('zero', $name) {
             padding-top: $size;
           }
         }
 
-        &--b--#{$name} {
+        &-b-#{$name} {
           @include respond-to('zero', $name) {
             padding-bottom: $size;
           }
         }
 
-        &--v--#{$name} {
+        &-v-#{$name} {
           @include respond-to('zero', $name) {
             padding: $size 0;
           }
         }
 
-        &--h--#{$name} {
+        &-h-#{$name} {
           @include respond-to('zero', $name) {
             padding: 0 $size;
           }
