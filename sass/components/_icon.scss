@@ -18,6 +18,18 @@
       fill: color($color);
     }
   }
+
+  &-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .image-link {
+      display: block;
+      width: 8%;
+    }
+  }
 }
 
 .svg-icon {

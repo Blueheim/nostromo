@@ -90,14 +90,16 @@ $absolute-center-properties:
   }
 }
 
+.m-al {
 
-.m-al-st {
-  align-self: start;
+  @each $suffix, $value in $flex-properties  {
+    &-#{$suffix} {
+      align-self: $value;
+    }
+  }
+  
 }
 
-.m-jc-en {
-  justify-content: flex-end;
-}
 
 .m-tx-c {
   text-align: center;

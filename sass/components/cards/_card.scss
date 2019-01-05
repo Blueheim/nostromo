@@ -1,78 +1,55 @@
 .card {
   position: relative;
-  height: auto;
-  // @include size(100%, auto);
-  transition: all 0.5s;
   transform-style: preserve-3d;
   perspective: 150rem;
 
-  &--vertical {
-    .card__side {
-      flex-direction: column;
-    }
+  // &--vertical {
+  //   .side {
+  //     flex-direction: column;
+  //   }
+  // }
 
-    .card__actions {
-      flex-direction: row;
-      align-self: stretch;
-    }
-  }
+  // &--horizontal {
+  //   .side {
+  //     flex-direction: column;
+  //     @include respond-to('large') {
+  //       flex-direction: row;
+  //     }
+  //   }
 
-  &--horizontal {
-    .card__side {
-      flex-direction: column;
-      @include respond-to('large') {
-        flex-direction: row;
-      }
-    }
+  //   .card__actions {
+  //     flex-direction: row;
 
-    .card__actions {
-      flex-direction: row;
+  //     @include respond-to('large') {
+  //       flex-direction: column;
+  //     }
+  //   }
+  // }
 
-      align-self: stretch;
+  // &--flip {
+  //   .card__side {
+  //     &--back {
+  //       @include respond-to('large') {
+  //         //Rotate to hide back
+  //         transform: rotateY(180deg);
+  //       }
+  //     }
+  //   }
 
-      @include respond-to('large') {
-        flex-direction: column;
-      }
-    }
-  }
+  //   &:hover .card__side--front {
+  //     @include respond-to('large') {
+  //       //transform: rotateY(0);
+  //       // Rotate to show back
+  //       transform: rotateY(-180deg);
+  //     }
+  //   }
 
-  &__side {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    @include size(100%, 100%);
-    backface-visibility: hidden;
-    overflow: hidden;
-    transition: all 0.8s ease;
-  }
-
-  &--flip {
-    .card__side {
-      &--back {
-        @include respond-to('large') {
-          //Rotate to hide back
-          transform: rotateY(180deg);
-        }
-      }
-    }
-
-    &:hover .card__side--front {
-      @include respond-to('large') {
-        //transform: rotateY(0);
-        // Rotate to show back
-        transform: rotateY(-180deg);
-      }
-    }
-
-    &:hover .card__side--back {
-      @include respond-to('large') {
-        transform: rotateY(0);
-      }
-    }
-  }
+  //   &:hover .card__side--back {
+  //     @include respond-to('large') {
+  //       transform: rotateY(0);
+  //     }
+  //   }
+  // }
 
   &__header {
     position: relative;
@@ -117,54 +94,4 @@
     }
   }
 
-  &__picture {
-    background-size: cover;
-    background-position: center;
-    height: 30%;
-    flex-grow: 1;
-    //height: 23rem;
-    // background-blend-mode: screen;
-    // clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    // -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-    // border-top-left-radius: $border-radius;
-    // border-top-right-radius: $border-radius;
-  }
-
-  &__actions {
-    display: flex;
-    align-self: stretch;
-
-    & > * {
-      flex-grow: 1;
-    }
-  }
-
-  &__footer {
-    .title {
-      display: grid;
-      grid-template-columns: 1fr max-content 1fr;
-      grid-column-gap: 1.5rem;
-      align-items: center;
-
-      &::before,
-      &::after {
-        content: '';
-        height: 1px;
-        display: block;
-        background-color: color('grey-light-2');
-      }
-    }
-
-    .icon-list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .image-link {
-        display: block;
-        width: 8%;
-      }
-    }
-  }
 }

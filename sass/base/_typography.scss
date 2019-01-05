@@ -52,10 +52,23 @@ body {
     background-image: linear-gradient(to right, color('tertiary-light'), color('tertiary-dark'));
     background-clip: text;
   }
+
+  &-5 {
+    display: grid;
+    grid-template-columns: 1fr max-content 1fr;
+    grid-column-gap: 1.5rem;
+    align-items: center;
+  
+    &::before,
+    &::after {
+      content: '';
+      height: 1px;
+      display: block;
+      background-color: color('grey-light-2');
+    }
+  }
 }
 
-.text {
-}
 
 // &:hover {
 //   transform: scale(1.1);

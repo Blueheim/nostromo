@@ -11,16 +11,67 @@ $blend-modes:
   }
 }
 
-.m-ef-hv--1 {
-  &:hover {
-    transform: translateY(10%);
-    box-shadow: 0 1rem 2rem transparentize(color('black'), 0.7);
+// .m-ef-hv--1 {
+//   &:hover {
+//     transform: translateY(10%);
+//     box-shadow: 0 1rem 2rem transparentize(color('black'), 0.7);
+//   }
+
+//   &:active,
+//   &focus {
+//     transform: translateY(5%);
+//     box-shadow: 0 0.5rem 1rem transparentize(color('black'), 0.7);
+//   }
+// }
+
+@each $theme in $themes {
+  $color: $theme;
+  $color-light: $theme + '-light';
+  $color-dark: $theme + '-dark';
+  $font-color: 'font-' + $theme;
+  $font-color-light: 'font-' + $theme + '-light';
+  $font-color-dark: 'font-' + $theme + '-dark';
+
+  .m-ef-hv-tx-#{$color}:hover {
+    color: color($color);
   }
 
-  &:active,
-  &focus {
-    transform: translateY(5%);
-    box-shadow: 0 0.5rem 1rem transparentize(color('black'), 0.7);
+  .m-ef-hv-bg-1 {
+
+    &.m-#{$theme} {
+
+      &:hover {
+        background-color: color($color-dark);
+        color: color($font-color-dark);
+      }
+  
+      &::after {
+        background-color: color($color);
+      }
+    }
+  }
+}
+
+.m-ef-hv-fp-1 {
+
+  .side-back {
+    @include respond-to('large') {
+      //Rotate to hide back
+      transform: rotateY(180deg);
+    }
+  }
+  
+  &:hover .side-front {
+    @include respond-to('large') {
+      // Rotate to show back
+      transform: rotateY(-180deg);
+    }
+  }
+  
+  &:hover .side-back {
+    @include respond-to('large') {
+      transform: rotateY(0);
+    }
   }
 }
 

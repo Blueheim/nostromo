@@ -26,6 +26,7 @@ ef: effect
 en: end
 et: etched
 fm: fill-mode
+fp: flip
 fw: forwards
 fs: font-size
 fx: flex
@@ -39,6 +40,7 @@ jc: justify-content
 l: left
 lg: large
 lt: light
+lw: lowercase
 md: medium
 mg: margin
 my: multiply
@@ -73,6 +75,7 @@ tr: top right
 ts: translate
 tx: text
 ty: tiny
+up: uppercase
 v: vertical
 wt: weight
 wd: width
