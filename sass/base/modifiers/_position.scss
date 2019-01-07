@@ -78,11 +78,11 @@ $absolute-center-properties:
       &-cl {
 
         &-#{$suffixA}-#{$suffixB} {
-          @include flex(row, $justify: $valueA, $align: $valueB);
+          @include flex(column, $justify: $valueA, $align: $valueB);
         }
   
         &-#{$suffixB}-#{$suffixA} {
-          @include flex(row, $justify: $valueB, $align: $valueA);
+          @include flex(column, $justify: $valueB, $align: $valueA);
         }
       
       }

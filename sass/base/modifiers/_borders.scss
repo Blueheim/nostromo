@@ -1,3 +1,5 @@
+$allThemes: join($themes, $greys);
+
 @each $suffix, $size in $sizes {
   $i: index(($sizes), ($suffix $size));
 
@@ -20,13 +22,10 @@
       border-bottom: #{$i}px solid currentColor;
     }
 
-    @each $theme in $themes {
+    @each $theme in $allThemes {
       $color: $theme;
       $color-light: $theme + '-light';
       $color-dark: $theme + '-dark';
-      $font-color: 'font-' + $theme;
-      $font-color-light: 'font-' + $theme + '-light';
-      $font-color-dark: 'font-' + $theme + '-dark';
 
       &-#{$theme} {
         border: #{$i}px solid color($color);

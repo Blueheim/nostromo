@@ -2,30 +2,80 @@
 name: Box
 ---
 
+import { Playground } from 'docz';
 import '../../docs.scss';
 import DocumentationWrapper from '../DocumentationWrapper.js';
 import photo from '../../img/photo.jpg';
 
-<DocumentationWrapper>
-  {/* <div class="box m-fx-cl m-mg-xh--v m-pd-hg--t m-rd-xt m-sw-xt">
-    <div class="m-ab--tc m-ts--50--rv">
-      <img class="image image--contain-center m-rd-xx" src={photo} />
-    </div>
-    <div class="box__content m-pd-ty">
-      <p>
-        lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba
-        lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba
-        lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba
-        lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba lorem ipsum blaba
-        lorem ipsum blaba
-      </p>
-    </div>
-  </div> */}
+# Box
 
-  <div style={{ height: '300px' }} class="box m-ef-hv-fp-1">
-    <div class="side side-front m-primary">
+The generic multipurpose box element
+
+# As a basic card
+
+<Playground>
+<DocumentationWrapper>
+  <div style={{ height: '400px' }} class="box m-bg-gd-primary-br m-rd-xt m-sw-ty-y">
+  </div>
+</DocumentationWrapper>
+</Playground>
+
+
+# As a Flip card
+
+Hover it to trigger effect
+
+<Playground>
+<DocumentationWrapper>
+  <div style={{ height: '400px' }} class="box m-rd-xt m-ef-hv-fp-y m-mg-md-b">
+    <div class="side side-front m-bg-gd-primary-br m-sw-ty-y m-tn-pp-tf m-tn-dr-1">
     </div>
-     <div class="side side-back m-secondary">
+    <div class="side side-back m-bg-gd-secondary-br m-sw-ty-y m-tn-pp-tf m-tn-dr-1">
+    </div>
+  </div>
+
+  <div style={{ height: '400px' }} class="box m-rd-xt m-ef-hv-fp-x">
+    <div class="side side-front m-bg-gd-primary-br m-sw-ty-y m-tn-pp-tf m-tn-dr-1">
+    </div>
+    <div class="side side-back m-bg-gd-secondary-br m-sw-ty-y m-tn-pp-tf m-tn-dr-1">
     </div>
   </div>
 </DocumentationWrapper>
+</Playground>
+
+# As a 2D Cube effect
+
+Hover it to trigger effect
+
+<Playground>
+<DocumentationWrapper>
+  <div style={{ height: '400px' }} class="box m-rd-xt m-ef-hv-cb2D-x m-mg-md-b">
+    <div class="side side-front m-bg-gd-primary-br m-tn-pp-tf m-tn-dr-1">
+    </div>
+    <div class="side side-back m-bg-gd-secondary-br m-tn-pp-tf m-tn-dr-1">
+    </div>
+  </div>
+</DocumentationWrapper>
+</Playground>
+
+# With slide in
+
+<Playground>
+<DocumentationWrapper>
+  <div style={{ height: '400px' }} class="box m-rd-xt m-ef-hv-si-b m-mg-md-b">
+    <div class="side side-front m-bg-gd-primary-br m-tn-dr-1">
+    </div>
+    <div class="side side-back m-tn-dr-1">
+      Hello how are you ?
+    </div>
+  </div>
+
+   <div style={{ height: '400px' }} class="box m-rd-xt m-ef-hv-si-r m-mg-md-b">
+    <div class="side side-front m-bg-gd-primary-br m-tn-pp-tf m-tn-dr-1">
+    </div>
+    <div class="side side-back m-tn-pp-tf m-tn-dr-1">
+      Hello how are you ?
+    </div>
+  </div>
+</DocumentationWrapper>
+</Playground>

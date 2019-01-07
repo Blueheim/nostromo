@@ -52,26 +52,139 @@ $blend-modes:
   }
 }
 
-.m-ef-hv-fp-1 {
+.m-ef-hv-fp{
 
-  .side-back {
-    @include respond-to('large') {
-      //Rotate to hide back
-      transform: rotateY(180deg);
+  &-x {
+    transform-style: preserve-3d;
+    perspective: 150rem;
+
+    .side-back {
+      @include respond-to('large') {
+        //Rotate to hide back
+        transform: rotateX(180deg);
+      }
+    }
+    
+    &:hover .side-front {
+      @include respond-to('large') {
+        // Rotate to show back
+        transform: rotateX(-180deg);
+      }
+    }
+    
+    &:hover .side-back {
+      @include respond-to('large') {
+        transform: rotateX(0);
+      }
     }
   }
   
-  &:hover .side-front {
-    @include respond-to('large') {
-      // Rotate to show back
-      transform: rotateY(-180deg);
+  &-y {
+
+    transform-style: preserve-3d;
+    perspective: 150rem;
+
+    .side-back {
+      @include respond-to('large') {
+        //Rotate to hide back
+        transform: rotateY(180deg);
+      }
     }
-  }
-  
-  &:hover .side-back {
-    @include respond-to('large') {
-      transform: rotateY(0);
+    
+    &:hover .side-front {
+      @include respond-to('large') {
+        // Rotate to show back
+        transform: rotateY(-180deg);
+      }
     }
+    
+    &:hover .side-back {
+      @include respond-to('large') {
+        transform: rotateY(0);
+      }
+    }
+
   }
 }
 
+
+.m-ef-hv-cb2D{
+
+  &-x {
+    .side-front {
+      
+      @include respond-to('large') {
+        transform-origin: top;
+        transform: translateY(0) rotateX(0deg);
+      }
+    }
+
+    &:hover .side-front {
+      @include respond-to('large') {
+        // Rotate to show back
+        transform: translateY(100%) rotateX(90deg);
+      }
+    }
+
+
+
+    .side-back {
+
+      @include respond-to('large') {
+        transform-origin: bottom;
+        //Rotate to hide back
+        transform: translateY(-100%) rotateX(90deg) ;
+      }
+    }
+    
+    
+    &:hover .side-back {
+      @include respond-to('large') {
+        transform: translateY(0) rotateX(0deg);
+      }
+    }
+  }
+
+}
+
+.m-ef-hv-si {
+
+  &-r {
+
+    overflow: hidden;
+
+    .side-back {
+
+      @include respond-to('large') {
+        transform: translateX(100%);
+      }
+    }
+    
+    
+    &:hover .side-back {
+      @include respond-to('large') {
+        transform: translateX(0%);
+      }
+    }
+  }
+
+  &-b {
+
+    overflow: hidden;
+
+    .side-back {
+
+      @include respond-to('large') {
+        transform: translateY(100%);
+      }
+    }
+    
+    
+    &:hover .side-back {
+      @include respond-to('large') {
+        transform: translateY(0%);
+      }
+    }
+  }
+
+}

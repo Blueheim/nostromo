@@ -12,6 +12,7 @@ bk: block
 bl: bottom left
 br: bottom right
 c: center
+cb: cube
 co: color
 cl: column
 cm: comp
@@ -52,6 +53,7 @@ ov: overlay
 pd: padding
 pp: property
 sa: space-around
+si: slide-in
 sc: scale
 sh: stretch
 sn: screen

@@ -54,5 +54,6 @@
   "bugs": {
     "url": "https://github.com/Blueheim/nostromo/issues"
   },
-  "homepage": "https://github.com/Blueheim/nostromo#readme"
+  "homepage": "https://github.com/Blueheim/nostromo#readme",
+  "dependencies": {}
 }

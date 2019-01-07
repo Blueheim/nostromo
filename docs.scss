@@ -3,6 +3,11 @@
 // For documentation only
 @import url('https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
 
+h1 {
+  font-family: inherit !important;
+  font-size: 3rem !important;
+}
+
 /* HELPERS */
 @import 'sass/helpers/export/default';
 /* VENDORS */
