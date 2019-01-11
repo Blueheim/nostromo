@@ -113,14 +113,14 @@
       }
     }
 
-    &__actions {
+    .nav__actions {
       align-self: stretch;
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
 
-    &__action {
+    .nav__action {
       cursor: pointer;
       height: 100%;
       display: flex;
@@ -133,7 +133,7 @@
       }
     }
 
-    &__search {
+    .nav__search {
       flex: 0 0 40%;
 
       @include flex-center;
