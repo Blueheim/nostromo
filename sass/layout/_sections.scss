@@ -23,7 +23,6 @@
   &__content {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
-    grid-gap: 2rem;
 
     @include respond-to('tiny') {
       grid-template-columns: repeat(auto-fit, minmax(40vw, 1fr));
