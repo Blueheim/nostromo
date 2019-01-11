@@ -30,9 +30,6 @@
 
     @include respond-to('large') {
       grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
-      align-items: start;
-      width: 80%;
-      margin: auto;
     }
   }
 }
