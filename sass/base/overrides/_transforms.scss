@@ -1,5 +1,5 @@
 @each $suffix, $origin in $origins {
-  .o-og--#{$suffix} {
+  .o-og-#{$suffix} {
     transform-origin: $origin !important;
   }
 }
