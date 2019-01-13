@@ -13,26 +13,26 @@ body {
 
   &-1 {
     text-transform: uppercase;
+    font-size: size('hg');
     letter-spacing: size('xs');
-    font-size: size('xh');
   }
 
   &-2 {
     text-transform: uppercase;
+    font-size: size('lg');
     letter-spacing: size('xt');
-    font-size: size('xl');
   }
 
   &-3 {
     text-transform: uppercase;
-    letter-spacing: size('xt');
     font-size: size('md');
+    letter-spacing: size('xt');
   }
 
   &-4 {
     text-transform: uppercase;
     font-size: size('sm');
-    letter-spacing: size('xt');
+    letter-spacing: size('xt') / 2;
   }
 
   &--primary {
@@ -53,12 +53,12 @@ body {
     background-clip: text;
   }
 
-  &-5 {
+  &-s1 {
     display: grid;
     grid-template-columns: 1fr max-content 1fr;
     grid-column-gap: 1.5rem;
     align-items: center;
-  
+
     &::before,
     &::after {
       content: '';
@@ -68,7 +68,6 @@ body {
     }
   }
 }
-
 
 // &:hover {
 //   transform: scale(1.1);
