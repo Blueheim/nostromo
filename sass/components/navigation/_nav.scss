@@ -18,9 +18,6 @@
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(100vw, 1fr));
       grid-gap: 2rem;
-      width: 80%;
-      margin: auto;
-      margin-top: 10rem;
 
       .nav-action--1 {
         font-weight: bold;
