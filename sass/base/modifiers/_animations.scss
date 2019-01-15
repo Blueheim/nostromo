@@ -27,6 +27,14 @@
 }
 
 /* ANIMATIONS */
+.m-an-fadein {
+  animation-name: fadeIn;
+}
+
+.m-an-fadeout {
+  animation-name: fadeOut;
+}
+
 .m-an-movein {
   &-l {
     animation-name: moveInLeft;
