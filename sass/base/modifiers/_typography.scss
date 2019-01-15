@@ -2,6 +2,16 @@
   .m-fs-#{$suffix} {
     font-size: $size;
   }
+
+  @each $name, $value in $breakpoints {
+    @if ($name != 'zero') {
+      .m-fs-#{$suffix}-#{$name} {
+        @include respond-to('zero', $name) {
+          font-size: $size;
+        }
+      }
+    }
+  }
 }
 
 @each $theme in $themes {
