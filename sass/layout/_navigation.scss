@@ -6,7 +6,6 @@
 
 .l-nav {
   height: $navbar-height;
-  width: 100%;
 
   &--transparent {
     @include transparent;
@@ -17,6 +16,7 @@
     left: 0;
     top: 0;
     z-index: 10;
+    width: 100vw;
   }
   // //box-shadow: -1rem 0rem 1rem transparentize(color('black'), 0.8);
   // height: 8rem;
