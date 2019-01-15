@@ -8062,15 +8062,15 @@ button {
     display: none !important; } }
 
 .l-nav {
-  height: 10vh;
-  width: 100%; }
+  height: 10vh; }
   .l-nav--transparent {
     background-color: transparent; }
   .l-nav--fixed {
     position: fixed;
     left: 0;
     top: 0;
-    z-index: 10; }
+    z-index: 10;
+    width: 100vw; }
 
 .l-app {
   display: grid;
@@ -8600,7 +8600,7 @@ button {
     padding: 0.7rem 2rem; }
   .control__helper {
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     pointer-events: none;
     transition: 0.5s; }
