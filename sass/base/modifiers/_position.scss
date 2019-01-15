@@ -1,15 +1,15 @@
-$flex-properties: 
-('c': center, 
-'sa' : space-around, 
-'sb': space-between, 
-'en': flex-end,
-'sh': stretch,
-'st': flex-start);
+$flex-properties: (
+  'c': center,
+  'sa': space-around,
+  'sb': space-between,
+  'en': flex-end,
+  'sh': stretch,
+  'st': flex-start,
+);
 
-$absolute-offset-properties:
-(
+$absolute-offset-properties: (
   //Order: top left bottom right
-  't': null 0 100% null,
+    't': null 0 100% null,
   'l': 0 null null 100%,
   'b': 100% 0 null null,
   'r': 0 100% null null,
@@ -19,23 +19,19 @@ $absolute-offset-properties:
   'br': 100% 100% null null
 );
 
-$absolute-center-properties:
-(
+$absolute-center-properties: (
   //Order: top left bottom right
-  'c': 50% 50% null null,
+    'c': 50% 50% null null,
   'tc': 0 50% null null,
   'lc': 50% 0 null null,
   'bc': null 50% 0 null,
   'rc': 50% null null 0
 );
 
-
 .m-ab {
-
   @include absolute($top: 0, $left: 0);
 
   &-of {
-
     @each $suffix, $value in $absolute-offset-properties {
       &-#{$suffix} {
         @include absolute($top: nth($value, 1), $left: nth($value, 2), $bottom: nth($value, 3), $right: nth($value, 4));
@@ -48,11 +44,9 @@ $absolute-center-properties:
       @include absolute($top: nth($value, 1), $left: nth($value, 2), $bottom: nth($value, 3), $right: nth($value, 4));
     }
   }
-  
 }
 
 .m-fx {
-
   @include flex;
 
   &-cl {
@@ -63,43 +57,46 @@ $absolute-center-properties:
     flex: none;
   }
 
-  @each $suffixA, $valueA in $flex-properties  {
-
+  @each $suffixA, $valueA in $flex-properties {
     @each $suffixB, $valueB in $flex-properties {
-
-      &-#{$suffixA}-#{$suffixB} {
-        @include flex(row, $justify: $valueA, $align: $valueB);
+      @if ($suffixB != 'sa' and $suffixB != 'sb') {
+        &-#{$suffixA}-#{$suffixB} {
+          @include flex(row, $justify: $valueA, $align: $valueB);
+        }
       }
 
-      &-#{$suffixB}-#{$suffixA} {
-        @include flex(row, $justify: $valueB, $align: $valueA);
+      @if ($suffixA != 'sa' and $suffixA != 'sb') {
+        &-#{$suffixB}-#{$suffixA} {
+          @include flex(row, $justify: $valueB, $align: $valueA);
+        }
       }
 
       &-cl {
+        @if ($suffixB != 'sa' and $suffixB != 'sb') {
+          &-#{$suffixA}-#{$suffixB} {
+            @include flex(column, $justify: $valueA, $align: $valueB);
+          }
+        }
 
-        &-#{$suffixA}-#{$suffixB} {
-          @include flex(column, $justify: $valueA, $align: $valueB);
+        @if ($suffixA != 'sa' and $suffixA != 'sb') {
+          &-#{$suffixB}-#{$suffixA} {
+            @include flex(column, $justify: $valueB, $align: $valueA);
+          }
         }
-  
-        &-#{$suffixB}-#{$suffixA} {
-          @include flex(column, $justify: $valueB, $align: $valueA);
-        }
-      
       }
     }
   }
 }
 
 .m-al {
-
-  @each $suffix, $value in $flex-properties  {
-    &-#{$suffix} {
-      align-self: $value;
+  @each $suffix, $value in $flex-properties {
+    @if ($suffix != 'sa' and $suffix != 'sb') {
+      &-#{$suffix} {
+        align-self: $value;
+      }
     }
   }
-  
 }
-
 
 .m-tx-c {
   text-align: center;
