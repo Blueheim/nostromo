@@ -43,6 +43,14 @@
   &-r {
     animation-name: moveInRight;
   }
+
+  &-t {
+    animation-name: moveInTop;
+  }
+
+  &-b {
+    animation-name: moveInBottom;
+  }
 }
 
 .m-an-scalein {
