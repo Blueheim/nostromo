@@ -136,7 +136,7 @@
     .nav__logo {
       flex: 0 0 15%;
 
-      @include respond-to('small') {
+      @include respond-to('tiny') {
         flex: 0 0 10%;
       }
 
@@ -148,7 +148,7 @@
     .nav__show-cta {
       flex: 0 0 15%;
 
-      @include respond-to('small') {
+      @include respond-to('tiny') {
         flex: 0 0 10%;
       }
 
