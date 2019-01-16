@@ -134,26 +134,17 @@
     }
 
     .nav__logo {
-      @include flex-center;
       flex: 0 0 15%;
 
-      @include respond-to('large') {
+      @include respond-to('medium') {
         flex: 0 0 5%;
       }
-
-      // .logo {
-      //   @include respond-to('large') {
-      //     // @include size(8rem);
-      //     width: 100%;
-      //   }
-      // }
     }
 
     .nav__show-cta {
       flex: 0 0 15%;
 
       @include respond-to('large') {
-        //@include size(5rem);
         flex: 0 0 5%;
       }
     }
