@@ -136,6 +136,10 @@
     .nav__logo {
       flex: 0 0 15%;
 
+      @include respond-to('small') {
+        flex: 0 0 10%;
+      }
+
       @include respond-to('medium') {
         flex: 0 0 5%;
       }
@@ -144,7 +148,11 @@
     .nav__show-cta {
       flex: 0 0 15%;
 
-      @include respond-to('large') {
+      @include respond-to('small') {
+        flex: 0 0 10%;
+      }
+
+      @include respond-to('medium') {
         flex: 0 0 5%;
       }
     }
