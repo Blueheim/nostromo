@@ -92,13 +92,13 @@
 
 @keyframes scroll-animation {
   0% {
-    border-color: transparentize(color('white'), 0.2);
+    border-color: color('white');
     transform: translate(0, 0);
   }
 
   20% {
-    border-color: transparentize(color('white'), 0.2);
-    transform: translate(15px, 15px);
+    border-color: color('white');
+    transform: translate(10px, 10px);
   }
 
   20.1%,

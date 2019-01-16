@@ -1,8 +1,8 @@
 .scroll-indicator {
-  position: fixed;
+  position: absolute;
   left: 50%;
-  bottom: 2rem;
-  @include size(5rem);
+  bottom: 10px;
+  @include size(2rem);
   background: none;
   transform: translate(-50%, -50%) rotate(45deg);
 
@@ -10,29 +10,29 @@
     position: absolute;
     top: 0;
     left: 0;
-    @include size(80%);
+    @include size(100%);
     display: block;
     border: none;
-    border-right: 3px solid color('white');
-    border-bottom: 3px solid color('white');
-    animation: scroll-animation 1s linear infinite;
+    border-right: 2px solid color('white');
+    border-bottom: 2px solid color('white');
+    animation: scroll-animation 2s linear infinite;
 
     &:nth-child(1) {
-      top: -3rem;
-      left: -3rem;
+      top: -20px;
+      left: -20px;
       animation-delay: 0s;
     }
 
     &:nth-child(2) {
-      top: -1.5rem;
-      left: -1.5rem;
-      animation-delay: 0.2s;
+      top: -10px;
+      left: -10px;
+      animation-delay: 0.4s;
     }
 
     &:nth-child(3) {
       top: 0;
       left: 0;
-      animation-delay: 0.4s;
+      animation-delay: 0.8s;
     }
   }
 }
