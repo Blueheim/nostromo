@@ -11,6 +11,10 @@
 
     @include respond-to('large') {
       flex-grow: 1;
+
+      &--head {
+        order: 0;
+      }
     }
   }
 }
