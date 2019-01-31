@@ -9298,6 +9298,18 @@ button {
   height: 100%;
   width: 100%; }
 
+.table {
+  display: block; }
+  @media only screen and (min-width: 75em) {
+    .table {
+      display: flex;
+      flex-wrap: wrap; } }
+  .table > .table__cell {
+    width: 100%; }
+    @media only screen and (min-width: 75em) {
+      .table > .table__cell {
+        flex-grow: 1; } }
+
 /* PAGES */
 /* THEMES */
 

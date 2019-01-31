@@ -1,0 +1,16 @@
+.table {
+  display: block;
+
+  @include respond-to('large') {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  > .table__cell {
+    width: 100%;
+
+    @include respond-to('large') {
+      flex-grow: 1;
+    }
+  }
+}
