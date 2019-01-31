@@ -7,8 +7,6 @@
   }
 
   > .table__cell {
-    width: 100%;
-
     @include respond-to('large') {
       flex-grow: 1;
 
