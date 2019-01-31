@@ -8805,7 +8805,9 @@ button {
     width: 100%; }
     @media only screen and (min-width: 75em) {
       .table > .table__cell {
-        flex-grow: 1; } }
+        flex-grow: 1; }
+        .table > .table__cell--head {
+          order: 0; } }
 
 /* PAGES */
 /* THEMES */
