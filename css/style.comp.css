@@ -300,13 +300,25 @@ body {
     opacity: 1;
     transform: translate(0); } }
 
+@keyframes moveInTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-10rem); }
+  80% {
+    transform: translateY(1rem); }
+  100% {
+    opacity: 1;
+    transform: translate(0); } }
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
-    transform: translateY(3rem); }
+    transform: translateY(10rem); }
+  80% {
+    transform: translateY(-1rem); }
   100% {
     opacity: 1;
-    transform: translateY(0); } }
+    transform: translate(0); } }
 
 @keyframes bg-position {
   0% {
@@ -343,11 +355,11 @@ body {
 
 @keyframes scroll-animation {
   0% {
-    border-color: rgba(255, 255, 255, 0.8);
+    border-color: #ffffff;
     transform: translate(0, 0); }
   20% {
-    border-color: rgba(255, 255, 255, 0.8);
-    transform: translate(15px, 15px); }
+    border-color: #ffffff;
+    transform: translate(10px, 10px); }
   20.1%,
   100% {
     border-color: rgba(255, 255, 255, 0.1); } }
@@ -7126,6 +7138,12 @@ button {
 .m-an-movein-r {
   animation-name: moveInRight; }
 
+.m-an-movein-t {
+  animation-name: moveInTop; }
+
+.m-an-movein-b {
+  animation-name: moveInBottom; }
+
 .m-an-scalein-x {
   animation-name: scaleInX; }
 
@@ -8150,8 +8168,8 @@ button {
     position: absolute;
     right: 1rem;
     top: 1rem;
-    width: 15%;
-    height: 10vmin;
+    width: 5%;
+    height: 5%;
     color: currentColor; }
 
 .nav--bar {
@@ -8202,16 +8220,19 @@ button {
     justify-content: center;
     align-items: center; }
   .nav--bar .nav__logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     flex: 0 0 15%; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 37.5em) {
+      .nav--bar .nav__logo {
+        flex: 0 0 10%; } }
+    @media only screen and (min-width: 62.5em) {
       .nav--bar .nav__logo {
         flex: 0 0 5%; } }
   .nav--bar .nav__show-cta {
     flex: 0 0 15%; }
-    @media only screen and (min-width: 75em) {
+    @media only screen and (min-width: 37.5em) {
+      .nav--bar .nav__show-cta {
+        flex: 0 0 10%; } }
+    @media only screen and (min-width: 62.5em) {
       .nav--bar .nav__show-cta {
         flex: 0 0 5%; } }
 
@@ -8690,36 +8711,36 @@ button {
   background-color: #f39c12; }
 
 .scroll-indicator {
-  position: fixed;
+  position: absolute;
   left: 50%;
-  bottom: 2rem;
-  width: 5rem;
-  height: 5rem;
+  bottom: 10px;
+  width: 2rem;
+  height: 2rem;
   background: none;
   transform: translate(-50%, -50%) rotate(45deg); }
   .scroll-indicator .arrow {
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 80%;
+    width: 100%;
+    height: 100%;
     display: block;
     border: none;
-    border-right: 3px solid #ffffff;
-    border-bottom: 3px solid #ffffff;
-    animation: scroll-animation 1s linear infinite; }
+    border-right: 2px solid #ffffff;
+    border-bottom: 2px solid #ffffff;
+    animation: scroll-animation 2s linear infinite; }
     .scroll-indicator .arrow:nth-child(1) {
-      top: -3rem;
-      left: -3rem;
+      top: -20px;
+      left: -20px;
       animation-delay: 0s; }
     .scroll-indicator .arrow:nth-child(2) {
-      top: -1.5rem;
-      left: -1.5rem;
-      animation-delay: 0.2s; }
+      top: -10px;
+      left: -10px;
+      animation-delay: 0.4s; }
     .scroll-indicator .arrow:nth-child(3) {
       top: 0;
       left: 0;
-      animation-delay: 0.4s; }
+      animation-delay: 0.8s; }
 
 .image {
   width: 100%; }
