@@ -8369,9 +8369,6 @@ button {
   .control--center {
     justify-content: center;
     align-items: center; }
-  .control__input,
-  .control__select select {
-    padding: 0.7rem 2rem; }
   .control__helper {
     display: flex;
     justify-content: flex-start;
