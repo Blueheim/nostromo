@@ -8386,7 +8386,8 @@ button {
       margin-left: 1rem; }
 
 .control__input {
-  order: 0; }
+  order: 0;
+  width: 100%; }
   .control__input--1 {
     display: block;
     color: #ffffff;
@@ -8419,7 +8420,8 @@ button {
 
 .control__select {
   overflow: hidden;
-  position: relative; }
+  position: relative;
+  width: 100%; }
   .control__select select {
     display: block;
     width: 100%;
