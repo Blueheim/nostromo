@@ -8840,8 +8840,7 @@ button {
 .control {
   position: relative;
   transition: all 0.3s;
-  display: flex;
-  width: 100%; }
+  display: flex; }
   .control--center {
     justify-content: center;
     align-items: center; }
@@ -8867,7 +8866,6 @@ button {
       margin-left: 1rem; }
 
 .control__input {
-  flex-grow: 1;
   order: 0; }
   .control__input--1 {
     display: block;
@@ -8908,7 +8906,6 @@ button {
 
 .control__select {
   overflow: hidden;
-  flex-grow: 1;
   position: relative; }
   .control__select select {
     display: block;
