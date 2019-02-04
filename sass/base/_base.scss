@@ -22,9 +22,9 @@ html {
     font-size: map-get($root-sizes, 'large');
   }
 
-  @include respond-to('huge') {
-    font-size: map-get($root-sizes, 'huge');
-  }
+  // @include respond-to('huge') {
+  //   font-size: map-get($root-sizes, 'huge');
+  // }
 }
 
 body {
