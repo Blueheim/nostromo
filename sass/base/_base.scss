@@ -18,9 +18,9 @@ html {
     font-size: map-get($root-sizes, 'medium');
   }
 
-  @include respond-to('large') {
-    font-size: map-get($root-sizes, 'large');
-  }
+  // @include respond-to('large') {
+  //   font-size: map-get($root-sizes, 'large');
+  // }
 
   // @include respond-to('huge') {
   //   font-size: map-get($root-sizes, 'huge');
