@@ -50,6 +50,14 @@
   }
 }
 
+@each $grey in $greys {
+  $color: $grey;
+
+  .m-bg-#{$color} {
+    background-color: color($color);
+  }
+}
+
 .m-bg-white {
   background-color: color('white');
 }
