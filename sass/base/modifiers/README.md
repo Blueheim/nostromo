@@ -40,6 +40,7 @@ iv: invert
 jc: justify-content
 l: left
 lg: large
+ls: letter-spacing
 lt: light
 lw: lowercase
 md: medium

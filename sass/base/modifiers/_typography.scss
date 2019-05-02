@@ -3,6 +3,10 @@
     font-size: $size;
   }
 
+  .m-ls-#{$suffix} {
+    letter-spacing: $size;
+  }
+
   @each $name, $value in $breakpoints {
     @if ($name != 'zero') {
       .m-fs-#{$suffix}-#{$name} {
@@ -73,10 +77,26 @@
   font-weight: 900;
 }
 
-.m-tf-up {
+.m-tx-c {
+  text-align: center;
+}
+
+.m-tx-l {
+  text-align: left;
+}
+
+.m-tx-r {
+  text-align: right;
+}
+
+.m-tx-j {
+  text-align: justify;
+}
+
+.m-tx-up {
   text-transform: uppercase;
 }
 
-.m-tf-lw {
+.m-tx-lw {
   text-transform: lowercase;
 }

@@ -2,6 +2,10 @@
   .o-fs-#{$suffix} {
     font-size: $size !important;
   }
+
+  .o-ls-#{$suffix} {
+    letter-spacing: $size !important;
+  }
 }
 
 .o-tx-c {
@@ -14,4 +18,16 @@
 
 .o-tx-r {
   text-align: right !important;
+}
+
+.o-tx-j {
+  text-align: justify !important;
+}
+
+.o-tx-up {
+  text-transform: uppercase !important;
+}
+
+.o-tx-lw {
+  text-transform: lowercase !important;
 }

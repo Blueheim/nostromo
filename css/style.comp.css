@@ -2142,6 +2142,9 @@ button {
 .m-fs-xt {
   font-size: 1rem; }
 
+.m-ls-xt {
+  letter-spacing: 1rem; }
+
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-xt-tiny {
     font-size: 1rem; } }
@@ -2164,6 +2167,9 @@ button {
 
 .m-fs-ty {
   font-size: 1.6rem; }
+
+.m-ls-ty {
+  letter-spacing: 1.6rem; }
 
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-ty-tiny {
@@ -2188,6 +2194,9 @@ button {
 .m-fs-xs {
   font-size: 2rem; }
 
+.m-ls-xs {
+  letter-spacing: 2rem; }
+
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-xs-tiny {
     font-size: 2rem; } }
@@ -2210,6 +2219,9 @@ button {
 
 .m-fs-sm {
   font-size: 2.5rem; }
+
+.m-ls-sm {
+  letter-spacing: 2.5rem; }
 
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-sm-tiny {
@@ -2234,6 +2246,9 @@ button {
 .m-fs-md {
   font-size: 3rem; }
 
+.m-ls-md {
+  letter-spacing: 3rem; }
+
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-md-tiny {
     font-size: 3rem; } }
@@ -2256,6 +2271,9 @@ button {
 
 .m-fs-lg {
   font-size: 3.5rem; }
+
+.m-ls-lg {
+  letter-spacing: 3.5rem; }
 
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-lg-tiny {
@@ -2280,6 +2298,9 @@ button {
 .m-fs-xl {
   font-size: 4rem; }
 
+.m-ls-xl {
+  letter-spacing: 4rem; }
+
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-xl-tiny {
     font-size: 4rem; } }
@@ -2303,6 +2324,9 @@ button {
 .m-fs-hg {
   font-size: 5rem; }
 
+.m-ls-hg {
+  letter-spacing: 5rem; }
+
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-hg-tiny {
     font-size: 5rem; } }
@@ -2325,6 +2349,9 @@ button {
 
 .m-fs-xh {
   font-size: 6rem; }
+
+.m-ls-xh {
+  letter-spacing: 6rem; }
 
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-fs-xh-tiny {
@@ -2422,10 +2449,22 @@ button {
 .m-wt-900 {
   font-weight: 900; }
 
-.m-tf-up {
+.m-tx-c {
+  text-align: center; }
+
+.m-tx-l {
+  text-align: left; }
+
+.m-tx-r {
+  text-align: right; }
+
+.m-tx-j {
+  text-align: justify; }
+
+.m-tx-up {
   text-transform: uppercase; }
 
-.m-tf-lw {
+.m-tx-lw {
   text-transform: lowercase; }
 
 .m-sw {
@@ -6556,15 +6595,6 @@ button {
 .m-al-st {
   align-self: flex-start; }
 
-.m-tx-c {
-  text-align: center; }
-
-.m-tx-l {
-  text-align: left; }
-
-.m-tx-r {
-  text-align: right; }
-
 .m-ef-bm-my {
   mix-blend-mode: multiply; }
 
@@ -6747,7 +6777,8 @@ button {
   width: 50%;
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
-  z-index: 0; }
+  z-index: 0;
+  pointer-events: none; }
 
 .m-ov-bf-v-50::before {
   content: '';
@@ -6757,7 +6788,8 @@ button {
   width: 100%;
   height: 50%;
   background: rgba(255, 255, 255, 0.1);
-  z-index: 0; }
+  z-index: 0;
+  pointer-events: none; }
 
 .m-ov-bf-h-50-sk::before {
   content: '';
@@ -6768,7 +6800,8 @@ button {
   height: 100%;
   background: rgba(255, 255, 255, 0.1);
   z-index: 0;
-  transform: skewX(20deg) scale(1.5); }
+  transform: skewX(20deg) scale(1.5);
+  pointer-events: none; }
 
 .m-ov-bf-v-50-sk::before {
   content: '';
@@ -6783,6 +6816,12 @@ button {
 
 .m-bg-primary {
   background-color: #c366f5; }
+
+.m-bg-primary-light {
+  background-color: #cf84f7; }
+
+.m-bg-primary-dark {
+  background-color: #9c51c4; }
 
 .m-bg-gd-primary-t {
   background: linear-gradient(to top, #cf84f7, #9c51c4); }
@@ -6811,6 +6850,12 @@ button {
 .m-bg-secondary {
   background-color: #8879e6; }
 
+.m-bg-secondary-light {
+  background-color: #a094eb; }
+
+.m-bg-secondary-dark {
+  background-color: #6d61b8; }
+
 .m-bg-gd-secondary-t {
   background: linear-gradient(to top, #a094eb, #6d61b8); }
 
@@ -6837,6 +6882,12 @@ button {
 
 .m-bg-tertiary {
   background-color: #f66456; }
+
+.m-bg-tertiary-light {
+  background-color: #f88378; }
+
+.m-bg-tertiary-dark {
+  background-color: #c55045; }
 
 .m-bg-gd-tertiary-t {
   background: linear-gradient(to top, #f88378, #c55045); }
@@ -6865,6 +6916,12 @@ button {
 .m-bg-valid {
   background-color: #2ecc71; }
 
+.m-bg-valid-light {
+  background-color: #58d68d; }
+
+.m-bg-valid-dark {
+  background-color: #25a35a; }
+
 .m-bg-gd-valid-t {
   background: linear-gradient(to top, #58d68d, #25a35a); }
 
@@ -6891,6 +6948,12 @@ button {
 
 .m-bg-invalid {
   background-color: #e74c3c; }
+
+.m-bg-invalid-light {
+  background-color: #ec7063; }
+
+.m-bg-invalid-dark {
+  background-color: #b93d30; }
 
 .m-bg-gd-invalid-t {
   background: linear-gradient(to top, #ec7063, #b93d30); }
@@ -6919,6 +6982,12 @@ button {
 .m-bg-info {
   background-color: #3498db; }
 
+.m-bg-info-light {
+  background-color: #5dade2; }
+
+.m-bg-info-dark {
+  background-color: #2a7aaf; }
+
 .m-bg-gd-info-t {
   background: linear-gradient(to top, #5dade2, #2a7aaf); }
 
@@ -6946,6 +7015,12 @@ button {
 .m-bg-alert {
   background-color: #f39c12; }
 
+.m-bg-alert-light {
+  background-color: #f5b041; }
+
+.m-bg-alert-dark {
+  background-color: #c27d0e; }
+
 .m-bg-gd-alert-t {
   background: linear-gradient(to top, #f5b041, #c27d0e); }
 
@@ -6969,6 +7044,24 @@ button {
 
 .m-bg-gd-alert-br {
   background: linear-gradient(to bottom right, #f5b041, #c27d0e); }
+
+.m-bg-grey-light-1 {
+  background-color: #faf9f9; }
+
+.m-bg-grey-light-2 {
+  background-color: #f4f2f2; }
+
+.m-bg-grey-light-3 {
+  background-color: #f0eeee; }
+
+.m-bg-grey-dark-1 {
+  background-color: #333; }
+
+.m-bg-grey-dark-2 {
+  background-color: #777; }
+
+.m-bg-grey-dark-3 {
+  background-color: #999; }
 
 .m-bg-white {
   background-color: #ffffff; }
@@ -7789,29 +7882,56 @@ button {
 .o-fs-xt {
   font-size: 1rem !important; }
 
+.o-ls-xt {
+  letter-spacing: 1rem !important; }
+
 .o-fs-ty {
   font-size: 1.6rem !important; }
+
+.o-ls-ty {
+  letter-spacing: 1.6rem !important; }
 
 .o-fs-xs {
   font-size: 2rem !important; }
 
+.o-ls-xs {
+  letter-spacing: 2rem !important; }
+
 .o-fs-sm {
   font-size: 2.5rem !important; }
+
+.o-ls-sm {
+  letter-spacing: 2.5rem !important; }
 
 .o-fs-md {
   font-size: 3rem !important; }
 
+.o-ls-md {
+  letter-spacing: 3rem !important; }
+
 .o-fs-lg {
   font-size: 3.5rem !important; }
+
+.o-ls-lg {
+  letter-spacing: 3.5rem !important; }
 
 .o-fs-xl {
   font-size: 4rem !important; }
 
+.o-ls-xl {
+  letter-spacing: 4rem !important; }
+
 .o-fs-hg {
   font-size: 5rem !important; }
 
+.o-ls-hg {
+  letter-spacing: 5rem !important; }
+
 .o-fs-xh {
   font-size: 6rem !important; }
+
+.o-ls-xh {
+  letter-spacing: 6rem !important; }
 
 .o-tx-c {
   text-align: center !important; }
@@ -7821,6 +7941,15 @@ button {
 
 .o-tx-r {
   text-align: right !important; }
+
+.o-tx-j {
+  text-align: justify !important; }
+
+.o-tx-up {
+  text-transform: uppercase !important; }
+
+.o-tx-lw {
+  text-transform: lowercase !important; }
 
 /* LAYOUT */
 @media only screen and (min-width: 75em) {
@@ -8098,11 +8227,8 @@ button {
 
 .form {
   height: 100%;
-  padding: 2rem;
   display: grid;
-  grid-gap: 2rem;
-  grid-auto-rows: min-content;
-  background-color: deeppink; }
+  grid-auto-rows: min-content; }
 
 .l-modal {
   display: flex;
@@ -8220,7 +8346,7 @@ button {
         flex: 0 0 10%; } }
     @media only screen and (min-width: 62.5em) {
       .nav--bar .nav__logo {
-        flex: 0 0 5%; } }
+        flex: 0 0 7%; } }
   .nav--bar .nav__show-cta {
     flex: 0 0 15%; }
     @media only screen and (min-width: 37.5em) {
