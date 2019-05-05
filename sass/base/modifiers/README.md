@@ -34,6 +34,7 @@ fx: flex
 gd: gradient
 gr: grid
 h: horizontal
+hn: hidden
 ht: height
 hv: hover
 iv: invert
@@ -80,6 +81,8 @@ tx: text
 ty: tiny
 up: uppercase
 v: vertical
+ve: visible
+vs: visibility
 wt: weight
 wd: width
 x: x

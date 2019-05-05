@@ -639,7 +639,8 @@ span {
   font-weight: inherit; }
 
 button,
-input {
+input,
+textarea {
   font-size: inherit;
   font-family: inherit;
   color: inherit;
@@ -6981,6 +6982,12 @@ button {
 .m-dp-no {
   display: none; }
 
+.m-vs-ve {
+  visibility: visible; }
+
+.m-vs-hn {
+  visibility: hidden; }
+
 @media only screen and (min-width: 0em) and (max-width: 37.5em) {
   .m-dp-no-tiny {
     display: none; } }
@@ -7302,7 +7309,10 @@ button {
   background-color: #ffffff; }
 
 .m-bg-glass {
-  background: rgba(255, 255, 255, 0.2); }
+  background-color: rgba(255, 255, 255, 0.2); }
+
+.m-bg-tp {
+  background-color: transparent; }
 
 .m-tn-pp-none {
   transition-property: none; }
@@ -8000,6 +8010,12 @@ button {
 
 .o-dp-bk {
   display: block !important; }
+
+.o-vs-ve {
+  visibility: visible !important; }
+
+.o-vs-hn {
+  visibility: hidden !important; }
 
 .o-wd-100 {
   width: 100% !important; }
@@ -8801,10 +8817,7 @@ button {
     height: 100%;
     display: flex;
     align-items: center;
-    padding: 0 2rem;
     border-color: currentColor; }
-    .nav--bar .nav__action:not(:last-child) {
-      margin-right: 1rem; }
   .nav--bar .nav__search {
     flex: 0 0 40%;
     display: flex;

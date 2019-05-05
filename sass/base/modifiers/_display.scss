@@ -14,6 +14,14 @@
   display: none;
 }
 
+.m-vs-ve {
+  visibility: visible;
+}
+
+.m-vs-hn {
+  visibility: hidden;
+}
+
 @each $name, $value in $breakpoints {
   @if ($name != 'zero') {
     .m-dp-no-#{$name} {
