@@ -37,6 +37,7 @@ h: horizontal
 hn: hidden
 ht: height
 hv: hover
+if: infinite
 iv: invert
 jc: justify-content
 l: left

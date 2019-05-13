@@ -280,6 +280,11 @@ body {
       display: block;
       background-color: #f4f2f2; }
 
+@keyframes noTransform {
+  100% {
+    opacity: 1;
+    transform: none; } }
+
 @keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -369,6 +374,17 @@ body {
     transform: scaleX(0); }
   to {
     transform: scaleX(1); } }
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    transform: none; }
+  50% {
+    opacity: 0.8;
+    transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    transform: none; } }
 
 /**
  * ----------------------------------------
@@ -7222,7 +7238,13 @@ button {
 .m-an-bw {
   animation-fill-mode: backwards; }
 
+.m-an-if {
+  animation-iteration-count: infinite; }
+
 /* ANIMATIONS */
+.m-an-notransform {
+  animation-name: noTransform; }
+
 .m-an-fadein {
   animation-name: fadeIn; }
 
@@ -7246,6 +7268,9 @@ button {
 
 .m-an-bouncein-t {
   animation-name: bounceInTop; }
+
+.m-an-pulse {
+  animation-name: pulse; }
 
 .m-tn-tm-linear {
   transition-timing-function: linear; }

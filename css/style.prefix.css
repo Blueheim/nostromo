@@ -284,6 +284,18 @@ body {
       display: block;
       background-color: #f4f2f2; }
 
+@-webkit-keyframes noTransform {
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes noTransform {
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -503,6 +515,34 @@ body {
   to {
     -webkit-transform: scaleX(1);
             transform: scaleX(1); } }
+
+@-webkit-keyframes pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; }
+  50% {
+    opacity: 0.8;
+    -webkit-transform: scale(0.8);
+            transform: scale(0.8); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+            transform: none; } }
 
 /**
  * ----------------------------------------
@@ -7481,7 +7521,15 @@ button {
   -webkit-animation-fill-mode: backwards;
           animation-fill-mode: backwards; }
 
+.m-an-if {
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite; }
+
 /* ANIMATIONS */
+.m-an-notransform {
+  -webkit-animation-name: noTransform;
+          animation-name: noTransform; }
+
 .m-an-fadein {
   -webkit-animation-name: fadeIn;
           animation-name: fadeIn; }
@@ -7513,6 +7561,10 @@ button {
 .m-an-bouncein-t {
   -webkit-animation-name: bounceInTop;
           animation-name: bounceInTop; }
+
+.m-an-pulse {
+  -webkit-animation-name: pulse;
+          animation-name: pulse; }
 
 .m-tn-tm-linear {
   transition-timing-function: linear; }

@@ -26,7 +26,15 @@
   animation-fill-mode: backwards;
 }
 
+.m-an-if {
+  animation-iteration-count: infinite;
+}
+
 /* ANIMATIONS */
+.m-an-notransform {
+  animation-name: noTransform;
+}
+
 .m-an-fadein {
   animation-name: fadeIn;
 }
@@ -63,4 +71,8 @@
   &-t {
     animation-name: bounceInTop;
   }
+}
+
+.m-an-pulse {
+  animation-name: pulse;
 }
