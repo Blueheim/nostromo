@@ -20,6 +20,7 @@
     "css",
     "sass",
     "default.scss",
+    "_light.scss",
     "LICENSE",
     "README.md"
   ],
